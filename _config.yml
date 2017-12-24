@@ -10,11 +10,11 @@ exclude:
 
 # Site settings
 title: Nyan101 Blog
-subtitle: "A simple yet classy theme for your Jekyll website or blog"
+subtitle: "여기엔 무슨 말이 들어가야 할까요"
 email: k.minchul95@gmail.com
 name: nyan101
 description: >
-  A simple yet classy theme for your Jekyll website or blog(description).
+  한글이 제대로 먹힐까 궁금해서 써보는 블로그 설명.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
