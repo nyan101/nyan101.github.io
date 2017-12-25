@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date:   2017-12-25 00:00:01
+date:   1970-01-01 00:00:01
 author: Ben Centra
 categories: Jekyll
 tags:	jekyll welcome
