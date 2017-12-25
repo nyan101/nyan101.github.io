@@ -24,7 +24,7 @@ cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
 # Build settings
-markdown: maruku #kramdown
+markdown: kramdown
 paginate: 5
 paginate_path: "/page:num/"
 inter_post_navigation: false
