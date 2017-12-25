@@ -54,6 +54,9 @@ descriptions:
   - cat: Dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
 
+  - cat: 근황
+    desc: "요새는 이렇게 살고 있습니다"
+
 # Social icons and sharing options
 #
 # Social settings are used in two places:
