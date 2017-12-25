@@ -11,14 +11,14 @@ exclude:
 # Site settings
 title: Nyan101 Blog
 subtitle: "여기엔 무슨 말이 들어가야 할까요"
-email: k.minchul95@gmail.com
+email: [REDACTED]
 name: nyan101
 description: >
   한글이 제대로 먹힐까 궁금해서 써보는 블로그 설명.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
-baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://nyan101.github.io" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
@@ -119,13 +119,6 @@ social:
     desc: Follow me on Instagram
     share: false
 
-  - name: Pinterest
-    icon: pinterest
-    username:
-    url:
-    desc: Follow me on Pinterest
-    share: false
-
   - name: SoundCloud
     icon: soundcloud
     username:
@@ -147,39 +140,11 @@ social:
     desc: Friend me on Steam
     share: false
 
-  - name: Dribbble
-    icon: dribbble
-    username:
-    url:
-    desc: Follow me on Dribble
-    share: false
-
-  - name: Vimeo
-    icon: vimeo-square
-    username:
-    url:
-    desc: Follow me on Vimeo
-    share: false
-
-  - name: Vine
-    icon: vine
-    username:
-    url:
-    desc: Follow me on Vine
-    share: false
-
   - name: Reddit
     icon: reddit
     username:
     url:
     desc: Share to Reddit
-    share: false
-
-  - name: "Hacker News"
-    icon: hacker-news
-    username:
-    url:
-    desc: Share to Hacker News
     share: false
 
 # Social sharing protocols
