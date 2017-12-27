@@ -4,9 +4,8 @@ title: About
 permalink: /about/
 ---
 
-<img src="{{ site.baseurl }}/assets/profile-placeholder.gif" title="Profile Picture" class="profile">
+<img src="{{ site.baseurl }}/assets/profile.jpg" title="Profile Picture" class="profile">
 
-자기소개 페이지. 무슨 말을 쓸지는 아직 모르겠다
+컴퓨터&수학 비슷한 거 배우는 학부생
 
-This page is a good place to write about yourself, your project, your product, or whatever it is your site is for. You can replace the image above, or you can get rid of it entirely. 
-
+~~곧 졸업하니까 학부생 말고 다른 말 써야 하는데 아직 적절한 단어를 못 찾았다~~
