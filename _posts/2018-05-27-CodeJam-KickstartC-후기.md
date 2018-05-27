@@ -5,7 +5,6 @@ date:   2018-05-27 00:00:01
 author: nyan101
 categories: 근황
 tags:	대회
-cover:  "/assets/images/2017/08/SCPC2017-title.jpg"
 ---
 
 지난 8월 17일 삼성전자 서울 R&D캠퍼스에서 열린 SCPC(Samsung Collegiate Programming Cup) 본선대회에 참가했다. 2015년 1회 대회부터 계속 본선까지만 진출하고 막상 수상은 못했어서 이번이 사실상 마지막 기회였는데, 졸업 전 마지막 대회라 운이 좋았는지 4등상(+200만원)을 받아갈 수 있었다.
@@ -18,6 +17,8 @@ cover:  "/assets/images/2017/08/SCPC2017-title.jpg"
 
 
 
+
+
 Kickstart는 CodeJam 본대회와 달리 비교적 자주 진행되고(2017년 기준 7회), 다양한 시간대에 분포해 있어 ~~코포처럼~~ 새벽까지 깨어있지 않아도 참가할 수 있다. 대회 자체적으로 상을 주지는 않지만 좋은 성적을 낼 경우 구글에서 인턴/입사 인터뷰 메일이 오기도 하니 시간이 된다면 참가해보자. ~~실제로 2017년 Kickstart Round G 때 15등 찍어서 메일 받아봄.~~
 
 
@@ -26,9 +27,11 @@ Kickstart는 CodeJam 본대회와 달리 비교적 자주 진행되고(2017년 �
 
 
 
+
+
 한동안 코딩을 하지 않아 걱정했는데 다행히 풀이들이 비교적 금방 떠올랐고, 최종 14등으로 대회를 마칠 수 있었다.
 
-문제는 https://code.google.com/codejam/contest/4384486/dashboard 에서 볼 수 있다. 어차피 며칠 후면 analysis가 올라오겠지만 내 풀이를 간단히 적어봤다.
+문제는 [여기](https://code.google.com/codejam/contest/4384486/dashboard) 에서 볼 수 있다. 어차피 며칠 후면 analysis가 올라오겠지만 내 풀이를 간단히 적어봤다.
 
 #### Problem A. Planet Distance
 
