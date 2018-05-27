@@ -7,8 +7,6 @@ categories: 근황
 tags:	대회
 ---
 
-지난 8월 17일 삼성전자 서울 R&D캠퍼스에서 열린 SCPC(Samsung Collegiate Programming Cup) 본선대회에 참가했다. 2015년 1회 대회부터 계속 본선까지만 진출하고 막상 수상은 못했어서 이번이 사실상 마지막 기회였는데, 졸업 전 마지막 대회라 운이 좋았는지 4등상(+200만원)을 받아갈 수 있었다.
-
 
 
 한동안 개인 사정으로 인해 다른 일을 할 수 없어 Google Code Jam 본대회 Qualification Round를 불참했는데, 마침 오늘 Code Jam Kickstart 가 있길래 참가해봤다. 
@@ -62,3 +60,7 @@ Kickstart는 CodeJam 본대회와 달리 비교적 자주 진행되고(2017년 �
 > 들의 합을 구하라.
 
 a^1 + a^2 + a^3 + ... + a^K를 등비수열의 합 공식을 써 구할 수 있다는 것만 파악하면 O(N logK)에 해결할 수 있다.
+
+
+
+해당 라운드의 [최종 스코어보드](https://code.google.com/codejam/contest/4384486/scoreboard?c=4384486#vt=1&vf=1) 에서 각 참가자가 작성한 코드를 다운받을 수 있으니 참고하자.
