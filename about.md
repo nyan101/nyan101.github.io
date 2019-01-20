@@ -11,17 +11,17 @@ permalink: /about/
 ~~곧 졸업하니까 학부생 말고 다른 말 써야 하는데 아직 적절한 단어를 못 찾았다~~
 이제 졸업해서 새로운 단어를 써야 하는데 '그 단어'는 쓰기 좀 그래서 안 쓰고 있음
 
-## Education
-
 ---
+
+## Education
 
 * KITRI 차세대 보안리더 양성 프로그램(Best of Best) 5기 수료 (30인)
 
 * 삼성 소프트웨어 멤버십(Samsung Software Membership) 수료
 
-## Awards
-
 ---
+
+## Awards
 
 #### Algorithm
 
