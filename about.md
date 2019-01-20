@@ -42,5 +42,5 @@ permalink: /about/
 
 ## Research & Papers
 
-* _"I'm Listening to your Location! Inferring User Location with Acoustic Side Channels"._ [Link](https://dl.acm.org/citation.cfm?doid=3178876.3186100)
+* _I'm Listening to your Location! Inferring User Location with Acoustic Side Channels._ [Link](https://dl.acm.org/citation.cfm?doid=3178876.3186100)
 
