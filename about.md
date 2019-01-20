@@ -37,3 +37,10 @@ permalink: /about/
 
 * 국가암호공모전 우수상(2012, 2013, 2015), 최우수상(2014)
 * 육군해킹방어대회 장려상 (2015)
+
+---
+
+## Research & Papers
+
+* _"I'm Listening to your Location! Inferring User Location with Acoustic Side Channels"._ [Link](https://dl.acm.org/citation.cfm?doid=3178876.3186100)
+
