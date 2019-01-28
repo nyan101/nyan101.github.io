@@ -18,7 +18,7 @@ use_math: true
 
 ### Days of the Week
 
-먼저 Coq에서 타입을 선언하는 법을 알아보자. 모든 Coq 구분은 .(마침표)로 끝남에 유의하자
+먼저 Coq에서 타입을 선언하는 법을 알아보자. 모든 Coq 구문은 .(마침표)로 끝남에 유의하자
 
 ```Coq
 Inductive day : Type :=
@@ -50,7 +50,7 @@ end.
 
 `next_weekday` 함수는 day 타입의 인자 `d`를 받아 day 타입을 반환한다.  `Compute` 를 통해 함수를 실행시켜볼 수 있다.
 
-<img src="C:/Users/nyan101/Desktop/nyan101.github.io/assets/images/2019/01/SWF-01-CoqIDE.png" width="700px">
+<img src="/assets/images/2019/01/SWF-01-CoqIDE.png" width="700px">
 
 공간상의 문제로 앞으로는 간단히 아래처럼 표기하자. \>\> 가 있는 줄은 입력. 빈 줄 이후에 이어지는 내용은 그에 대한 출력을 의미한다.
 
@@ -158,7 +158,7 @@ Inductive color : Type :=
 
 이렇게 만들어진 타입에 대해서도 함수를 정의할 수 있으며, 하스켈과 유사하게 \_를 더미(dummy)로 하는 패턴 매칭을 사용할 수 있다.
 
-```Cpq
+```Coq
 Definition isred (c:color) : bool :=
 match c with
 | black => false
