@@ -62,4 +62,4 @@ Coq는 현재 전산학과 수학의 여러 분야에 폭넓게 활용되고 있
 * dependent type을 이용한 함수형 프로그래밍 환경 제공
 
 * higher-order logic에서의 proof assistant
-  : 4색 정리, Feit-Thompson 정리 등의 증명 및 검증
+  : 4색 정리, Feit-Thompson 정리의 증명 및 검증
