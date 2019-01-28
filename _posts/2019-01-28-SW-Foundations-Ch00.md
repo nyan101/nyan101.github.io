@@ -8,7 +8,7 @@ tags:	Coq
 use_math: true
 ---
 
-Coq를 공부해보겠다는 막연한 목표와 함께 이런저런 자료를 찾아보고 그만두기를 반복하던 중, [DeepSpec Summer School](https://deepspec.org/event/dsss18/) 세미나에서 나온 영상을 발견했다. 유투브에서 찾은 다른 영상들이 4,5년 전 자료였던 반면 DeepSpec에서는 최근인 2017, 2018년까지 꾸준히 학습자료와 세미나 영상이 업로드되고 있었다.
+Coq를 공부해보겠다는 막연한 목표와 함께 이런저런 자료를 찾아보고 그만두기를 반복하던 중, [DeepSpec Summer School](https://deepspec.org/event/dsss18/) 세미나에서 나온 영상을 발견했다. 유투브에서 찾은 다른 영상들이 4,5년 전 자료였던 반면 DeepSpec에서는 최근인 2017, 2018년까지 꾸준히 학습자료와 세미나 영상이 업로드되고 있다.
 
 사실 예전 LaTeX을 익힐 때에도 이것저것 찾아보기만 하다가 결국 학교 과제를 LaTeX으로 작성해보고서야 익숙해졌는데, 이번에도 실 사용 없이 공부하는게 얼마나 갈지는 잘 모르겠다.. 자료 초반에 _"All the core chapters are suitable for both upper-level undergraduate and graduate students."_ 라는 말이 있던데, ~~물론 저런 말들이 다 그렇듯이 전부 거짓말이겠지만~~ 이젠 undergraduate 신분이라는 핑계도 사라졌으니 좀더 확실히 짚고 넘어가야겠다는 생각도 든다.
 
@@ -55,8 +55,11 @@ Coq는 현재 전산학과 수학의 여러 분야에 폭넓게 활용되고 있
 
 * 프로그래밍 언어의 모델링 플랫폼
   : JavaCard 플랫폼의 보안성을 증명해 CC인증을 받는 데 활용됨
+
 * 증명된(formally certified) SW나 HW의 개발환경
   : CompCert(fully-verified C optimizing compiler), CertiKos(fully-verified hypervisor), CertiCrypt 등
+
 * dependent type을 이용한 함수형 프로그래밍 환경 제공
+
 * higher-order logic에서의 proof assistant
   : 4색 정리, Feit-Thompson 정리 등의 증명 및 검증
