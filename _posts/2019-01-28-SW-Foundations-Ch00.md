@@ -24,7 +24,7 @@ _**\<Software Foundations\>**_ 라는 제목에서 짐작할 수 있듯이, 이�
   * MVC모델, publish-subcribe, ⋯
 * 프로그래밍 언어 자체의 설계철학을 제시
   * OOP, aspect-oriented, functional, ⋯
-* 소프트웨어의 성질을 수학적으로 논증(reasoning)
+* **소프트웨어의 성질을 수학적으로 논증(reasoning)**
   * SMT solver, Isabelle, Coq, ⋯
 
 여기서 다루고자 하는 건 마지막 접근방식이다. 특히, \<Software Foundations\>에서는 크게 다음 3가지를 중점적으로 다룬다.
