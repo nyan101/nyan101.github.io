@@ -168,7 +168,7 @@ match c with
 end.
 ```
 
-`isred`가 `color -> bool`인 함수이므로 `(isred red)`는 올바른 expression이 아님에 주의하자.(단, `(isred (primary red))`는 올바른 expression)
+`isred`가 `color -> bool`인 함수이므로 `(isred red)`는 올바른 expression이 아님에 주의하자. (단, `(isred (primary red))`는 올바른 expression이다)
 
 
 
@@ -197,7 +197,7 @@ end.
 
 ### Modules
 
-지금까지 작성한 모든 코드는 전역(global scope)에 속한다. 단순히 예제를 따라해보는 거라면 몰라도 코드가 복잡해질수록 모든 걸 전역으로 두는 대신, 영역을 나눠야 할 필요성이 커진다. 자바의 패키지, C++의 네임스페이스처럼 Coq에서는 모듈을 제공한다.
+지금까지 작성한 모든 코드는 전역(global scope)에 속한다. 단순히 예제를 따라해보는 거라면 몰라도 코드가 복잡해질수록 모든 걸 전역으로 두는 대신 영역을 나눠야 할 필요성이 커진다. 자바의 패키지, C++의 네임스페이스처럼 Coq에서는 모듈을 제공한다.
 
 ```Coq
 Module XXX.
