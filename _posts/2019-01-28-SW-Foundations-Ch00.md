@@ -55,7 +55,6 @@ Coq는 현재 전산학과 수학의 여러 분야에 폭넓게 활용되고 있
 
 * 프로그래밍 언어의 모델링 플랫폼
   : JavaCard 플랫폼의 보안성을 증명해 CC인증을 받는 데 활용됨
-
 * 증명된(formally certified) SW나 HW의 개발환경
   : CompCert(fully-verified C optimizing compiler), CertiKos(fully-verified hypervisor), CertiCrypt 등
 * dependent type을 이용한 함수형 프로그래밍 환경 제공
