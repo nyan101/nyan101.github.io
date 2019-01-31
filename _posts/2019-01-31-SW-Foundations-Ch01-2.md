@@ -112,7 +112,7 @@ match n with
 end.
 ```
 
-그런데 이를 실행시키면 _"The reference is_even was not found in the current environment."_라는 오류를 볼 수 있다. `is_even`의 정의에서 다시 `is_even`을 사용한 게 원인으로 Definition이 단순한 패턴 매칭이기 때문에 등장하는 오류이다. 생각해보면 `is_even (S (S (S O)))`를 `is_even (S O)`로 바꾼다고 계산이 끝나는 게 아니므로, 함수를 다시 **재귀적(recursive)**으로 적용하는 방법을 찾아야 한다. Coq에서는 `Fixpoint`가 그 역할을 수행한다.
+그런데 이를 실행시키면 "_The reference is_even was not found in the current environment._"라는 오류를 볼 수 있다. `is_even`의 정의에서 다시 `is_even`을 사용한 게 원인으로 Definition이 단순한 패턴 매칭이기 때문에 등장하는 오류이다. 생각해보면 `is_even (S (S (S O)))`를 `is_even (S O)`로 바꾼다고 계산이 끝나는 게 아니므로, 함수를 다시 **재귀적(recursive)**으로 적용하는 방법을 찾아야 한다. Coq에서는 `Fixpoint`가 그 역할을 수행한다.
 
 ```Coq
 Fixpoint is_even (n : nat) : bool :=
@@ -145,7 +145,7 @@ match n with
 end.
 ```
 
-Coq에서는 plus`처럼 n과 m이 모두 같은 타입(`nat`)인 경우 한번에 묶어서 표기가 가능하다.
+Coq에서는 `plus`처럼 n과 m이 모두 같은 타입(`nat`)인 경우 한번에 묶어서 표기가 가능하다.
 
 ```Coq
 Fixpoint mult (n m : nat) : nat :=
@@ -155,7 +155,7 @@ match n with
 end.
 ```
 
-이전 글에서 여러 요소를 한번에 매칭시키는 법을 알아봤다 (※이전 글의 Tuples 단락 참조). 이 방식 외에도 2개 이상의 변수를 case by case로 나눌 때 `match...with`을 중첩해 사용할 수 있다. 두 자연수 n, m이 동일한지 판단하는 함수 `is_equal`을 작성해봤다.
+이전 글에서 여러 요소를 한번에 매칭시키는 법을 알아봤다 (※ 이전 글의 Tuples 단락 참조). 이 방식 외에도 2개 이상의 변수를 case by case로 나눌 때 `match...with`을 중첩해 사용할 수 있다. 두 자연수 n, m이 동일한지 판단하는 함수 `is_equal`을 작성해봤다.
 
 ```Coq
 Fixpoint is_equal (n m : nat) : bool :=
@@ -214,14 +214,11 @@ end.
 
 올바르게 수행했다면 결과창에서 각각 아래와 같은 메시지를 볼 수 있다.
 
-> plus is defined
-> 
+> plus is defined \
 > plus is recursively defined (decreasing on 1st argument)
 > 
 > 
-> 
-> another_plus is defined
-> 
+> another_plus is defined \
 > another_plus is recursively defined (decreasing on 2nd argument)
 
 앞서 Fixpoint를 이용해 함수를 재귀적으로 정의할 수 있다고 했으므로 _xxx is recursively defined_  부분은 별로 놀랍지 않다. 그런데 이어진 괄호 안의 문장은 어떤 의미일까?
