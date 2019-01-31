@@ -192,7 +192,7 @@ end.
 
 ## Fixpoint (extra)
 
-CoqIDE를 사용해 실습을 진행했다면`Fixpoint`를 사용해 함수를 정의할 때마다 결과창에 눈길을 끄는 문구가 출력됐을 것이다. 아니라면 다시 `plus`를 예시로 들어보자.
+CoqIDE를 사용해 실습을 진행했다면 `Fixpoint`를 사용해 함수를 정의할 때마다 결과창에 눈길을 끄는 문구가 출력됐을 것이다. 아니라면 다시 `plus`를 예시로 들어보자.
 
 
 
@@ -215,9 +215,13 @@ end.
 올바르게 수행했다면 결과창에서 각각 아래와 같은 메시지를 볼 수 있다.
 
 > plus is defined
+> 
 > plus is recursively defined (decreasing on 1st argument)
->
+> 
+> 
+> 
 > another_plus is defined
+> 
 > another_plus is recursively defined (decreasing on 2nd argument)
 
 앞서 Fixpoint를 이용해 함수를 재귀적으로 정의할 수 있다고 했으므로 _xxx is recursively defined_  부분은 별로 놀랍지 않다. 그런데 이어진 괄호 안의 문장은 어떤 의미일까?
@@ -226,7 +230,7 @@ Coq에서 함수를 정의할 때 가장 중요한 점은 **"모든 함수는 �
 
 
 
-음? **함수가 유한 시간 내에 계산이 끝나는지를 판단**이라고 하면 튜링머신에서 다뤘던 [정지 문제(Halting Problem)](https://ko.wikipedia.org/wiki/%EC%A0%95%EC%A7%80_%EB%AC%B8%EC%A0%9C)가 떠오른다. 문제는 이건 계산 불가능한 문제로 잘 알려져 있다는 사실이다. 그럼 Coq는 대체 어떻게 하는 걸까.
+음? **함수가 유한 시간 내에 계산이 끝나는지를 판단**이라고 하면 튜링머신에서 다뤘던 [정지 문제(Halting Problem)](https://ko.wikipedia.org/wiki/%EC%A0%95%EC%A7%80_%EB%AC%B8%EC%A0%9C)가 떠오른다. 당황스러운 점은 이건 계산 불가능한 문제로 잘 알려져 있다는 사실이다. 그럼 Coq는 대체 어떻게 하는 걸까.
 
 
 
