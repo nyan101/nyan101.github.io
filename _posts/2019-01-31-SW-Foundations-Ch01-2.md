@@ -12,7 +12,7 @@ use_math: true
 
 ## Define Numbers
 
-이전 글에서는 `day`, `bool`, `color` 와 같이 원소의 개수가 유한한 타입, 다시 말해 타입 \\(T\\)에 대해 \\(\\{x | \\mathrm\\{x has type \\}T\\} \\)가 유한집합인 경우만을 다뤘다. 무한한 원소를 가지는 타입을 정의하려면 어떻게 해야 할까? 집합론에서와 마찬가지로 자연수에서 시작해보자. 페아노 공리계([Peano axioms](https://en.wikipedia.org/wiki/Peano_axioms))에서 필요한 부분을 빌려오자. 크게 중요하지 않은 공리들은 생략했다
+이전 글에서는 `day`, `bool`, `color` 와 같이 원소의 개수가 유한한 타입, 다시 말해 타입 \\(T\\)에 대해 \\(\\{x \| \\mathrm\\{x has type \\}T\\} \\)가 유한집합인 경우만을 다뤘다. 무한한 원소를 가지는 타입을 정의하려면 어떻게 해야 할까? 집합론에서와 마찬가지로 자연수에서 시작해보자. 페아노 공리계([Peano axioms](https://en.wikipedia.org/wiki/Peano_axioms))에서 필요한 부분을 빌려오자. 크게 중요하지 않은 공리들은 생략했다
 
 > 1\. 0 is a natural number.
 > 5\. For every natural number n, S(n) is a natural number.
