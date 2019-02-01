@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "SW Foundations - Ch02. Proof by ..."
-date:   2019-01-31 20:15:17
+date:   2019-02-01 20:15:17
 author: nyan101
 categories: 자습
 tags:	Coq
