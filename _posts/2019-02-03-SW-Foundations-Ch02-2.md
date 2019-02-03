@@ -87,26 +87,27 @@ Qed.
 마찬가지로 `eqn:E` 역시 추가적인 가독성을 제공한다. 조금 전 `n`을 경우에 따라 나누었지만 그게 `n = O`인 경우와, `n = S n'`인 2가지라는 사실을 알기 위해서는 (디테일을 기억하고 있지 않다면) `nat`의 정의까지 다시 올라가야 한다.`destruct` tactic을 사용할 때 `eqn:(name)`을 덧붙이면 각 경우를 가정으로 표기해 현재 다루고 있는 subgoal이 어떤 경우에 해당하는지를 조금 더 친절하게 알려준다. 각 경우를 처리할 때 subgoals 창에 나타난 메시지를 보면 이를 좀더 잘 이해할 수 있다.
 
 
-<div class="pull-left">
-```Coq
-1 subgoal
+<table>
+<tr>
+<td>
+<pre><code class="language-Coq">1 subgoal
 n : nat
 E : n = 0
 ______________________________________(1/1)
 (0 + 1 =? 0) = false
-```
-</div>
-<div class="pull-right">
-```Coq
-1 subgoal
+</code></pre>
+</td>
+<td>
+<pre><code class="language-Coq">1 subgoal
 n, n' : nat
 E : n = S n'
 ______________________________________(1/1)
 (S n' + 1 =? 0) = false
-```
-</div>
+</code></pre>
+</td>
+</tr>
+</table>
 <hr>
-
 
 scope의 활용을 좀더 이해하기 위해 다른 예제를 살펴보자. 
 
