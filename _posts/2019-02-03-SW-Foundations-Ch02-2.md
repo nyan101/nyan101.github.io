@@ -11,7 +11,7 @@ use_math: true
 
 
 ## Proof by Case Analysis
-simpl이나 rewriting만으로는 충분하지 않은 경우가 있다. [예전 글](https://nyan101.github.io/%EC%9E%90%EC%8A%B5/2019/01/31/SW-Foundations-Ch01-2.html)에서 정의했던 `is_equal`에 새 Notation을 정의하자.
+다뤄야 하는 대상이 복잡해지면 `simpl`이나 `rewrite`만으로는 충분하지 않은 경우가 있다. 잠시 [예전 글](https://nyan101.github.io/%EC%9E%90%EC%8A%B5/2019/01/31/SW-Foundations-Ch01-2.html)에서 정의했던 `is_equal`을 가져오면서 여기에 새로운 Notation을 추가하자.
 
 ```Coq
 Fixpoint is_equal (n m : nat) : bool :=
@@ -31,14 +31,14 @@ Notation "x =? y" := (eqb x y) (at level 70) : nat_scope.
 
 
 
-이제 다음 두 명제를 생각해보자. 
+이제 거의 비슷하게 생긴 다음 두 명제를 증명해보자. 
 
 * \\( \\forall n : nat, 1+n \\neq 0 \\)
 * \\( \\forall n : nat, n+1 \\neq 0 \\)
 
 
 
-먼저 1+n은 plus와 notation의 정의로부터 `S n`으로 simplified될 수 있고, 이를 이용하면 위의 명제는 `simpl.` 로 증명이 끝난다.
+먼저 `1+n`은 plus와 notation의 정의로부터 `S n`으로 simplified될 수 있고, 이를 이용하면 위의 명제는 `simpl.` 로 증명이 끝난다.
 
 ```Coq
 Theorem O_cannot_be_1_n : forall n:nat, (1+n =? 0) = false.
@@ -49,7 +49,7 @@ reflexivity.
 Qed.
 ```
 
-하지만 `n+1`은 `simpl.`을 시도해도 아무런 변화가 일어나지 않는다. 그런데 `reflexivity.`를 적용하(려고 시도하)면 _Unable to unify "false" with "n + 1 =? 0"_ 라는 오류를 볼 수 있다. `1+n`과 달리 `n+1`은 n이 `O`인지 `S n'` 형태인지에 따라 결과값이 달라지기 때문에 Coq가 한번에 처리할 수 있는 역량을 벗어난다. 그렇다면 **경우를 나누어서** 처리해보자. `destruct` tactic이 그 역할을 담당한다.
+하지만 `n+1`은 `simpl.`을 시도해도 아무런 변화가 일어나지 않는다. 그런데 `reflexivity.`를 적용하(려고 시도하)면 _Unable to unify "false" with "n + 1 =? 0"_ 라는 오류를 볼 수 있다. `1+n`과 달리 `n+1`은 n이 `O`인지 `S n'` 형태인지에 따라 결과값이 달라지기 때문에 Coq가 한번에 처리할 수 있는 역량을 벗어난다. 그렇다면 **경우를 나누어서** 처리하는 방법을 떠올릴 수 있다. `destruct` tactic이 그 역할을 담당한다.
 
 ```Coq
 Theorem O_cannot_be_n_1 : forall n:nat, n+1 =? 0 = false.
@@ -68,7 +68,7 @@ ______________________________________(2/2)
 (S n + 1 =? 0) = false
 ```
 
-이어서 증명을 진행해도 되지만, Coq에서는 각 subgoal에 대한 증명임을 명확히 하기 위해 보조 마크를 사용할 수 있다 (LaTeX의 itemize를 생각하면 된다). 이번 경우 각 subgoal은 `reflexivity.`로 바로 증명이 끝난다.
+이어서 증명을 진행해도 되지만, Coq에서는 각 subgoal에 대한 증명임을 명확히 하기 위해 보조 마크를 사용할 수 있다 (bullet을 이용한 개조식 서술을 생각하면 된다). 이번 경우 각 subgoal은 `reflexivity.`로 바로 증명이 끝난다.
 
 ```Coq
 Theorem O_cannot_be_n_1 : forall n:nat, n+1 =? 0 = false.
@@ -80,11 +80,11 @@ destruct n as [ | n'] eqn:E.
 Qed.
 ```
 
-처음 -를 수행하면 subgoal 창에 나타난 목표가 하나로 한정되는 것을 볼 수 있다. -나 +, \*같은 bullet이 일종의 scope 한정자 역할을 하는 셈이다.
+
 
 여기서 `as [ | n']`은 n을 경우에 따라 나누면서 만들어지는 새로운 변수에 이름을 제공하기 위해 사용했다 (`O`는 새로운 변수가 필요하지 않지만 `S xxx` 의 경우는 `xxx` 자리에 사용할 새로운 변수가 필요). as를 사용하지 않아도 Coq에서 자동으로 이름을 제공하지만, 의미를 명확히 하기 위해 가능하면 직접 이름을 제시하는 것이 좋다.
 
-마찬가지로 `eqn:E` 역시 추가적인 가독성을 제공한다. 조금 전 `n`을 경우에 따라 나누었지만 그게 `n = O`인 경우와, `n = S n'`인 2가지라는 사실을 알기 위해서는 (디테일을 기억하고 있지 않다면) `nat`의 정의까지 다시 올라가야 한다.`destruct` tactic을 사용할 때 `eqn:(name)`을 덧붙이면 각 경우를 가정으로 표기해 현재 다루고 있는 subgoal이 어떤 경우에 해당하는지를 조금 더 친절하게 알려준다. 각 경우를 처리할 때 subgoals 창에 나타난 메시지를 보면 이를 좀더 잘 이해할 수 있다.
+마찬가지로 `eqn:E` 역시 추가적인 가독성을 제공한다. 조금 전 `n`을 경우에 따라 나누었지만 그게 `n = O`인 경우와, `n = S n'`인 2가지라는 사실을 알기 위해서는 (디테일을 기억하고 있지 않다면) `nat`의 정의까지 다시 올라가야 한다.`destruct` tactic을 사용할 때 `eqn:(name)`을 덧붙이면 각 경우를 가정으로 표기해 현재 다루고 있는 subgoal이 어떤 경우에 해당하는지를 조금 더 친절하게 알려준다.  subgoals 창에 나타나는 메시지를 보면 이를 좀더 잘 이해할 수 있다.
 
 
 <table>
@@ -107,9 +107,8 @@ ______________________________________(1/1)
 </td>
 </tr>
 </table>
-<hr>
 
-scope의 활용을 좀더 이해하기 위해 다른 예제를 살펴보자. 
+나뉘어진 subgoal에 대해 증명을 진행하면서, -를 수행하는 순간 subgoal 창에 나타난 목표가 하나로 한정되는 것을 볼 수 있다. -나 +, \*같은 bullet이 일종의 scope 한정자 역할을 하는 셈이다. scope의 활용을 좀더 이해하기 위해 다른 예제를 살펴보자. 
 
 ```Coq
 Theorem andb_commutative : forall b c, andb b c = andb c b.
