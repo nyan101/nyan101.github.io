@@ -86,14 +86,13 @@ Qed.
 
 마찬가지로 `eqn:E` 역시 추가적인 가독성을 제공한다. 조금 전 `n`을 경우에 따라 나누었지만 그게 `n = O`인 경우와, `n = S n'`인 2가지라는 사실을 알기 위해서는 (디테일을 기억하고 있지 않다면) `nat`의 정의까지 다시 올라가야 한다.`destruct` tactic을 사용할 때 `eqn:(name)`을 덧붙이면 각 경우를 가정으로 표기해 현재 다루고 있는 subgoal이 어떤 경우에 해당하는지를 조금 더 친절하게 알려준다.  subgoals 창에 나타나는 메시지를 보면 이를 좀더 잘 이해할 수 있다.
 
-
 <table>
 <tr>
 <td>
 <pre><code class="language-Coq">1 subgoal
 n : nat
 E : n = 0
-______________________________________(1/1)
+__________________________(1/1)
 (0 + 1 =? 0) = false
 </code></pre>
 </td>
@@ -101,12 +100,13 @@ ______________________________________(1/1)
 <pre><code class="language-Coq">1 subgoal
 n, n' : nat
 E : n = S n'
-______________________________________(1/1)
+__________________________(1/1)
 (S n' + 1 =? 0) = false
 </code></pre>
 </td>
 </tr>
 </table>
+
 
 나뉘어진 subgoal에 대해 증명을 진행하면서, -를 수행하는 순간 subgoal 창에 나타난 목표가 하나로 한정되는 것을 볼 수 있다. -나 +, \*같은 bullet이 일종의 scope 한정자 역할을 하는 셈이다. scope의 활용을 좀더 이해하기 위해 다른 예제를 살펴보자. 
 
@@ -137,4 +137,104 @@ Proof.
     { reflexivity. } }
 Qed.
 ```
+
+
+
+## Proof by Induction
+
+다음으로 이전에 다뤘던 `plus_0_n`과 유사하지만 다른 tactic을 사용해야 하는 경우를 알아보자.
+
+```Coq
+Theorem plus_n_0 : forall n:nat, n+0=n.
+Proof.
+intros n.
+(* TODO *)
+Qed.
+```
+
+`simpl.`은 아무런 변화가 없고, `destruct n as [|n']`을 적용하자 무언가 진척이 있어보인다. 
+
+```Coq
+2 subgoals
+______________________________________(1/2)
+0 + 0 = 0
+______________________________________(2/2)
+S n' + 0 = S n'
+```
+
+첫 번째는 `reflexivity`로 간단히 해결 가능하지만 두 번째 subgoal에 `simpl.`을 적용하면 다음과 같이 변한다.
+
+```Coq
+1 subgoal
+n' : nat
+______________________________________(1/1)
+S (n' + 0) = S n'
+```
+
+~~뭐지 데자뷰인가~~ 다시 `destruct`를 적용해 시도해봤지만 같은 패턴이 반복된다.
+
+<img src="/assets/images/2019/02/SWF-02-2-plus-n-0.png" width="800px">
+
+그러면 이 무한한 경우의 수를 모두 하나씩 보여야 할까? 이는 애초에 불가능하다. 그렇다면 어떤 접근을 사용할 수 있을까.
+
+\\( \\forall P(-)((P(0)\\land \\forall n (P(n) \\implies P(n+1))) \\implies \\forall n P(n)) \\)
+
+다루고자 하는 대상이 자연수(nat)이므로 수학적 귀납법을 생각해볼 수 있다.  위 수식에 나타나 있듯이 자연수에 대한 성질 \\(P(n)\\)에 대해,
+
+* \\(P(0)\\)이 성립하고
+* \\(\\forall n, P(n) \\implies P(n+1)\\) 이면
+
+모든 자연수 n에 대해 P(n)이 성립, 다시 말해 \\(\\forall n, P(n)\\) 이 된다.
+
+이전 `destruct`때와 유사하게`induction` tactic을 적용하면 2개의 subgoal이 나타난다. 여기서 `n'`은 destruct때와 마찬가지 의미를, `IH`는 Induction Hypothesis에 `IH`라는 이름을 붙였음을 뜻한다.
+
+```Coq
+induction n as [|n' IH].
+```
+
+첫 번째 subgoal(0+0=0)을 `reflexivity`로 끝내고 2번째 subgoal인 induction step에 집중하자. 이때 앞서 이름붙인 `IH`를 사용할 수 있다.
+
+```Coq
+1 subgoal
+n' : nat
+IH : n' + 0 = n'
+______________________________________(1/1)
+S n' + 0 = S n'
+```
+
+`simpl.`을 적용하면 goal은 `S (n' + 0) = S n'`으로 변하고, 여기에 `rewrite IH`를 적용하면 증명을 끝낼 수 있다. 전체 코드는 아래와 같다.
+
+```Coq
+Theorem plus_n_0 : forall n:nat, n+0 = n.
+Proof.
+intros n.
+induction n as [|n' IH].
+- (* 0 + 0 = 0 *)
+  reflexivity.
+- (* S n' + 0 = S n' *)
+  simpl.
+  rewrite -> IH.
+  reflexivity.
+Qed.
+```
+
+
+
+## Proofs within Proofs
+
+앞서 Induction Step을 보일 때 중간에 전제조건으로 주어진 `IH`를 이용해 손쉽게(?) 증명을 마쳤다. 이처럼 증명 도중에 사용할 수 있는 정리들이 있다면 간결함과 가독성을 높이는 데 큰 도움이 된다. 바깥에서 정의된 `Lemma`나 `Corollary` 등을 사용할 수도 있지만, 그러기엔 사소한 경우 `assert`를 이용해 증명 도중에 작은 보조정리들을 추가할 수 있다.
+
+```Coq
+Theorem mult_0_plus
+ : forall n m : nat, (0 + n) * m = n * m.
+Proof.
+  intros n m.
+  assert (H: 0 + n = n).
+```
+
+`assert` 를 추가하면 2개의 subgoal이 나타난다. 첫 번째는 assert로 추가된 명제, 두 번째는 원래 목표였던 subgoal이다. assert로 추가한 내용을 증명하고 나면 `induction`에서와 마찬가지로 이를 이용할 수 있다.
+
+<img src="/assets/images/2019/02/SWF-02-2-assert.png" width="800px">
+
+
 
