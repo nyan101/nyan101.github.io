@@ -10,7 +10,7 @@ use_math: true
 
 
 
-본 장에서는 Structured Data, 그중에서도 List에 대해 다룬다.
+본 챕터에서는 Structured Data, 그중에서도 List에 대해 다룬다.
 
 ## Pairs of Numbers
 지난번 `nybble`을 정의할 때 언급했듯이, Coq의 생성자(constructor)는 여러 개의 인자를 받을 수 있다.
@@ -52,7 +52,7 @@ match p with
 end.
 ```
 
-작성이 끝나면 Compute를 통해 두 방식 모두 예상대로 잘 동작하는 것을 확인할 수 있다.
+작성이 끝나면 Compute를 통해 잘 동작하는지 확인해볼 수 있다.
 
 ```Coq
 >> Compute fst (pair 3 5). (* fst2도 동일 *)
@@ -63,11 +63,11 @@ end.
    5 : nat
 ```
 
-여기서 `fst2`, `snd2`를 정의할 때 사용한 패턴 매칭은 얼핏 x,y 둘을 매칭하는 다중 매칭처럼 보이지만 실제로는 `pair x y` 하나에 대응되는 **단일 매칭**임에 유의해야 한다. (C++ 의 pair STL 기준으로 _void f(int x, int y)_ 와 _void f(pair<int,int> p)_의 차이라고 이해하면 된다.)
+여기서 `fst2`, `snd2`를 정의할 때 사용한 패턴 매칭은 얼핏 x, y 두 요소를 매칭하는 다중 매칭처럼 보이지만 실제로는 `pair x y` 하나에 대응되는 **단일 매칭**임에 유의해야 한다. (C++ 의 pair STL 기준으로 _void f(int x, int y)_ 와 _void f(pair<int,int> p)_ 의 차이라고 이해하면 된다.)
 
 
 
-다음으로 natprod를 다루는 간단한 명제에 대한 증명을 시도해보자.
+다음으로 natprod에 대한 간단한 명제를 증명해보자.
 
 ```Coq
 Theorem surjective_pairing :
@@ -84,7 +84,6 @@ Theorem surjective_pairing2 :
   forall (p : natprod), p = (fst p, snd p).
 Proof.
 reflexivity. (* ERROR *)
-Qed.
 ```
 
 이런 경우 `p : natprod`가 `( (n : nat), (m : nat) )` 형태임을 인식시켜줘야 한다. 이는 destruct tactic을 사용해 해결할 수 있다. 이번 기회에 destruct의 정확한 기능을 알아보자.
@@ -99,13 +98,13 @@ reflexivity.
 Qed.
 ```
 
-`destruct p as [n m].`을 적용하는 순간 subgoal의 `p`가 `(n,m)`으로 바뀌고, `reflexivity`가 적용되는 것을 볼 수 있다. [이전 글](https://nyan101.github.io/%EC%9E%90%EC%8A%B5/2019/02/03/SW-Foundations-Ch02-2.html)에서 destruct tactic을 단순히 "경우를 나누는" 용법이라고 설명했는데, 구체적으로는 "가능한 생성규칙별로 경우를 나누고, 인자가 있는 경우 \[ \] 에 제시된 순서대로 대응시키는" 기능이라고 이해할 수 있다. 다시 말해, natprod는 유일한 생성규칙이 `pair (n1 n2 : nat)`이었으므로 2개의 인자명(n,m)을 받아 `destruct p as [n m]`이, nat의 경우 2개의 생성규칙별로 \[ \](`O`는 0개의 인자)과 \[n'\] (`S (n:nat)`은 1개의 인자)이 되어 전체 `destruct n as [ | n']`이 되는 것이다.
+`destruct p as [n m].`을 적용하는 순간 subgoal의 `p`가 `(n,m)`으로 바뀌고, `reflexivity`가 적용 가능해지는 것을 볼 수 있다. [이전 글](https://nyan101.github.io/%EC%9E%90%EC%8A%B5/2019/02/03/SW-Foundations-Ch02-2.html)에서 destruct tactic을 단순히 "경우를 나누는" 용법이라고 설명했는데, 구체적으로는 **가능한 생성규칙별로 경우를 나누고, 인자가 있는 경우 \[ \] 에 제시된 순서대로 대응시키는** 기능이라고 이해할 수 있다. 따라서, natprod는 유일한 생성규칙이 `pair (n1 n2 : nat)`이었으므로 2개의 인자명(n,m)을 받아 `destruct p as [n m]`이, nat의 경우 2개의 생성규칙별로 \[ \](`O`는 0개의 인자)과 \[n'\] (`S (n:nat)`은 1개의 인자)이 되어 전체 `destruct n as [ | n']`이 되는 것이다.
 
 
 
 ## Lists of Numbers
 
-pair에서 한발 더 나아가, 임의 개수의 원소를 가질 수 있는 list를 만들어보자. 원문의 표현을 빌리면 "_A list is either the empty list or else a pair of a number and another list._"가 된다.
+pair에서 한발 더 나아가, 임의 개수의 원소를 가질 수 있는 list를 만들어보자. 원문의 표현을 빌리면 "_A list is either the empty list or else a pair of a number and another list._"라고 한다.
 
 ```Coq
 Inductive natlist : Type :=
@@ -121,7 +120,7 @@ Inductive natlist : Type :=
     : natlist
 ```
 
-구조는 이해했는데 매번 이렇게 작성하기는 너무 길고 번거롭다. 이를 단순화시킬 수 있도록 새로운 notation을 정의하자.
+구조는 이해했지만 매번 이렇게 작성하기는 너무 길고 번거롭다. 좀더 편리하게 사용할 수 있도록 새로운 notation을 정의하자.
 
 ```Coq
 Notation "x :: l" := (cons x l) (at level 60, right associativity).
@@ -129,7 +128,7 @@ Notation "[ ]" := nil.
 Notation "[ x ; .. ; y ]" := (cons x .. (cons y nil) ..).
 ```
 
-다음 Definition들은 모두 동일한 의미를 가진다.
+그러면 다음 Definition들은 모두 동일한 의미를 지닌다.
 
 ```Coq
 Definition mylist1 := (cons 1 (cons 2 (cons 3 (cons 4 nil)))).
@@ -144,11 +143,11 @@ Definition mylist6 := 1::2::[3;4].
 
 ## Functions on Lists
 
-그러면 이제 natlist를 다루는 함수를 만들 수 있다. 하스켈 프로그래밍 언어를 사용해봤다면 익숙한 함수들이 몇 보일 것이다.
+이제 natlist를 다루는 함수를 만들 수 있다. 하스켈 프로그래밍 언어를 사용해봤다면 대부분 익숙한 함수들일 것이다.
 
 #### Head & Tail
 
-먼저 pair의 fst, snd와 유사하게 hd(head), tl(tail) 함수를 정의하자. 이때 `hd nil`의 경우 기본값(default)에 해당하는 값을 정의해줘야 함에 유의하자. 여기서는 O을 기본값으로 삼았다.
+먼저 pair의 fst, snd와 유사하게 hd(head), tl(tail) 함수를 정의하자. 이때 `hd nil`에 기본값(default)으로 O을 정의해줬음에 유의하자.
 
 ```Coq
 Definition hd (l:natlist) : nat :=
@@ -166,7 +165,7 @@ end.
 
 #### Repeat
 
-n, count를 받아 count개수 만큼의 n을 원소로 가지는 natlist를 생성한다.
+n, count를 받아 count개 만큼의 n을 원소로 가지는 natlist를 생성한다.
 
 ```Coq
 Fixpoint repeat (n count : nat) : natlist :=
@@ -226,7 +225,7 @@ Notation "x ++ y" := (app x y) (right associativity, at level 60).
 
 
 
-p.s. 파이썬을 사용해본 입장에서 리스트 더하기가 concatenate 연산인 건 자연스러워도, append함수의 기능을 고려해봤을 때 `app`이라는 이름 대신 `concat` 이 더 자연스러워 보인다. 하지만 Coq에서 제공하는 함수 중 범용 타입(polymorphic) 리스트에 동일한 기능을 제공하는 함수가 `app`이라는 이름으로 존재하므로 통일성을 위해 해당 명칭을 그대로 사용했다.
+p.s. 파이썬을 사용해본 입장에서 리스트 더하기가 concatenate 연산인 건 자연스러워도, append함수의 기능을 고려해봤을 때 `app`이라는 이름 대신 `concat` 이 더 자연스러워 보인다. 하지만 Coq에서 제공하는 함수 중 범용 타입(polymorphic) 리스트에 동일한 기능을 제공하는 함수가 이미 `app`이라는 이름으로 존재하므로 통일성을 위해 해당 명칭을 그대로 사용했다.
 
 
 
@@ -258,7 +257,7 @@ end.
 Definition bag := natlist.
 ```
 
-연습삼아 주어진 bag 안에 특정 원소가 얼마나 포함되어있는지를 계산하는 `count` 를 작성해보자. 이를 위해 먼저 이전에 작성했던 `is_equal`을 가져오자. 다중 매칭을 이용한 버전을 아래에 다시 작성했다.
+연습삼아 주어진 bag 안에 특정 원소가 얼마나 포함되어있는지를 계산하는 `count` 를 작성해보자. 이를 위해 먼저 이전에 작성했던 `is_equal`을 가져와야 한다. 다중 매칭을 이용한 짧은 버전을 아래에 다시 작성했다.
 
 ```Coq
 Fixpoint is_equal (n m : nat) : bool :=
@@ -307,8 +306,8 @@ match b with
 end.
 ```
 
-그런데 true, false는 앞서 `bool` 타입을 정의할 때 만들어준 생성자일뿐 여기에 참/거짓이라는 의미를 덧붙여준 기억은 없다. 사실 굳이 bool이 아니어도 Coq에서는 어떤 Inductive하게 정의된 타입이 2개의 생성자를 가지기만 하면 `if`를 적용할 수 있으며, 이때 if로 제시된 표현식이 첫 번째 생성자와 매칭될 경우 `then` 부분이, 두 번째 생성자와 매칭될 경우 `else` 부분이 계산된다.
+그런데 true, false는 앞서 `bool` 타입을 정의할 때 만들어준 생성자일뿐 여기에 참/거짓이라는 의미를 덧붙여준 기억은 없다. 사실 굳이 bool이 아니어도 Coq에서는 어떤 Inductive하게 정의된 타입이 2개의 생성자를 가지기만 하면 `if`를 사용할 수 있으며, 이때 if에 주어진 표현식이 첫 번째 생성자와 매칭될 경우 `then` 다음 부분이, 두 번째 생성자와 매칭될 경우 `else` 다음 부분이 최종 결과가 된다.
 
 
 
-이번 글에서는 리스트 타입 `natlist`를 정의하는 방법과 이를 다루는 함수들을 작성해봤다. 다음 글에서는 이런 함수들의 성질에 대해 논증(reasoning)을 진행해보자.
+이번 글에서는 nat들의 리스트, `natlist` 타입을 정의하는 방법과 이를 다루는 함수들을 작성해봤다. 다음 글에서는 지금까지 정의한 함수들의 성질에 대해 논증(reasoning)을 진행해보자.
