@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SW Foundations - Ch03. Working with Structured Data (1) (작성중)"
+title:  "SW Foundations - Ch03. Working with Structured Data (1)"
 date:   2019-02-09 15:33:11
 author: nyan101
 categories: 자습
@@ -230,6 +230,26 @@ p.s. 파이썬을 사용해본 입장에서 리스트 더하기가 concatenate �
 
 
 
+#### Reverse
+
+주어진 리스트를 뒤집는다.
+
+```Coq
+Fixpoint rev (l : natlist) : natlist :=
+match l with
+| nil => nil
+| h::t => rev t ++ [h]
+end.
+```
+
+```Coq
+>> Compute rev [1;2;3;4;5].
+
+   [5; 4; 3; 2; 1] : natlist
+```
+
+
+
 #### Bag(multiset)
 
 리스트를 이용해 multiset(동일 원소가 여러 개인 경우를 허용하는 집합)을 구현할 수 있다.
@@ -288,3 +308,7 @@ end.
 ```
 
 그런데 true, false는 앞서 `bool` 타입을 정의할 때 만들어준 생성자일뿐 여기에 참/거짓이라는 의미를 덧붙여준 기억은 없다. 사실 굳이 bool이 아니어도 Coq에서는 어떤 Inductive하게 정의된 타입이 2개의 생성자를 가지기만 하면 `if`를 적용할 수 있으며, 이때 if로 제시된 표현식이 첫 번째 생성자와 매칭될 경우 `then` 부분이, 두 번째 생성자와 매칭될 경우 `else` 부분이 계산된다.
+
+
+
+이번 글에서는 리스트 타입 `natlist`를 정의하는 방법과 이를 다루는 함수들을 작성해봤다. 다음 글에서는 이런 함수들의 성질에 대해 논증(reasoning)을 진행해보자.
