@@ -27,8 +27,7 @@ permalink: /about/
 
 * ACM 대학생 프로그래밍 경시대회(ICPC)
   * 2016 Daejeon Regional 11th place (team: PUUUNGSEON)
-  * 2017 Daejeon Regional 3rd place (team: asdf) <br>
-    : 한국 대학생 프로그래밍 경시대회 은상을 겸함
+  * 2017 Daejeon Regional 3rd place (team: asdf) <br> : 한국 대학생 프로그래밍 경시대회 은상을 겸함
   * 2017 Ho Chi Minh City Regional Third Prize (team: asdf)
 * SCPC 삼성 대학생 프로그래밍 경진대회 4등상 (2017)
 * 이데일리 Coding Challenge 성인부 대상 (2018)
