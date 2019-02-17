@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "[Coq 기초] Ch04. Polymorphism & Higher-Order Functions (1) (작성중)"
+title:  "[Coq Basic] Ch04. Polymorphism & Higher-Order Functions (1) (작성중)"
 date:   2019-02-17 22:22:37
 author: nyan101
 categories: 자습
-tags:	Coq Software\ Foundations
+tags:	[Coq, Software Foundations]
 use_math: true
 ---
 
