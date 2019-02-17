@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Software Foundations - Ch00. Overview"
+title:  "[Coq 입문] Ch00. Overview"
 date:   2019-01-28 21:02:16
 author: nyan101
 categories: 자습
-tags:	Coq
+tags:	[Coq, Software Foundations]
 use_math: true
 ---
 

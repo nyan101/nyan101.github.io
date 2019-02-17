@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "SW Foundations - Ch03. Working with Structured Data (2)"
+title:  "[Coq 입문] Ch03. Working with Structured Data (2)"
 date:   2019-02-11 22:01:56
 author: nyan101
 categories: 자습
-tags:	Coq
+tags:	[Coq, Software Foundations]
 use_math: true
 ---
 

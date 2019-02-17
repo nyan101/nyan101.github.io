@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Coq Basic] Ch04. Polymorphism & Higher-Order Functions (1) (작성중)"
+title:  "[Coq 입문] Ch04. Polymorphism & Higher-Order Functions (1) (작성중)"
 date:   2019-02-17 22:22:37
 author: nyan101
 categories: 자습
