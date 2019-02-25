@@ -17,8 +17,7 @@ permalink: /about/
 
 * KITRI 차세대 보안리더 양성 프로그램(Best of Best) 5기 수료 (30인 선발)
 
-* 삼성 소프트웨어 멤버십(Samsung Software Membership) 수료 <br>
-  : 삼성 SW 역량 테스트 Expert 등급 인정
+* 삼성 소프트웨어 멤버십(Samsung Software Membership) 수료 <br> : 삼성 SW 역량 테스트 Expert 등급 인정
 
 ---
 
