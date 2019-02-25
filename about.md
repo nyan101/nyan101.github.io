@@ -15,9 +15,10 @@ permalink: /about/
 
 ## Education
 
-* KITRI 차세대 보안리더 양성 프로그램(Best of Best) 5기 수료 (30인)
+* KITRI 차세대 보안리더 양성 프로그램(Best of Best) 5기 수료 (30인 선발)
 
-* 삼성 소프트웨어 멤버십(Samsung Software Membership) 수료
+* 삼성 소프트웨어 멤버십(Samsung Software Membership) 수료 <br>
+  : 삼성 SW 역량 테스트 Expert 등급 인정
 
 ---
 
@@ -27,8 +28,9 @@ permalink: /about/
 
 * ACM 대학생 프로그래밍 경시대회(ICPC)
   * 2016 Daejeon Regional 11th place (team: PUUUNGSEON)
-  * 2017 Daejeon Regional 3rd place (team: asdf) <br> : 한국 대학생 프로그래밍 경시대회 은상을 겸함
+  * 2017 Daejeon Regional 3rd place (team: asdf)
   * 2017 Ho Chi Minh City Regional Third Prize (team: asdf)
+* 한국 대학생 프로그래밍 경시대회 은상 (2017)
 * SCPC 삼성 대학생 프로그래밍 경진대회 4등상 (2017)
 * 이데일리 Coding Challenge 성인부 대상 (2018)
 
