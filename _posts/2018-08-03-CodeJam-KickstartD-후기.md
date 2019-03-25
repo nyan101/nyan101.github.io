@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Code Jam Kickstart D 2018 후기"
+title:  "Code Jam Kickstart 2018 Round D 후기"
 date:   2018-08-03 20:24:03
 author: nyan101
 categories: 근황
