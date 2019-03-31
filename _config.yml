@@ -57,6 +57,9 @@ descriptions:
   - cat: 근황
     desc: "요새는 이렇게 살고 있습니다"
 
+  - cat: TIL
+    desc: "Today I learned..."
+
   - cat: 전산
     desc: "전산에 관한 잡다한 글을 씁니다"
 
