@@ -3,7 +3,7 @@ layout: post
 title:  "Möbius 함수의 정의와 활용"
 date:   2019-03-31 21:38:49
 author: nyan101
-categories: T.I.L.
+categories: TIL
 tags:	[전산, 수학]
 use_math: true
 ---
