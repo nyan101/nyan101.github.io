@@ -89,16 +89,24 @@ $$
 그러면 n 이하의 소수 리스트 `vector<int> pvec`을 이용해 다음과 같이 `int mu[n]` 배열을 채울 수 있다.
 
 ```c++
-int mu[n+1]
+int  mu[n+1];
+bool isPrime[n+1];
 vector<int> pvec;
 
+fill(isPrime, isPrime+n+1, true);
 fill(mu, mu+n+1, -1);
+
 mu[1] = 1;
 for(int i=2;i<=n;i++)
 {
+    if(isPrime[i])
+        pvec.push_back(i);
+
     for(int p : pvec)
     {
         if(i*p > n) break;
+        
+        isPrime[i*p] = false;
         
         if(i%p == 0)
         {
