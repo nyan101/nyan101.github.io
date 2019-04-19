@@ -30,6 +30,13 @@ paginate_path: "/page:num/"
 inter_post_navigation: false
 highlightjs_theme: "atelier-cave-light"
 
+# Permalinks
+# permalink: /:title
+# permalink: /author/:author
+permalink: /category/:title
+# 각각의 post에 고정주소를 어떤 방식으로 할당할 것인지를 결정
+# 이 값을 바꾸면 작성한 포스트의 저장위치나 파일이름이 변경된다.
+
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
   enabled:
