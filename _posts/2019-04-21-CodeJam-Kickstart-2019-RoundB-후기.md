@@ -8,7 +8,7 @@ tags:	대회
 use_math: true
 ---
 
-지난 Round A에 이어 리뉴얼된 킥스타트에서 두번째로 치르는 대회였다. 다행히 지난번과 같은 서버 문제는 없었지만 생각처럼 문제가 잘 풀리지는 않았다. A번을 제출하고 나니 딱히 풀이가 떠오르는 문제가 없어 결국 B, C 모두 Small까지만 통과할 수 있었다. 결과는 최종 115등으로 전체 문제는 [여기](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050eda)에서 볼 수 있다.
+지난 Round A에 이어 리뉴얼된 킥스타트에서 치르는 두번째 대회였다. 다행히 지난번과 같은 서버 문제는 없었지만 생각처럼 문제가 잘 풀리지는 않았다. A번을 제출하고 나니 딱히 풀이가 떠오르는 문제가 없어 결국 B, C 모두 Small까지만 통과할 수 있었다. 결과는 최종 115등으로 전체 문제는 [여기](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050eda)에서 볼 수 있다.
 
 
 
