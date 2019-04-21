@@ -26,9 +26,9 @@ permalink: /about/
 #### Algorithm
 
 * ACM 대학생 프로그래밍 경시대회(ICPC)
-  * 2016 Daejeon Regional 11th place (team: PUUUNGSEON)
-  * 2017 Daejeon Regional 3rd place (team: asdf)
-  * 2017 Ho Chi Minh City Regional Third Prize (team: asdf)
+  * 2016 Asia Daejeon Regional Contest, 11th place (team: PUUUNGSEON)
+  * 2017 Asia Daejeon Regional Contest, 3rd place (team: asdf)
+  * 2017 Asia Ho Chi Minh City Regional Contest, Third Prize (team: asdf)
 
 * 한국 대학생 프로그래밍 경시대회 은상 (2017)
 
