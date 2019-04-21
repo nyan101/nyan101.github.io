@@ -27,7 +27,7 @@ use_math: true
 
 Small에서는 **모든 \\(S\_i\\)가 동일하다** 라는 조건이 있으므로 **i번째 스톤을 먹기 시작하는 시점은 이전까지의 선택과 무관하게 \\(S\_1 \* (i-1)\\)로 고정된다.** 따라서 "스톤 i를 j번째로 먹을 때" 얻을 수 있는 에너지를 사전에 계산할 수 있고, 이를 가중치로 하는 이분그래프(스톤—순서)를 그릴 수 있다. 이제 만들어진 그래프에 대해 최대 가중치를 가지는 maximum matching[^1]을 구하면 Small을 통과할 수 있다. 최대 가중치 이분매칭은 예전 팀노트에 있던 MCMF 코드를 약간 수정했다. [[source](https://github.com/nyan101/algorithm_snippet/blob/master/CodeJam/Kickstart 2019 Round B/B.cpp)]
 
- 정해는 먼저 각 스톤을 \\(S\_i / L\_i)\\)를 기준으로 정렬한 후 Knapsack을 수행하는 것이다. 대회 도중  \\(S\_i / L\_i)\\)까지는 떠올렸지만 _"The stone's energy stops decreasing once it hits zero."_ 라는 조건 때문에 그 이상 발전시키지 못했는데, 이를 Knapsack으로 해결할 수 있다고 한다.
+ 정해는 먼저 각 스톤을 \\(S\_i / L\_i\\)를 기준으로 정렬한 후 Knapsack을 수행하는 것이다. 대회 도중  \\(S\_i / L\_i\\)까지는 떠올렸지만 _"The stone's energy stops decreasing once it hits zero."_ 라는 조건 때문에 그 이상 발전시키지 못했는데, 이를 Knapsack으로 해결할 수 있다고 한다.
 
 [^1]: 그래프 구조상 항상 전체 N쌍이 매칭되는 것이 보장된다
 
