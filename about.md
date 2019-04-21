@@ -33,12 +33,12 @@ permalink: /about/
 * SCPC 삼성 대학생 프로그래밍 경진대회 4등상 (2017)
 * 이데일리 Coding Challenge 성인부 대상 (2018)
 * 구글 코드잼 킥스타트(Google Code Jam Kickstart) 다수 참가
-  * Kickstart Round G 2017. 15위 [](https://code.google.com/codejam/contest/3254486/scoreboard#vt=1&vf=1)
-  * Kickstart Round C 2018. 14위 [](https://code.google.com/codejam/contest/4384486/scoreboard#vt=1&vf=1)
-  * Kickstart Round D 2018. 23위 [](https://code.google.com/codejam/contest/6364486/scoreboard#vt=1&vf=1)
-  * Kickstart Round G 2018. 19위 [](https://code.google.com/codejam/contest/5374486/scoreboard#vt=1&vf=1)
-  * Kickstart Round A 2019. 299위 [](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050e01)
-  * Kickstart Round B 2019. 115위 [](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050eda)
+  * Code Jam Kickstart Round G 2017. (15위) [🔗](https://code.google.com/codejam/contest/3254486/scoreboard#vt=1&vf=1)
+  * Code Jam Kickstart Round C 2018. (14위) [🔗](https://code.google.com/codejam/contest/4384486/scoreboard#vt=1&vf=1)
+  * Code Jam Kickstart Round D 2018. (23위) [🔗](https://code.google.com/codejam/contest/6364486/scoreboard#vt=1&vf=1)
+  * Code Jam Kickstart Round G 2018. (19위) [🔗](https://code.google.com/codejam/contest/5374486/scoreboard#vt=1&vf=1)
+  * Kick Start Round A 2019. (299위) [🔗](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050e01)
+  * Kick Start Round B 2019. (115위) [🔗](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050eda)
 
 #### Security
 
@@ -50,5 +50,5 @@ permalink: /about/
 
 ## Research & Papers
 
-* _I'm Listening to your Location! Inferring User Location with Acoustic Side Channels._ (2nd Author) [Link](https://dl.acm.org/citation.cfm?doid=3178876.3186100){:target="_blank"}
+* _I'm Listening to your Location! Inferring User Location with Acoustic Side Channels._ (2nd Author) [🔗](https://dl.acm.org/citation.cfm?doid=3178876.3186100){:target="_blank"}
 
