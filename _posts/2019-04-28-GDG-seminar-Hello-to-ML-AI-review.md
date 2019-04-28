@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "GDG 세미나 \<Hello to ML/AI: 러닝머신 말고 머신러닝!\> 후기 (작성중)"
+title:  "GDG 세미나 &lt;Hello to ML/AI: 러닝머신 말고 머신러닝!&gt; 후기 (작성중)"
 date:   2019-04-28 21:51:02
 author: nyan101
 categories: 근황
