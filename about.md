@@ -23,7 +23,7 @@ permalink: /about/
 
 ## Awards
 
-#### Algorithm
+### Algorithm
 
 * ACM 대학생 프로그래밍 경시대회(ICPC)
   * 2016 Asia Daejeon Regional Contest, 11th place (team: PUUUNGSEON)
@@ -44,7 +44,7 @@ permalink: /about/
   * Kick Start Round A 2019. (299위) [🔗](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050e01){:target="_blank"}
   * Kick Start Round B 2019. (115위) [🔗](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050eda){:target="_blank"}
 
-#### Security
+### Security
 
 * 국가암호공모전 우수상(2012, 2013, 2015), 최우수상(2014)
 
