@@ -8,16 +8,16 @@ tags:	컨퍼런스
 use_math: true
 ---
 
-지난 25일 목요일, 삼성역 서울 파르나스 호텔에서 FireEye Cyber Defense Live 2019 Seoul 컨퍼런스가 열렸다. Cyber Defense Live는 미국의 보안회사 FireEye에서 주최하는 컨퍼런스로 국제 사이버 보안의 최근 동향, 공격/방어에서의 새로운 인사이트, (보안 솔루션을 제공하는) 기업 차원에서의 PR 등 다양한 주제가 포함되어 있다. ~~사실 이런 컨퍼런스가 있는 줄도 몰랐는데 직장에서 출장으로 보내줌~~
+지난 25일 목요일, 삼성역 인근 서울 파르나스 호텔에서 FireEye Cyber Defense Live 2019 Seoul 컨퍼런스가 열렸다. Cyber Defense Live는 미국의 보안회사 FireEye에서 주최하는 컨퍼런스로 국제 사이버 보안의 최근 동향과 공격/방어에서의 새로운 인사이트 제시, 기업 차원에서의 PR 등 다양한 주제가 포함되어 있었다. ~~사실 이런 컨퍼런스가 있는 줄도 몰랐는데 직장에서 출장으로 보내줌~~
 
 안내판을 따라 들어간 로비에서 파트너 기업들의 홍보부스를 볼 수 있었다.
 <table>
 <tr>
 <td>
-<img src="/assets/images/2019/04/FireEye-intro.jpg" width="350px">
+<img src="/assets/images/2019/04/FireEye-intro.jpg">
 </td>
 <td>
-<img src="/assets/images/2019/04/FireEye-lobby.jpg" width="350px">
+<img src="/assets/images/2019/04/FireEye-lobby.jpg">
 </td>
 </tr>
 </table>
@@ -28,7 +28,16 @@ use_math: true
 
 오전 세션에서는 현재 사이버 보안의 동향을 분석하고 그에 대한 인사이트를 제시하는 성격의 발표가 이루어졌다. 
 
-<img src="/assets/images/2019/04/FireEye-speech01.jpg" width="350px"> <img src="/assets/images/2019/04/FireEye-speech02.jpg" width="350px">
+<table>
+<tr>
+<td>
+<img src="/assets/images/2019/04/FireEye-speech01.jpg">
+</td>
+<td>
+<img src="/assets/images/2019/04/FireEye-speech02.jpg">
+</td>
+</tr>
+</table>
 
 이와 함께 KRAFTON, 배달의민족 등이 패널로 참여해 각자가 겪었던 보안위협에 대한 경험을 소개하는 자리가 있었다.
 
@@ -37,14 +46,13 @@ use_math: true
 <table>
 <tr>
 <td>
-<img src="/assets/images/2019/04/FireEye-PR01.jpg" width="350px">
+<img src="/assets/images/2019/04/FireEye-PR01.jpg">
 </td>
 <td>
-<img src="/assets/images/2019/04/FireEye-PR02.jpg" width="350px">
+<img src="/assets/images/2019/04/FireEye-PR02.jpg">
 </td>
 </tr>
 </table>
-
 
 이번 컨퍼런스에서 느낀 점을 하나만 꼽자면 역시 **"아는 만큼 보인다"**라는 사실이다. 개인적으로 큰 차원에서의 이야기인 오전 세션까지는 흥미있게 들었지만, 기업 차원에서의 보안 위협과 그에 대한 솔루션 위주였던 오후 세션에서는 큰 인상을 받지 못했다. 반면 현직에서 오신 다른 분들은 오후 세션에 더 관심을 가지고 듣는 모습이었고, 컨퍼런스 다음날 출근한 연구소에서도 (같이 출장가셨던) 선임 연구원님들이 SOAR 개념과 그 적용범위에 대해 이야기를 나누시는 걸 볼 수 있었다.
 
@@ -52,7 +60,7 @@ use_math: true
 
 [^1]: 이렇게 말하는 지금도 저런 과제가 가지는 중요성을 머리로 '추정할' 수만 있고 마음으로 체감하지는 못하고 있어 _"-일 수 있다"_ 라는 표현을 썼다.
 
-이제 연구소에서 2년, [검열됨]에서 4년이 남았다. 느끼기에 따라 긴 시간일 수도 있고 짧은 시간일 수도 있다 ~~솔직히 뒤쪽 4년은 조금 길거같기는 하다.~~ 그동안 뭘 얻어갈 수 있을지는 잘 모르겠지만 적어도 (스스로 저런 개념을 수립할 수 있지는 못하더라도) 저런 발표를 들었을 때 비슷한 수준의 고민을 할 수 있는 정도까지는 성장했으면 좋겠다.
+이제 연구소에서 2년, [검열됨]에서 4년이 남았다. 느끼기에 따라 긴 시간일 수도, 혹은 짧은 시간일 수도 있다 ~~솔직히 뒤쪽 4년은 조금 길거같기는 하다.~~ 그동안 뭘 얻어갈 수 있을지는 잘 모르겠지만 적어도 (스스로 저런 개념을 수립할 수 있지는 못하더라도) 저런 발표를 들었을 때 비슷한 수준의 고민을 할 수 있는 정도까지는 성장했으면 좋겠다.
 
 
 
