@@ -11,7 +11,16 @@ use_math: true
 지난 25일 목요일, 삼성역 서울 파르나스 호텔에서 FireEye Cyber Defense Live 2019 Seoul 컨퍼런스가 열렸다. Cyber Defense Live는 미국의 보안회사 FireEye에서 주최하는 컨퍼런스로 국제 사이버 보안의 최근 동향, 공격/방어에서의 새로운 인사이트, (보안 솔루션을 제공하는) 기업 차원에서의 PR 등 다양한 주제가 포함되어 있다. ~~사실 이런 컨퍼런스가 있는 줄도 몰랐는데 직장에서 출장으로 보내줌~~
 
 안내판을 따라 들어간 로비에서 파트너 기업들의 홍보부스를 볼 수 있었다.
-<img src="/assets/images/2019/04/FireEye-intro.jpg" width="350px"> <img src="/assets/images/2019/04/FireEye-lobby.jpg" width="350px">
+<table>
+<tr>
+<td>
+<img src="/assets/images/2019/04/FireEye-intro.jpg" width="350px">
+</td>
+<td>
+<img src="/assets/images/2019/04/FireEye-lobby.jpg" width="350px">
+</td>
+</tr>
+</table>
 
 발표가 이뤄지는 메인 홀의 모습이다. 약 2000여명 정도가 등록했다고 하던데 명패를 둘러본 결과 대부분이 기업 보안부서에서 온 것으로 보였다.
 
@@ -25,7 +34,16 @@ use_math: true
 
 점심식사 후 이어진 오후 세션은 상대적으로 자사 솔루션 소개에 집중했다는 느낌을 받았다. 특히 SOAR(Security Orchestration and Automated Response)이라는 개념을 강조하면서, 파이어아이 사의 Helix가 무엇을 할 수 있는지에 중점을 둔 발표가 이루어졌다. 발표 휴식시간 동안 둘러본 홍보부스에서는 여러 파트너사에서 자사 제품을 홍보하고 있었다.
 
-<img src="/assets/images/2019/04/FireEye-PR01.jpg" width="350px"> <img src="/assets/images/2019/04/FireEye-PR02.jpg" width="350px">
+<table>
+<tr>
+<td>
+<img src="/assets/images/2019/04/FireEye-PR01.jpg" width="350px">
+</td>
+<td>
+<img src="/assets/images/2019/04/FireEye-PR02.jpg" width="350px">
+</td>
+</tr>
+</table>
 
 
 이번 컨퍼런스에서 느낀 점을 하나만 꼽자면 역시 **"아는 만큼 보인다"**라는 사실이다. 개인적으로 큰 차원에서의 이야기인 오전 세션까지는 흥미있게 들었지만, 기업 차원에서의 보안 위협과 그에 대한 솔루션 위주였던 오후 세션에서는 큰 인상을 받지 못했다. 반면 현직에서 오신 다른 분들은 오후 세션에 더 관심을 가지고 듣는 모습이었고, 컨퍼런스 다음날 출근한 연구소에서도 (같이 출장가셨던) 선임 연구원님들이 SOAR 개념과 그 적용범위에 대해 이야기를 나누시는 걸 볼 수 있었다.
