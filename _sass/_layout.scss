@@ -27,9 +27,12 @@ ul.default {
 	@extend %default-ul;
 }
 
+/* Custom */
 ul li ul {
   list-style-type: circle;
 }
+
+/* End Custom */
 
 code {
 	background-color: #eee;
@@ -192,6 +195,12 @@ pre code.hljs {
     	}
     }
   }
+}
+
+h2.section-header {
+    margin-top: 1em;
+    border-top: 4px solid;
+    border-bottom: 1px solid #D3D3D3;
 }
 
 /*
