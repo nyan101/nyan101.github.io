@@ -26,15 +26,15 @@ permalink: /about/
 ### Algorithm
 
 * ACM 대학생 프로그래밍 경시대회(ICPC)
-  * 2016 Asia Daejeon Regional Contest, 11th place (team: PUUUNGSEON)
-  * 2017 Asia Daejeon Regional Contest, 3rd place (team: asdf)
-  * 2017 Asia Ho Chi Minh City Regional Contest, Third Prize (team: asdf)
+  * 2016 Asia Daejeon Regional Contest, **11th** place (team: PUUUNGSEON)
+  * 2017 Asia Daejeon Regional Contest, **3rd** place (team: asdf)
+  * 2017 Asia Ho Chi Minh City Regional Contest, **Third Prize** (team: asdf)
 
-* 한국 대학생 프로그래밍 경시대회 은상 (2017)
+* 한국 대학생 프로그래밍 경시대회 **은상** (2017)
 
-* SCPC 삼성 대학생 프로그래밍 경진대회 4등상 (2017)
+* SCPC 삼성 대학생 프로그래밍 경진대회 **4등상** (2017)
 
-* 이데일리 Coding Challenge 성인부 대상 (2018)
+* 이데일리 Coding Challenge 성인부 **대상** (2018)
 
 * 구글 코드잼 킥스타트(Google Code Jam Kickstart) 다수 참가
   * Code Jam Kickstart Round G 2017. (15위) [🔗](https://code.google.com/codejam/contest/3254486/scoreboard#vt=1&vf=1){:target="_blank"}
@@ -46,9 +46,9 @@ permalink: /about/
 
 ### Security
 
-* 국가암호공모전 우수상(2012, 2013, 2015), 최우수상(2014)
+* 국가암호공모전 **우수상**(2012, 2013, 2015), **최우수상**(2014)
 
-* 육군해킹방어대회 장려상 (2015)
+* 육군해킹방어대회 **장려상** (2015)
 
 ---
 
