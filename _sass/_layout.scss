@@ -27,6 +27,10 @@ ul.default {
 	@extend %default-ul;
 }
 
+ul li ul {
+  list-style-type: circle;
+}
+
 code {
 	background-color: #eee;
 	display: inline-block;
