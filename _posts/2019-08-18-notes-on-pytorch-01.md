@@ -50,6 +50,8 @@ z = x @ y    # x,y의 행렬곱. x,y가 크기 제약조건(N x M 행렬과 M x 
 
 
 
+
+
 ## Tensor와 Autograd
 
 딥러닝은 결국 gradient descent 과정이다.  이를 이해하기 위해 gradient란 무엇이고, 어떻게 구할 수 있는지 알아보자.
@@ -94,9 +96,9 @@ y.requires_grad_(False) # 이제 y는 연산 그래프에서 gradient를 계산�
 
 <img src="/assets/images/2019/08/pytorch-01-gradient.png" width="600px">
 
-아래 그래프에서 \\(x=5\\)인 순간에 x의 그래디언트 \\(\\frac{\\partial y}{\\partial x}\\)는 335이다. 이는 \\(x=5\\) 근처에서 x가 \\(d\\) 만큼 변하면 y는 \\(335d\\) 만큼 변하게 됨을 의미한다. 다변수 함수 \\(y=f(x\_1,x\_2)\\)에 대해서도 마찬가지로 \\(\\frac{\\partial y}{\\partial x\_1}, \\frac{\\partial y}{\\partial x\_2}\\) 를 정의할 수 있다.
+아래 그래프에서 \\(x=5\\)인 순간에 x의 그래디언트 \\(\\frac{\\partial y}{\\partial x}\\)는 335이다. 이는 \\(x=5\\) 근처에서 x가 \\(d\\) 만큼 변하면 y는 \\(335d\\) 만큼 변하게 됨을 의미한다. 다변수 함수 \\(y=f(x\_1,x\_2)\\)에 대해서도 마찬가지로 \\(\\frac{\\partial y}{\\partial x\_1}, \\frac{\\partial y}{\\partial x\_2}\\) 를 구할 수 있다.
 
-이제 연산 그래프의 진가가 드러난다. 연산 그래프를 통해 최종 결과물(a.k.a. 목적함수)이 어떻게 계산된 것인지를 역추적함으로써 각 입력 변수들이 목적함수에 얼마나 영향을 끼치는지를 말해줄 수 있다.
+이제 연산 그래프의 진가가 드러난다. 연산 그래프를 통해 최종 결과물(a.k.a. 목적함수)이 어떻게 계산된 것인지를 역추적함으로써, 각 입력 변수들이 목적함수에 얼마나 영향을 끼치는지를 말해줄 수 있다. 이 모든 과정은 최종 결과물(`y`)에서 `.backward()` 함수 호출을 통해 이루어진다.
 
 ```python
 x = torch.tensor([5.0], requires_grad=True)
@@ -151,5 +153,62 @@ criterion = nn.MSELoss()
 loss = criterion(my_output, y_target)
 ```
 
+```python
+class MyNet(nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+
+    def forward(self, x_input):
+        return y_predicted
+
+my_net = MyNet()
+
+my_input  = xxx
+y_target  = yyy
+
+my_output = my_net(my_input)
+
+criterion = nn.MSELoss()
+loss = criterion(my_output, y_target)
+
+class SomeClass:
+    # asdasd
+    pass
+	
+def somefunc(param1='', param2=0):
+    r'''A docstring'''
+    if param1 > param2: # interesting
+        print 'Gre\'ater'
+    return (param2 - param1 + 1 + 0b10l) or True
+```
+
+
+
+hightlight.js 테스트 코드
+
+```python
+@requires_authorization
+def somefunc(param1='', param2=0):
+    r'''A docstring'''
+    if param1 > param2: # interesting
+        print 'Gre\'ater'
+    return (param2 - param1 + 1 + 0b10l) or True
+
+class SomeClass:
+    pass
+    
+x1 = torch.tensor([1.0], requires_grad=True)
+x2 = torch.tensor([2.0], requires_grad=True)
+x3 = torch.tensor([3.0], requires_grad=True)
+
+y = x1*x2*x3*x3 + 7*x1*x2 - x2*x2 - 4*x1*x3 
+y.backward()   # y의 계산과 관련된 모든 x들에 대해 dy/dx를 구한다
+
+>>> message = '''interpreter
+... prompt'''
+```
+
 ---
+
+
 
