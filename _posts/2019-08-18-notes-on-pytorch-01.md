@@ -81,6 +81,15 @@ z = x + y                                   # tensor([7.], grad_fn=<AddBackward>
 y.requires_grad_(False) # 이제 y는 연산 그래프에서 gradient를 계산하지 않음
 ```
 
+테스트
+
+```python
+x = torch.tensor([3.0], requires_grad=True)
+y = torch.tensor([4.0], requires_grad=True)
+z = x + y                                  
+y.requires_grad_(False)
+```
+
 
 
 #### 그래디언트 계산
