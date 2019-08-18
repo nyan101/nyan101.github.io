@@ -52,11 +52,11 @@ z = x @ y    # x,y의 행렬곱. x,y가 크기 제약조건(N x M 행렬과 M x 
 
 ## Tensor와 Autograd
 
-딥러닝은 결국 gradient descent 과정이다. 
+딥러닝은 결국 gradient descent 과정이다.  이를 이해하기 위해 gradient란 무엇이고, 어떻게 구할 수 있는지 알아보자.
 
 #### 연산 그래프(Computational Graph)
 
-이제 텐서들의 연산에 대한 머리속의 구조(Mental Model)를 살짝 바꾸는 작업이 필요하다. 다음 코드를 보자
+먼저 텐서들의 연산에 대한 머리속의 구조(Mental Model)를 살짝 바꾸는 작업이 필요하다. 다음 코드를 보자.
 
 ```python
 x = torch.tensor([3])
@@ -79,15 +79,6 @@ x = torch.tensor([3.0], requires_grad=True) # tensor([3.], requires_grad=True)
 y = torch.tensor([4.0], requires_grad=True) # tensor([4.], requires_grad=True)
 z = x + y                                   # tensor([7.], grad_fn=<AddBackward>)
 y.requires_grad_(False) # 이제 y는 연산 그래프에서 gradient를 계산하지 않음
-```
-
-테스트
-
-```python
-x = torch.tensor([3.0], requires_grad=True)
-y = torch.tensor([4.0], requires_grad=True)
-z = x + y                                  
-y.requires_grad_(False)
 ```
 
 
