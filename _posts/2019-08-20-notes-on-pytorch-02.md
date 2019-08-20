@@ -85,7 +85,7 @@ pytorch 모델은 기본적으로 이러한 분류를 따라 설계된다. 각�
 
 ## Model 클래스 만들기
 
-pytorch 모델 클래스를 위한 기본 틀은 다음과 같다. 선형 함수는 너무 간단하니 3개의 파라미터(`a`, `b`, `c`)를 설정해 3차함수 근사를 위한 모델을 만들었다.
+pytorch 모델 클래스를 위한 기본 틀은 다음과 같다. 선형 함수는 너무 간단하니 3개의 파라미터(`a`, `b`, `c`)를 설정해 2차함수 근사를 위한 모델을 만들었다.
 
 ```python
 import torch
@@ -213,7 +213,7 @@ for epoch in range(100000):
         print(f"Loss after {epoch} steps: {loss}")
 ```
 
-학습 epoch이 증가함에 따라 점차 fitting하고자 하는 데이터에 가까워지는 것을 볼 수 있다.
+학습 epoch이 증가함에 따라 점차 fitting하고자 하는 데이터에 가까워지는 것을 확인할 수 있다.
 
 <img src="/assets/images/2019/08/pytorch-02-poly-result.png" style="margin:0;width:100%">
 
