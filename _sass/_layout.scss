@@ -28,22 +28,28 @@ ul.default {
 }
 
 /* Custom */
+@import "rouge-highlight-theme";
+
 ul li ul {
   list-style-type: circle;
 }
 
-/* End Custom */
-
-code {
-	background-color: #eee;
+code{
 	display: inline-block;
 	border-radius: 3px;
+}
+
+code.highlighter-rouge{
+	background-color: #eee;
 	padding: 0 3px;
 }
 
-pre code.hljs {
+pre code {
+	padding: .5em;
 	font-size: modular-scale(-1);
 }
+
+/* End Custom */
 
 .page-divider {
 	$divider-color: $light-gray;
