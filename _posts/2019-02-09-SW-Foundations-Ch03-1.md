@@ -15,7 +15,7 @@ use_math: true
 ## Pairs of Numbers
 지난번 `nybble`을 정의할 때 언급했듯이, Coq의 생성자(constructor)는 여러 개의 인자를 받을 수 있다.
 
-```Coq
+```coq
 Inductive natprod : Type :=
 | pair (n1 n2 : nat).
 ```
@@ -24,7 +24,7 @@ Inductive natprod : Type :=
 
 이제 몇 가지 함수와 함께 새로운 notation을 정의해보자. `fst`, `snd`는 각각 natprod의 첫 번째, 두 번째 인자를 추출하는 함수가 된다.
 
-```Coq
+```coq
 Definition fst (p : natprod) : nat :=
 match p with
 | pair x y => x
@@ -40,7 +40,7 @@ Notation "( x , y )" := (pair x y).
 
 이렇게 정의된 notation은 함수 정의에서도 사용할 수 있다. fst, snd를 (x,y) notation을 사용해 다시 작성해보자.
 
-```Coq
+```coq
 Definition fst2 (p : natprod) : nat :=
 match p with
 | (x,y) => x
@@ -54,7 +54,7 @@ end.
 
 작성이 끝나면 Compute를 통해 잘 동작하는지 확인해볼 수 있다.
 
-```Coq
+```coq
 >> Compute fst (pair 3 5). (* fst2도 동일 *)
 
    3 : nat
@@ -69,7 +69,7 @@ end.
 
 다음으로 natprod에 대한 간단한 명제를 증명해보자.
 
-```Coq
+```coq
 Theorem surjective_pairing :
  forall (n m : nat), (n,m) = (fst (n,m), snd(n,m)).
 Proof.
@@ -79,7 +79,7 @@ Qed.
 
 그런데 정리하고자 하는 명제를 서술할 때 (x,y) notation을 사용하지 않고 바로 natprod를 이용해 작성하면 reflexivity tactic이 이를 인식하지 못한다.
 
-```Coq
+```coq
 Theorem surjective_pairing2 :
   forall (p : natprod), p = (fst p, snd p).
 Proof.
@@ -88,7 +88,7 @@ reflexivity. (* ERROR *)
 
 이런 경우 `p : natprod`가 `( (n : nat), (m : nat) )` 형태임을 인식시켜줘야 한다. 이는 destruct tactic을 사용해 해결할 수 있다. 이번 기회에 destruct의 정확한 기능을 알아보자.
 
-```Coq
+```coq
 Theorem surjective_pairing2 :
   forall (p : natprod), p = (fst p, snd p).
 Proof.
@@ -106,7 +106,7 @@ Qed.
 
 pair에서 한발 더 나아가, 임의 개수의 원소를 가질 수 있는 list를 만들어보자. 원문의 표현을 빌리면 "_A list is either the empty list or else a pair of a number and another list._"라고 한다.
 
-```Coq
+```coq
 Inductive natlist : Type :=
 | nil
 | cons (n : nat) (l : natlist).
@@ -114,7 +114,7 @@ Inductive natlist : Type :=
 
 이 생성규칙으로 만들어지는 예를 하나 살펴보자.
 
-```Coq
+```coq
 >> Check (cons 1 (cons 2 (cons 3 nil))).
 
     : natlist
@@ -122,7 +122,7 @@ Inductive natlist : Type :=
 
 구조는 이해했지만 매번 이렇게 작성하기는 너무 길고 번거롭다. 좀더 편리하게 사용할 수 있도록 새로운 notation을 정의하자.
 
-```Coq
+```coq
 Notation "x :: l" := (cons x l) (at level 60, right associativity).
 Notation "[ ]" := nil.
 Notation "[ x ; .. ; y ]" := (cons x .. (cons y nil) ..).
@@ -130,7 +130,7 @@ Notation "[ x ; .. ; y ]" := (cons x .. (cons y nil) ..).
 
 그러면 다음 Definition들은 모두 동일한 의미를 지닌다.
 
-```Coq
+```coq
 Definition mylist1 := (cons 1 (cons 2 (cons 3 (cons 4 nil)))).
 Definition mylist2 := 1::(2::(3::(4::nil))).
 Definition mylist3 := 1::2::3::4::nil (* 1::2::3::4::[] *).
@@ -149,7 +149,7 @@ Definition mylist6 := 1::2::[3;4].
 
 먼저 pair의 fst, snd와 유사하게 hd(head), tl(tail) 함수를 정의하자. 이때 `hd nil`에 기본값(default)으로 O을 정의해줬음에 유의하자.
 
-```Coq
+```coq
 Definition hd (l:natlist) : nat :=
 match l with
 | nil => O
@@ -167,7 +167,7 @@ end.
 
 n, count를 받아 count개 만큼의 n을 원소로 가지는 natlist를 생성한다.
 
-```Coq
+```coq
 Fixpoint repeat (n count : nat) : natlist :=
 match count with
 | O => nil
@@ -175,7 +175,7 @@ match count with
 end.
 ```
 
-```Coq
+```coq
 >> Compute repeat 5 3.
 
    [5; 5; 5] : natlist
@@ -185,7 +185,7 @@ end.
 
 주어진 리스트의 길이를 계산한다.
 
-```Coq
+```coq
 Fixpoint length (l : natlist) : nat :=
 match l with
 | nil => O
@@ -193,7 +193,7 @@ match l with
 end.
 ```
 
-```Coq
+```coq
 >> length [1;2;3;4;5].
 
    5 : nat
@@ -203,7 +203,7 @@ end.
 
 주어진 두 리스트를 연결(concatenate)한다.
 
-```Coq
+```coq
 Fixpoint app (l1 l2 : natlist) : natlist :=
 match l1 with
 | nil => l2
@@ -211,7 +211,7 @@ match l1 with
 end.
 ```
 
-```Coq
+```coq
 >> Compute app [1;3;5] [2;4].
 
    [1; 3; 5; 2; 4] : natlist
@@ -219,7 +219,7 @@ end.
 
 append는 왠지 쓸모가 많아보인다. infix notation을 추가하자.
 
-```Coq
+```coq
 Notation "x ++ y" := (app x y) (right associativity, at level 60).
 ```
 
@@ -233,7 +233,7 @@ p.s. 파이썬을 사용해본 입장에서 리스트 더하기가 concatenate �
 
 주어진 리스트를 뒤집는다.
 
-```Coq
+```coq
 Fixpoint rev (l : natlist) : natlist :=
 match l with
 | nil => nil
@@ -241,7 +241,7 @@ match l with
 end.
 ```
 
-```Coq
+```coq
 >> Compute rev [1;2;3;4;5].
 
    [5; 4; 3; 2; 1] : natlist
@@ -253,13 +253,13 @@ end.
 
 리스트를 이용해 multiset(동일 원소가 여러 개인 경우를 허용하는 집합)을 구현할 수 있다.
 
-```Coq
+```coq
 Definition bag := natlist.
 ```
 
 연습삼아 주어진 bag 안에 특정 원소가 얼마나 포함되어있는지를 계산하는 `count` 를 작성해보자. 이를 위해 먼저 이전에 작성했던 `is_equal`을 가져와야 한다. 다중 매칭을 이용한 짧은 버전을 아래에 다시 작성했다.
 
-```Coq
+```coq
 Fixpoint is_equal (n m : nat) : bool :=
 match n, m with
 | O, O       => true
@@ -272,7 +272,7 @@ Notation "x =? y" := (is_equal x y) (at level 70).
 
 이제 count 함수를 마저 작성하자.
 
-```Coq
+```coq
 Fixpoint count (v:nat) (b:bag) : nat :=
 match b with
 | nil => O
@@ -283,7 +283,7 @@ match b with
 end.
 ```
 
-```Coq
+```coq
 >> count 3 [1;2;3;4;5;4;3;2].
 
    2 : nat
@@ -297,7 +297,7 @@ end.
 
 그런데 count 함수의 정의에서 두 번째 `match...with`을 보면 bool 타입에서 true / false 2가지 경우만을 매칭시킨다. 이런 경우 굳이 match까지 쓸 필요가 있을까? Coq 역시 일반적인 프로그래밍 언어에서와 마찬가지로 `if` 가 존재한다. 이를 이용하면 count 함수는 다음과 같이 다시 쓸 수 있다.
 
-```Coq
+```coq
 Fixpoint count2 (v:nat) (b:bag) : nat :=
 match b with
 | nil => O

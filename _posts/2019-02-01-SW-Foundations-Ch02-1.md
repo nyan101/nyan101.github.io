@@ -15,7 +15,7 @@ use_math: true
 ## Notation
 본론을 시작하기에 앞서 전에 만들었던 `plus`, `mult` 에  infix notation을 정의하자.
 
-```Coq
+```coq
 Notation "x + y" := (plus x y)
                        (at level 50, left associativity)
                        : nat_scope.
@@ -39,7 +39,7 @@ Notation "x * y" := (mult x y)
 
 이제 Coq로 수학적 정리를 표현해보자. Coq에서 정리는 다음 형태를 가진다. (`Theorem`, `Lemma`, `Corollary`, `Example` 모두 동일한 형태인데 이것들이 어떻게 다른지는 아직 잘 모르겠다.)
 
-```Coq
+```coq
 Theorem (name) : (statement).
 Proof.
 (tactics)
@@ -52,7 +52,7 @@ Qed.
 
 참고를 위해 `plus`의 정의를 다시 가져왔다.
 
-```Coq
+```coq
 Fixpoint plus (n m : nat) :=
 match n with
 | O => m
@@ -62,13 +62,13 @@ end.
 
 먼저 증명하고자 하는 명제를 서술하자. 이름은 `plus_0_n`으로 지었다.
 
-```Coq
+```coq
 Theorem plus_0_n : forall n:nat, 0 + n = n.
 ```
 
 다음으로 증명 시작을 나타내는 `Proof.`를 쓴다.
 
-```Coq
+```coq
 Proof.
 ```
 
@@ -80,7 +80,7 @@ Proof.
 
 subgoal에서 n 앞에 forall 한정자(quantifier)가 붙어있다. 종이에 펜으로 증명을 시작할 때와 마찬가지로 "어떤 자연수 n에 대해" 를 쓰면서 forall을 떼놓고 생각하자. Coq에서는 `intros` tactic이 그 역할을 수행한다.
 
-```Coq
+```coq
 intros n.
 ```
 
@@ -90,7 +90,7 @@ subgoal이 어떻게 변했는지 살펴보자. 다음으로 `simpl.` 을 적용
 
 (`simpl.` 적용 이전)
 
-```Coq
+```coq
 1 subgoal
 n : nat
 ______________________________________(1/1)
@@ -99,7 +99,7 @@ ______________________________________(1/1)
 
 (`simpl.` 적용 이후)
 
-```Coq
+```coq
 1 subgoal
 n : nat
 ______________________________________(1/1)
@@ -134,7 +134,7 @@ n = n
 
 이전에 설명된 내용을 통해 여기까지는 쉽게 작성할 수 있다.
 
-```Coq
+```coq
 Theorem plus_same : forall n m:nat, n=m -> n+n=m+m.
 Proof.
 intros n m.
@@ -142,13 +142,13 @@ intros n m.
 
 그런데 `simpl.`을 적용해도 아무런 차이가 나타나지 않는다. 이전의 `0+n`은 plus의 정의에서 바로 치환이 가능했지만 이번엔 딱히 변화가 없다. 다시 종이와 펜을 들고있다고 상상해보자. \\(P \\rightarrow Q\\) 를 증명할 때 \\(P \\rightarrow Q\\)임을 바로 보이는 것과, 일단 \\(P\\)를 참이라고 가정하고 \\(Q\\)가 참임을 보이는 것 중 어느 쪽이 편리할까? 후자의 방법을 사용하기 위해 `n = m`을 전제조건으로 포함시키자.
 
-```Coq
+```coq
 intros H.
 ```
 
 그러면 subgoal 창은 다음과 같이 변한다.
 
-```Coq
+```coq
 1 subgoal
 n, m : nat
 H : n = m
@@ -158,13 +158,13 @@ n + n = m + m
 
 전제조건 H에서 n=m이라고 했으므로 n을 m으로 바꿔써도 되지 않을까? Coq에서는 이를 수행하는 `rewrite` tactic이 있다.
 
-```Coq
+```coq
 rewrite -> H.
 ```
 
 이를 적용하면 등호 왼쪽의 n이 m으로 바뀌면서 subgoal이 아래처럼 변한다.
 
-```Coq
+```coq
 1 subgoal
 n, m : nat
 H : n = m

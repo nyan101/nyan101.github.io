@@ -20,7 +20,7 @@ use_math: true
 
 먼저 Coq에서 타입을 선언하는 법을 알아보자. 모든 Coq 구문은 .(마침표)로 끝남에 유의하자
 
-```Coq
+```coq
 Inductive day : Type :=
 | monday
 | tuesday
@@ -35,7 +35,7 @@ day 타입에는 monday, tuesday 등의 원소가 있다. 편의상 원소라는
 
 이제 day 타입을 다루는 함수를 하나 정의하자
 
-```Coq
+```coq
 Definition next_weekday (d:day) : day :=
 match d with
 | monday => tuesday
@@ -65,7 +65,7 @@ end.
 
 `Example` 키워드로 함수의 동작 예시에 이름을 붙여 기록할 수 있다.
 
-```Coq
+```coq
 Example test_next_weekday:
   (next_weekday (next_weekday saturday)) = tuesday.
 ```
@@ -84,7 +84,7 @@ Proof. simpl. reflexivity. Qed.
 
 앞서 `day` 타입을 정의한 것과 유사하게, 이번엔 `bool` 타입을 정의해보자. 상식을 거스르지 않고 이번에 만들 bool 타입도 2개의 원소를 가진다.
 
-```Coq
+```coq
 Inductive bool : Type :=
 | true
 | false.
@@ -92,7 +92,7 @@ Inductive bool : Type :=
 
 `day` 때와 비슷하게 함수를 정의할 수 있다. 2변수 함수를 정의하는 부분에 유의해서 살펴보자. (`orb`는 `andb`와 거의 동일하므로 생략)
 
-```Coq
+```coq
 Definition negb (b:bool) : bool :=
 match b with
 | true => false
@@ -108,7 +108,7 @@ end.
 
 Coq에서는 Notation 키워드를 통해 함수에 새로운 표기를 추가할 수 있다.
 
-```Coq
+```coq
 Notation "x && y" := (andb x y).
 Notation "x || y" := (orb x y).
 ```
@@ -127,7 +127,7 @@ Notation "x || y" := (orb x y).
 
 모든 expression은 타입을 가지고 있다. Check 키워드를 통해 기존에 만든 원소들의 타입을 확인해보자.
 
-```Coq
+```coq
 >> Check true.
 
   true : bool
@@ -142,7 +142,7 @@ Notation "x || y" := (orb x y).
 
 기존에 정의된 타입을 이용해 새로운 타입을 정의할 수 있다. '생성자(constructor)'라는 용어를 염두에 두고 아래 정의를 살펴보자.
 
-```Coq
+```coq
 Inductive rgb : Type :=
 | red
 | green
@@ -158,7 +158,7 @@ Inductive color : Type :=
 
 이렇게 만들어진 타입에 대해서도 함수를 정의할 수 있으며, 하스켈과 유사하게 \_를 더미(dummy)로 하는 패턴 매칭을 사용할 수 있다.
 
-```Coq
+```coq
 Definition isred (c:color) : bool :=
 match c with
 | black => false
@@ -176,7 +176,7 @@ end.
 
 한 constructor가 여러 인자를 가질 수도, 패턴 매칭에서 여러 인자를 한번에 매칭시킬 수도 있다.
 
-```Coq
+```coq
 Inductive bit : Type :=
 | B0
 | B1.
@@ -199,7 +199,7 @@ end.
 
 지금까지 작성한 모든 코드는 전역(global scope)에 속한다. 단순히 예제를 따라해보는 거라면 몰라도 코드가 복잡해질수록 모든 걸 전역으로 두는 대신 영역을 나눠야 할 필요성이 커진다. 자바의 패키지, C++의 네임스페이스처럼 Coq에서는 모듈을 제공한다.
 
-```Coq
+```coq
 Module XXX.
 (* code *)
 End XXX.

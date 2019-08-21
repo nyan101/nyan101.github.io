@@ -20,7 +20,7 @@ use_math: true
 
 이제 이 정의를 그대로 Coq로 옮겨보자. 
 
-``` Coq
+```coq
 Inductive nat : Type :=
 | O
 | S (n : nat).
@@ -28,7 +28,7 @@ Inductive nat : Type :=
 
 이제 `O`, `S 0`, `S (S 0)`, `S (S (S 0))`으로 이어지는 모든 패턴은 `nat` 타입이 된다. 위 코드는 실제 Coq에서 자연수 `nat`이 정의되는 방식과 동일하다. 정의를 살펴보면 `O`, `S 0`, `S (S 0)`, `S (S (S 0))`, ...이 각각 0, 1, 2, 3, ...에 대응된다는 사실을 쉽게 눈치챌 수 있다. Coq에서는 이를 반영해 `S (S (S ...))` 대신 알아보기 편한 syntactic sugar를 제공한다. 이를 적용하기 위해 앞서 작성한 `nat` 정의를 지우고 Check로 확인해보자.
 
-```Coq
+```coq
 >> Check (S (S (S (S O)))).
 
    4 : nat
@@ -36,7 +36,7 @@ Inductive nat : Type :=
 
 이제 `nat` 타입을 받는 함수를 만들어보자. predecessor 함수 `pred`는 다음과 같이 정의할 수 있다.
 
-```Coq
+```coq
 Definition pred (n : nat) :=
 match n with
 | O => 0
@@ -46,7 +46,7 @@ end.
 
 0의 predecessor는 0으로 정의했음에 유의하자(결과물도 `nat` 범위 안에 있으려면 -1은 나올 수 없다). 마찬가지로 `minusTwo` 함수를 만들 수 있다.
 
-```Coq
+```coq
 Definition minusTwo (n : nat) :=
 match n with
 | O => O
@@ -57,7 +57,7 @@ end.
 
 Compute를 통해 함수가 의도한 대로 만들어졌는지 확인하자.
 
-```Coq
+```coq
 >> Compute (pred 4).
 
    3 : nat
@@ -71,7 +71,7 @@ Compute를 통해 함수가 의도한 대로 만들어졌는지 확인하자.
 
 여기서 한 가지 짚고 넘어가야 할 사실이 있다. `pred`, `minusTwo`, `S` 모두 Check를 통해 확인해보면 `nat -> nat` 타입으로 동일하고, `S`도 나머지 둘과 마찬가지로 Compute가 된다.
 
-```Coq
+```coq
 >> Compute (S 3).
 
    4 : nat
@@ -79,7 +79,7 @@ Compute를 통해 함수가 의도한 대로 만들어졌는지 확인하자.
 
 하지만 `S`는 `pred`, `minusTwo`와 근본적으로 다르다. 구체적으로 `pred`는 일종의 **계산규칙(computation rule)**을 가지고 `nat` 위에서 정의된 함수이고 `S`는 `nat`의 정의에서 등장하는 생성자라는 차이를 가진다. `pred`의 정의에 따라 `pred 4`는 `3`으로 simplified될 수 있지만 `S 3`이 `4`가 되는 건 Coq에서 제공하는 syntactic sugar일 뿐 simplified가 아니다. 잠시 10진법을 머리에서 지우고 `S`와 `O`을 이용한 표기로 돌아가보면 그 차이를 이해할 수 있다.
 
-```Coq
+```coq
 >> Compute (pred (S (S (S (S O))))).
 
    S (S (S O)) : nat
@@ -103,7 +103,7 @@ Compute를 통해 함수가 의도한 대로 만들어졌는지 확인하자.
 
 이를 코드로 옮겨보자.
 
-```Coq
+```coq
 Definition is_even (n : nat) : bool :=
 match n with
 | O => true
@@ -114,7 +114,7 @@ end.
 
 그런데 이를 실행시키면 "_The reference is_even was not found in the current environment._"라는 오류를 볼 수 있다. `is_even`의 정의에서 다시 `is_even`을 사용한 게 원인으로 Definition이 단순한 패턴 매칭이기 때문에 등장하는 오류이다. 생각해보면 `is_even (S (S (S O)))`를 `is_even (S O)`로 바꾼다고 계산이 끝나는 게 아니므로, 함수를 다시 **재귀적(recursive)**으로 적용하는 방법을 찾아야 한다. Coq에서는 `Fixpoint`가 그 역할을 수행한다.
 
-```Coq
+```coq
 Fixpoint is_even (n : nat) : bool :=
 match n with
 | O => true
@@ -131,13 +131,13 @@ end.
 
 아래 예시를 보면서 `Definition`과 `Fixpoint`의 차이에 대해 감을 잡아보자.
 
-```Coq
+```coq
 Definition is_odd (n : nat) : bool := negb (is_even n).
 ```
 
 둘 이상의 인자를 가지는 함수도 마찬가지로 정의할 수 있다.
 
-```Coq
+```coq
 Fixpoint plus (n : nat) (m : nat) : nat :=
 match n with
 | O => m
@@ -147,7 +147,7 @@ end.
 
 Coq에서는 `plus`처럼 n과 m이 모두 같은 타입(`nat`)인 경우 한번에 묶어서 표기가 가능하다.
 
-```Coq
+```coq
 Fixpoint mult (n m : nat) : nat :=
 match n with
 | O => O
@@ -157,7 +157,7 @@ end.
 
 이전 글에서 여러 요소를 한번에 매칭시키는 법을 알아봤다 (※ 이전 글의 Tuples 단락 참조). 이 방식 외에도 2개 이상의 변수를 case by case로 나눌 때 `match...with`을 중첩해 사용할 수 있다. 두 자연수 n, m이 동일한지 판단하는 함수 `is_equal`을 작성해봤다.
 
-```Coq
+```coq
 Fixpoint is_equal (n m : nat) : bool :=
 match n with
 | O => match m with
@@ -173,7 +173,7 @@ end.
 
 지금까지 작성한 함수들을 Compute를 통해 확인해보자.
 
-```Coq
+```coq
 >> Compute plus 3 5.
 
    8 : nat
@@ -198,7 +198,7 @@ CoqIDE를 사용해 실습을 진행했다면 `Fixpoint`를 사용해 함수를 
 
 다음 두 함수를 작성하고 나오는 메시지를 확인하자.
 
-```Coq
+```coq
 Fixpoint plus (n m : nat) : nat :=
 match n with
 | O => m

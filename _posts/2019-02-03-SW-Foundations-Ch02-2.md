@@ -13,7 +13,7 @@ use_math: true
 ## Proof by Case Analysis
 다뤄야 하는 대상이 복잡해지면 `simpl`이나 `rewrite`만으로는 충분하지 않은 경우가 있다. 잠시 [예전 글](https://nyan101.github.io/%EC%9E%90%EC%8A%B5/2019/01/31/SW-Foundations-Ch01-2.html)에서 정의했던 `is_equal`을 가져오면서 여기에 새로운 Notation을 추가하자.
 
-```Coq
+```coq
 Fixpoint is_equal (n m : nat) : bool :=
 match n with
 | O => match m with
@@ -40,7 +40,7 @@ Notation "x =? y" := (eqb x y) (at level 70) : nat_scope.
 
 먼저 `1+n`은 plus와 notation의 정의로부터 `S n`으로 simplified될 수 있고, 이를 이용하면 위의 명제는 `simpl.` 로 증명이 끝난다.
 
-```Coq
+```coq
 Theorem O_cannot_be_1_n : forall n:nat, (1+n =? 0) = false.
 Proof.
 intros n.
@@ -51,7 +51,7 @@ Qed.
 
 하지만 `n+1`은 `simpl.`을 시도해도 아무런 변화가 일어나지 않는다. 그런데 `reflexivity.`를 적용하(려고 시도하)면 _Unable to unify "false" with "n + 1 =? 0"_ 라는 오류를 볼 수 있다. `1+n`과 달리 `n+1`은 n이 `O`인지 `S n'` 형태인지에 따라 결과값이 달라지기 때문에 Coq가 한번에 처리할 수 있는 역량을 벗어난다. 그렇다면 **경우를 나누어서** 처리하는 방법을 떠올릴 수 있다. `destruct` tactic이 그 역할을 담당한다.
 
-```Coq
+```coq
 Theorem O_cannot_be_n_1 : forall n:nat, n+1 =? 0 = false.
 intros n.
 simpl.
@@ -60,7 +60,7 @@ destruct n.
 
 여기까지 적용했다면 각 경우가 나뉘어지면서 2개의 subgoal이 나타난다.
 
-```Coq
+```coq
 2 subgoals
 ______________________________________(1/2)
 (0 + 1 =? 0) = false
@@ -70,7 +70,7 @@ ______________________________________(2/2)
 
 이어서 증명을 진행해도 되지만, Coq에서는 각 subgoal에 대한 증명임을 명확히 하기 위해 보조 마크를 사용할 수 있다 (bullet을 이용한 개조식 서술을 생각하면 된다). 이번 경우 각 subgoal은 `reflexivity.`로 바로 증명이 끝난다.
 
-```Coq
+```coq
 Theorem O_cannot_be_n_1 : forall n:nat, n+1 =? 0 = false.
 intros n.
 simpl.
@@ -110,7 +110,7 @@ __________________________(1/1)
 
 나뉘어진 subgoal에 대해 증명을 진행하면서, -를 수행하는 순간 subgoal 창에 나타난 목표가 하나로 한정되는 것을 볼 수 있다. -나 +, \*같은 bullet이 일종의 scope 한정자 역할을 하는 셈이다. scope의 활용을 좀더 이해하기 위해 다른 예제를 살펴보자. 
 
-```Coq
+```coq
 Theorem andb_commutative : forall b c, andb b c = andb c b.
 Proof.
   intros b c. destruct b. eqn:Eb.
@@ -125,7 +125,7 @@ Qed.
 
 중첩이 조금 더 깊게(nested) 이루어지는 상황을 대비해 \{, \}을 사용해서도 scope 표기가 가능하다.
 
-```Coq
+```coq
 Theorem andb_commutative' : ∀b c, andb b c = andb c b.
 Proof.
   intros b c. destruct b eqn:Eb.
@@ -144,7 +144,7 @@ Qed.
 
 다음으로 이전에 다뤘던 `plus_0_n`과 유사하지만 다른 tactic을 사용해야 하는 경우를 알아보자.
 
-```Coq
+```coq
 Theorem plus_n_0 : forall n:nat, n+0=n.
 Proof.
 intros n.
@@ -154,7 +154,7 @@ Qed.
 
 `simpl.`은 아무런 변화가 없고, `destruct n as [|n']`을 적용하자 무언가 진척이 있어보인다. 
 
-```Coq
+```coq
 2 subgoals
 ______________________________________(1/2)
 0 + 0 = 0
@@ -164,7 +164,7 @@ S n' + 0 = S n'
 
 첫 번째는 `reflexivity`로 간단히 해결 가능하지만 두 번째 subgoal에 `simpl.`을 적용하면 다음과 같이 변한다.
 
-```Coq
+```coq
 1 subgoal
 n' : nat
 ______________________________________(1/1)
@@ -188,13 +188,13 @@ S (n' + 0) = S n'
 
 이전 `destruct`때와 유사하게`induction` tactic을 적용하면 2개의 subgoal이 나타난다. 여기서 `n'`은 destruct때와 마찬가지 의미를, `IH`는 Induction Hypothesis에 `IH`라는 이름을 붙였음을 뜻한다.
 
-```Coq
+```coq
 induction n as [|n' IH].
 ```
 
 첫 번째 subgoal(0+0=0)을 `reflexivity`로 끝내고 2번째 subgoal인 induction step에 집중하자. 이때 앞서 이름붙인 `IH`를 사용할 수 있다.
 
-```Coq
+```coq
 1 subgoal
 n' : nat
 IH : n' + 0 = n'
@@ -204,7 +204,7 @@ S n' + 0 = S n'
 
 `simpl.`을 적용하면 goal은 `S (n' + 0) = S n'`으로 변하고, 여기에 `rewrite IH`를 적용하면 증명을 끝낼 수 있다. 전체 코드는 아래와 같다.
 
-```Coq
+```coq
 Theorem plus_n_0 : forall n:nat, n+0 = n.
 Proof.
 intros n.
@@ -224,7 +224,7 @@ Qed.
 
 앞서 Induction Step을 보일 때 중간에 전제조건으로 주어진 `IH`를 이용해 손쉽게(?) 증명을 마쳤다. 이처럼 증명 도중에 사용할 수 있는 정리들이 있다면 간결함과 가독성을 높이는 데 큰 도움이 된다. 바깥에서 정의된 `Lemma`나 `Corollary` 등을 사용할 수도 있지만, 그러기엔 사소한 경우 `assert`를 이용해 증명 도중에 작은 보조정리들을 추가할 수 있다.
 
-```Coq
+```coq
 Theorem mult_0_plus
  : forall n m : nat, (0 + n) * m = n * m.
 Proof.
