@@ -93,7 +93,7 @@ import torch.nn as nn
 
 class MyModel(nn.Module): # nn.Module 클래스의 확장이 된다
     def __init__(self):
-        # super 생성자의 첫 인자로 해당 클래스를 넘긴다
+        # 부모 생성자 호출
         super(MyModel, self).__init__()
         # 파라미터들의 타입이 torch.tensor가 아니라 nn.Parameter임에 유의
         self.a = nn.Parameter(torch.tensor([1.]))
