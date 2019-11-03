@@ -11,7 +11,7 @@ use_math: true
 
 
 ## 발상: Knockoff Nets
-어제(11.02) 대학원에서 Mario Fritz 박사님의 AI Security에 대한 강연을 들어볼 수 있었다. 딥러닝이 대세가 되면서 등장하는 여러 보안 문제들에 대해 알 수 있었는데, 그중 Model Stealing에 대해 다룬 [knockoff-net]( https://arxiv.org/abs/1812.02766) 관련 내용이 흥미로워 이를 약간 변형해 pytorch로 구현해보았다.
+어제(2일) 대학원에서 Mario Fritz 박사님의 AI Security에 대한 강연을 들어볼 수 있었다. 딥러닝이 대세가 되면서 등장한 여러 보안 문제들에 대한 특강이었는데, 그중 Model Stealing(구체적으로는 Functionality Stealing)에 대해 다룬 [knockoff-net]( https://arxiv.org/abs/1812.02766) 관련 내용이 흥미로워 pytorch로 구현해보았다. 다만 노트북이라는 한계로 원본 논문보다는 디테일을 다소 단순화했다(...)
 
 Knockoff net을 간단히 말하자면 **공격자가 이미 학습이 끝난 모델 V를 블랙박스로 이용해 자신의 모델 A를 학습시키는** 것이라고 할 수 있다. 모델을 학습시킬 때 마주하는 문제 중 하나는 소위 *좋은 학습 데이터*를 구하기 어렵다는 점이다. Classification 문제를 생각해봐도 대표적인 MNIST나 CIFAR-10 등 예시를 제외하면 잘 정제되어 있고 + 올바른 라벨이 붙어있는 데이터는 구하기 쉽지 않다. 이때 이런 고급 데이터셋으로 학습된 모델 V를 이용해 (해당 데이터셋 없이) 새로운 모델 A를 학습시킨다고 생각해 보자.
 
@@ -22,18 +22,20 @@ Knockoff net을 간단히 말하자면 **공격자가 이미 학습이 끝난 �
 * 가상의 함수 \\(F\_\{ideal\}\\) : 이미지를 넣으면 원하는 라벨이 one-hot 인코딩되어서 나오는 함수
 * 모델 V의 `.forward()`(이하 \\(F\_V\\)) : 위 \\(F\_\{ideal\}\\)을 모방하는 함수
 
-라고 하면 \\(F\_V = F\_\{ideal\}\\)가 우리가 원하는 결과이며, 이를 위해 모델 V의 파라미터를 조절하는 작업이 모델의 학습이 된다. 다시 말해 training set을 이용한 학습은 결국 **잘 정제된 데이터셋 \\(D=\\{ (d\_\{sample\}, d\_\{label\}) \\} \\)에 대해서 \\(F\_\{V\}(d\_\{sample\}) \\simeq F\_\{ideal\}(d\_\{sample\})=d\_label\\) 이면 일반화된 다른 입력에 대해서도 \\(F\_\{V\}(sample) \\simeq F\_\{ideal\}(sample)=label\\)** 이 될 것이라는 기대에 기반한다.
+라고 하면 \\(F\_V = F\_\{ideal\}\\)가 우리가 원하는 결과이며, 이를 위해 모델 V의 파라미터를 조절하는 작업이 모델의 학습이 된다. 다시 말해 training set을 이용한 학습은 결국 **학습 데이터셋 \\(D=\\{ (d\_\{sample\}, d\_\{label\}) \\} \\)에 대해 \\(F\_\{V\}(d\_\{sample\}) \\simeq F\_\{ideal\}(d\_\{sample\})=d\_\{label\}\\) 이면 일반화된 다른 입력에 대해서도 \\(F\_\{V\}(sample) \\simeq F\_\{ideal\}(sample)=label\\)** 이 될 것이라는 기대에 기반한다.
 
-그렇다면 \\(D\\)가 아닌 **다른 데이터셋 \\(R=\\{ (r\_\{sample\}, \\_) \\} \\)에 대해 \\(F\_A(r\_\{sample\}) \\simeq F\_V(r\_\{sample\})\\)이 되도록 조정한다면, 일반화된 샘플에 대해서 \\(F\_\{A\}(sample) \\simeq F\_\{V\}(sample) \\simeq F\_\{ideal\}(sample)\\)이 되지 않을까?** knockoff net 논문에서는 그림이라는 선은 지켰지만[^1] 본 블로그에서는 완전히 랜덤한 노이즈를 통해 \\(R\\)을 만들어보았다.
+그렇다면 \\(D\\)가 아닌 **다른 데이터셋 \\(R=\\{ (r\_\{sample\}, \\_) \\} \\)에 대해 \\(F\_A(r\_\{sample\}) \\simeq F\_V(r\_\{sample\})\\)이 되도록 조정한다면, 일반화된 샘플에 대해서 \\(F\_\{A\}(sample) \\simeq F\_\{V\}(sample) \\simeq F\_\{ideal\}(sample)\\)이 되지 않을까?** knockoff net 논문에서는 그림이라는 선은 지켰지만[^1] 본 블로그에서는 랜덤한 노이즈를 통해 \\(R\\)을 생성했다.
 
 <img src="/assets/images/2019/11/model-stealing-different-sample-distribution.png" style="width:450px">
 
-[^1]: 새 분류기를 모방하는 데 강아지, 자전거 사진 등을 이용해 학습 진행
+(그림 출처:  [Knockoff Nets: Stealing Functionality of Black-Box Models]( https://arxiv.org/pdf/1812.02766.pdf) )
+
+[^1]: 새 분류기를 모방하는 데 강아지, 자전거 사진 등을 이용해 학습을 진행했다
 
 
 ## 제대로 학습된 모델 V 만들기
 
-먼저 모델 V를 만들기 위해 [이전 글]( https://nyan101.github.io/blog/notes-on-pytorch-03)에서 MNIST 분류기를 가져왔다. 편의를 위해 기존 모델의 끝에 Softmax 레이어를 추가해 출력벡터 값을 0~1 사이로 맞췄다. 이는 MNIST를 올바르게 학습한 모델이 된다.
+먼저 모델 V를 만들기 위해 [이전 글]( https://nyan101.github.io/blog/notes-on-pytorch-03)에서 MNIST 분류기를 가져왔다. 출력값 확인을 위해 기존 모델의 끝에 softmax 레이어를 추가해 출력벡터의 각 요소를 0~1 사이로 조절했다. 이 `net`은 MNIST를 정상적으로 학습한 모델이 된다.
 
 ```python
 class MyModel(nn.Module):
@@ -85,7 +87,7 @@ tensor([2.6900e-10, 4.2002e-23, 6.6886e-01, 1.5307e-04, 1.0798e-23, 4.9928e-07,
 ~~모델에 따르면 이 이미지는 66.9%로 숫자 2, 33.1%로 숫자 8인 모양이다~~ 물론 이 결과는 별다른 의미를 가지지 않는다. 그렇다면 이렇게 만든 (랜덤한 이미지, 예측값)을 학습 데이터로 사용해 모델 A를 학습시키면 어떻게 될까? 
 
 ```python
-net_koff = MyModel()
+net_koff = MyModel() # 기존 net과 구조는 동일하다.
 criterion_koff = nn.BCELoss() # 라벨이 아닌 두 '분포'에 대한 학습이므로 BCELoss 사용
 optimizer_koff = optim.Adam(net_koff.parameters())
 
@@ -117,7 +119,7 @@ for x, y in test_loader:
 print(f"test accuracy of knockoff net: {acc}/{tot} ({100*acc/tot}%)")
 ```
 
-일반적인 학습과 구조는 동일하지만 train_loader에서 가져온 데이터 대신 `torch.randn_like()`를 이용해 같은 크기의 랜덤한 노이즈로 대체했다. 또한 정답 라벨 y를 사용하는 대신 `net`의 출력값을 `y_target`으로 지정해 계산했음에 유의하자. 말이 안 되는 것 같지만 놀랍게도 학습이 끝난 후 `net_koff`의 test accuracy를 측정해보면 73% 라는 높은 수치를 보여준다.
+일반적인 학습과 거의 동일하지만 train_loader에서 가져온 데이터 대신 `torch.randn_like()`를 이용해 같은 크기의 노이즈로 대체했다. 또한 라벨 y를 사용하는 대신 `net`의 출력값을 `y_target`으로 지정했음에 유의하자. 말이 안 되는 것 같지만 놀랍게도 학습이 끝난 후 `net_koff`의 test accuracy를 측정해보면 83.6% 라는 높은 수치를 보여준다.
 
 
 
@@ -155,9 +157,9 @@ class MyAnotherModel(nn.Module):
         return x11
 ```
 
-학습은 이전 `MyModel`의 `net_koff`와 동일한 방법으로 이루어졌다. 실험 결과 이렇게 만든 `net_koff2`는 MNIST test set에서 약 70.1%라는 정확도를 보였다.
+학습은 이전 `MyModel`의 `net_koff`와 동일한 방법으로 이루어졌다. 실험 결과 이렇게 만든 `net_koff2`는 MNIST test set에서 약 56.3%라는 정확도를 보였다. 일반적인 MNIST에서 이는 크게 의미있는 수치가 아니지만[^2] 학습에 사용한 입력이 전부 `torch.randn([1, 28, 28])`이라는 점을 고려하면 꽤 놀라운 결과라고 할 수 있다.
 
-
+[^2]: MNIST는 간단한 모델에서도 쉽게 90% 이상의 정확도를 얻을 수 있는 것으로 잘 알려져 있다.
 
 ## 후기(?)
 
