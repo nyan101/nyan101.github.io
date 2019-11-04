@@ -173,4 +173,6 @@ UPD: 몇번 더 돌려보니 70, 80%를 넘어 `MyAnotherModel`에서도 91% 이
 
 
 
+p.s. 실험에 사용한 전체 코드는 [여기](https://gist.github.com/nyan101/8a3159bb54afec64df1ae2e120ffb6f4){:target="_blank"}에서 볼 수 있다. (PC 전용)
+
 ---
