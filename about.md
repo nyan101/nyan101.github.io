@@ -16,7 +16,7 @@ permalink: /about/
   * 30인 선발 (취약점분석 Track)
 
 * 삼성 소프트웨어 멤버십(Samsung Software Membership) 수료 (2017–18)
-  * 삼성 SW 역량 테스트 Expert 등급 인정
+  * 삼성 SW 역량 테스트 Expert(C형) 등급 인정
 
 * 정보올림피아드(International Olympiad in Informatics) 겨울 계절학교 **조교** (2018)
 
