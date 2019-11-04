@@ -41,6 +41,7 @@ permalink: /about/
   * Code Jam Kickstart Round G 2018. (19위) [🔗](https://code.google.com/codejam/contest/5374486/scoreboard#vt=1&vf=1){:target="_blank"}
   * Kick Start Round A 2019. (299위) [🔗](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050e01){:target="_blank"}
   * Kick Start Round B 2019. (115위) [🔗](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000050eda){:target="_blank"}
+* 구글 코드잼(Google Code Jam) 2019 **Round 3 진출**(전체 395위)
 
 ### \<Security\>
 
