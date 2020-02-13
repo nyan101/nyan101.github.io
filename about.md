@@ -62,7 +62,7 @@ permalink: /about/
 
 
 <h2 class='section-header'> Research & Paper </h2>
-* _I'm Listening to your Location! Inferring User Location with Acoustic Side Channels._ (2nd Author) [🔗](https://dl.acm.org/citation.cfm?doid=3178876.3186100){:target="_blank"}
+* _I'm Listening to your Location! Inferring User Location with Acoustic Side Channels._ (WWW '18, 2nd Author) [🔗](https://dl.acm.org/citation.cfm?doid=3178876.3186100){:target="_blank"}
 
 
 

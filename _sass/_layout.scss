@@ -32,6 +32,11 @@ ul.default {
 
 ul li ul {
   list-style-type: circle;
+  margin: 0;
+}
+
+li {
+    padding: 0 0 1px 0;
 }
 
 code{
