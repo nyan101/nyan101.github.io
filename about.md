@@ -23,10 +23,10 @@ permalink: /about/
 #### \<교외\>
 
 * 정보올림피아드(International Olympiad in Informatics) 겨울 계절학교 <strong>조교</strong> (2018)
-* 삼성 소프트웨어 멤버십(Samsung Software Membership) 수료 (2017–18)
+* 삼성 소프트웨어 멤버십(Samsung Software Membership) 수료 (2017 ~ 2018)
   * 삼성 SW 역량 테스트 Expert(C형) 등급 인정
   * 대학생 대상 알고리즘 멘토링 진행
-* KITRI 차세대 보안리더 양성 프로그램(Best of Best) 5기 수료 (2016)
+* KITRI 차세대 보안리더 양성 프로그램(Best of the Best) 5기 수료 (2016)
   * 30인 선발 (취약점분석 Track)
 
 
