@@ -12,8 +12,9 @@ use_math: true
 
 * 파이썬에서 `range(n)`은 0부터 시작해 n이 아닌 n-1까지를 포함한다. 양 끝을 명시적으로 나타내기 위해 `[st...ed]`와 같은 표기를 사용했다.
 * 파이썬에서 거듭제곱을 나타내는 `a**b` 대신 일반적으로 사용되는 `a^b` 표기를 사용했다.
-* mod p에서의 역원을 `a^(-1)`로 표기했다. 실제 구현에서는 a의 (p-2)제곱으로 구할 수 있다.
-  * 페르마 소정리에 의해 $a^{p-1} \equiv 1 \pmod p$이므로 $a\cdot a^{p-2} \equiv 1$에서 $a^{-1} \equiv a^{p-2}$.
+* mod p에서의 역원을 `a^(-1)`로 표기했다. 실제 구현에서는 다음과 같이 구할 수 있다.
+  * 페르마 소정리에 의해 $a^{p-1} \equiv 1 \pmod p$이므로 $a\cdot a^{p-2} \equiv 1$에서 $a^{-1} \equiv a^{p-2}$
+  * $p$가 소수가 아닌 경우, 확장 유클리드 알고리즘을 사용한다
 
 
 
@@ -131,7 +132,7 @@ def solveDLP(y, g, p, max_iter=1000):
     return None
 ```
 
-이 알고리즘의 수행시간은 transition rule $f$의 설정, 그리고 분할 $(S_0,S_1,S_2)$에 따라 달라질 수 있으며, 근사적으로 $O(\sqrt n)$ 정도임이 알려져 있다.
+이 알고리즘의 수행시간은 transition rule $f$의 설정과 분할방식 $(S_0,S_1,S_2)$에 따라 달라질 수 있으며, 근사적으로 $O(\sqrt n)$ 정도임이 알려져 있다.
 
 
 
@@ -142,7 +143,7 @@ pohlig-hellman 알고리즘은 순환군 $\mathbb{Z}_p^\ast$의 크기 n(=p-1)�
 $$
 |G| = |\mathbb{Z}_p^\ast| = n = (p-1) = \prod_{i=1}^m q_i^{c_i}
 $$
-로 표현했을 때 $q_i$들이 모두 작은 경우에 사용할 수 있다. 이 알고리즘은 페르마 소정리(Fermat's Little Theorem)에 의해 $g^{p-1}\equiv 1 \pmod p$라는 사실과, 중국인의 나머지 정리에 의해 $g^k \equiv y \pmod p$를 만족하는 k는
+로 표현했을 때 $q_i$들이 모두 작은 경우에 사용할 수 있다. 이 알고리즘은 페르마 소정리에 의해 $g^{p-1}\equiv 1 \pmod p$라는 사실과, 중국인의 나머지 정리에 의해 $g^k \equiv y \pmod p$를 만족하는 k는
 
 $$
 k \equiv k_1 \pmod {q_1^{c_1}}\\
