@@ -54,19 +54,11 @@ pre code {
 	font-size: modular-scale(-1);
 }
 
-blockquote:before {
-  content: "\201C";
-  font-size: 3em;
-  font-family: Georgia;
-  color: #bcbcbc;
-  float: left;
-  margin: -5px 10px 0px -10px;
-}
-
 blockquote {
     border-left: 5px solid #ccc;
     margin: 10px;
     padding: 10px;
+    color: #000a;
 }
 
 /* End Custom */
