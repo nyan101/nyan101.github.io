@@ -128,7 +128,9 @@ def solveDLP(y, g, p, max_iter=1000):
         x1, a1, b1 = f(x1, a1, b1)
         x2, a2, b2 = f(f(x2, a2, b2))
         if x1 == x2:
-            return ((a1 - a2) * (b2 - b1)^(-1)) % p
+            # (p-1)은 소수가 아니므로 ax = b (mod p-1)의 해가 유일하지 않을 수 있다
+            # 실제 코드에서는 이를 고려한 처리가 필요하다
+            return ((a1 - a2) * (b2 - b1)^(-1)) % (p-1)
     return None
 ```
 
