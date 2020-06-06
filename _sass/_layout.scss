@@ -61,6 +61,22 @@ blockquote {
     color: #000a;
 }
 
+.resume-date {
+    font-style: italic;
+    font-family: inherit;
+    color: dimgray;
+}
+
+.resume-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.resume-item {
+	margin: 0 0 10px 0;
+}
+
 /* End Custom */
 
 .page-divider {
