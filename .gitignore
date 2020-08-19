@@ -1,5 +1,8 @@
 .DS_Store
 
+# about-private
+about-private.md
+
 # Compiled site
 _site
 _drafts
