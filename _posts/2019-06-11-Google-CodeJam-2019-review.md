@@ -8,6 +8,12 @@ tags:	대회
 use_math: true
 ---
 
+
+
+**TL;DR : 코드잼 티셔츠 받음**
+
+
+
 2019년 [코드잼 본 대회](https://codingcompetitions.withgoogle.com/codejam)를 치렀다. 몇 번 글을 썼던 Kickstart와는 달리 1년에 1번밖에 열리지 않는 대회이고, 작년엔 훈련소에 있느라 참가를 못 해서인지 조금은 긴장된 마음이었다. 대학 시절 내내 코드잼, 해커컵을 통틀어 티셔츠와는 인연이 없었기에 이번에야말로 하나 받아내겠다는 생각을 했다.
 
 <img src="/assets/images/2019/06/GCJ-main.png" width="800px">

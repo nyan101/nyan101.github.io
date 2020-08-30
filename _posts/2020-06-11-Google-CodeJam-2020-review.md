@@ -8,6 +8,12 @@ tags:	대회
 use_math: true
 ---
 
+
+
+**TL;DR : 올해도 티셔츠 받음**
+
+
+
 지난주 토요일 2020년 [코드잼](https://codingcompetitions.withgoogle.com/codejam)을 마쳤다. 사실 대회에 대한 설명이나 기본적인 소개는 작년에 [거의 똑같은 글](https://nyan101.github.io/blog/Google-CodeJam-2019-review)을 썼어서 이번엔 별로 할 말이 많지는 않다.
 
 <img src="/assets/images/2020/06/GCJ-result.png" width="800px">
