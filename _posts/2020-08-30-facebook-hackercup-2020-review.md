@@ -24,7 +24,7 @@ use_math: true
 
 각 라운드의 성적은 다음과 같다.
 
-<img src="/assets/images/2020/08/hackercup-scoreboard.png" width="800px">
+<img src="/assets/images/2020/08/hackercup-scoreboard.png">
 
 ### Qualification Round
 
@@ -42,7 +42,7 @@ A번이 같은 상황에 데이터 조건만 다르게 해 A1, A2, A3으로 분�
 
 올해도 Round 2는 일요일 새벽 2시부터 5시까지 진행됐다. 작년엔 자느라 30분 늦게 시작했던 아쉬움이 있었기에 이번엔 꼭 시간을 맞추겠다는 다짐을 했고, 편의점에서 미리 에너지드링크까지 사오면서 단단히 준비했다.
 
-<img src="/assets/images/2020/08/hackercup-kakaotalk.jpg" width="600px">
+<img src="/assets/images/2020/08/hackercup-kakaotalk.jpg" style="width:60%">
 
 하지만 1시에 "잠깐 눈좀 붙일까"라는 생각을 ~~해서는 안 됐음에도~~ 한 게 화근이었고, 그렇게 눈을 뜨니 2시 19분이었다(...) 다행히 바뀐 규정에 따라 1문제 이상만 해결해도 티셔츠는 받을 수 있었기에 부담을 조금 내려놓고 대회를 시작했다. A번은 Round 2인 걸 감안하면 간단한 난이도, B는 약간의 수식을 세우면 $$O(N^2)$$ DP로 풀리는 확률계산 문제였다. 이후 시간을 들여 C를 코딩했으나 예제가 나오지 않아 확인하던 중, 문제 접근을 살짝 엇나갔다는 사실을 깨달았다.
 
