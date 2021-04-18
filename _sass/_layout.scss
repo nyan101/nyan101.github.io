@@ -61,21 +61,34 @@ blockquote {
     color: #000a;
 }
 
+.resume-item {
+    margin: 0 0 10px 0;
+}
+
+.resume-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.resume-appendix{
+    flex-grow: 1;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.resume-organization{
+    font-family: inherit;
+    color: #434343;
+}
+
 .resume-date {
     font-style: italic;
     font-family: inherit;
     color: dimgray;
 }
 
-.resume-row {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.resume-item {
-	margin: 0 0 10px 0;
-}
 
 p img {
     min-width: 320px;
