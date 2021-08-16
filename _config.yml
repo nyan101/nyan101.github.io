@@ -26,7 +26,7 @@ logo: "/assets/logo.png"
 # Build settings
 markdown: kramdown
 paginate: 10
-paginate_path: "/page:num/"
+paginate_path: "/page/:num/"
 inter_post_navigation: false
 highlightjs_theme: "atelier-cave-light"
 
@@ -55,8 +55,8 @@ disqus_shortname: nyan101-github-io
 
 # Category descriptions (for archive pages)
 descriptions:
-  - cat: Jekyll
-    desc: "Posts describing Jekyll setup techniques."
+#  - cat: Jekyll
+#    desc: "Posts describing Jekyll setup techniques."
 
   - cat: Dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."

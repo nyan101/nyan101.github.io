@@ -8,6 +8,12 @@ layout: default
     <header class="site-header">
       <h1 class="title">{{ site.title }}</h1>
       {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
+      <p>
+        {% for cat in site.categories %}
+        <a style="color:inherit;" href="{{ site.baseurl }}/category/{{ cat | first }}">{{ cat | first }}</a>
+        {% if forloop.last == false %} | {% endif %}
+        {% endfor %}
+      </p>
     </header>
   </div>
 </div>
