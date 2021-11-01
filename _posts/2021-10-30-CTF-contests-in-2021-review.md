@@ -20,6 +20,8 @@ use_math: true
 
 <img src="/assets/images/2021/08/af-cyberwarrior-01.jpg" style="width:80%">
 
+<img src="/assets/images/2021/08/af-cyberwarrior-02.jpg" style="width:80%">
+
 지난번에 [별도로 후기글](https://nyan101.github.io/blog/airforce-cyberwarrior-contest-2021-review)을 작성했던 공군 CTF 대회이다. 대회 자체가 아래 설명할 국방 사이버보안 경진대회에 출전할 공군 대표를 선발하기 위한 절차이기도 한 만큼, 입상자로서 대표 선발 & 교육파견을 나갈 수 있었다. 팀으로 나가는 CTF에서는 주로 크립토만 건드리다가 개인 대회는 처음 나가봤는데, 생각보다 좋은 결과를 얻어 만족스러웠다.
 
 
