@@ -17,7 +17,7 @@
 ///     word-wrap: break-word;
 ///   }
 
-@mixin word-wrap($wrap: break-word) {
+@mixin word-wrap($wrap: keep-all) {
   overflow-wrap: $wrap;
   word-wrap: $wrap;
 
