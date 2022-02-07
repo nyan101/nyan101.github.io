@@ -1,6 +1,6 @@
 ---
 layout: post
-title:	"[PyTorch] PyTorch 사용법 정리 - train_model() 함수 제작"
+title:	"[PyTorch] PyTorch 사용법 정리 - train_model() 함수 작성"
 date:	2022-02-06 20:38:11
 author: nyan101
 categories: 자습
@@ -10,11 +10,19 @@ use_math: true
 
 
 
-~~굉장히 오랜만에 이어지는 포스팅이다...~~
+굉장히 오랜만에 이어지는 포스팅이다... ~~핑거스냅에 당해서 블립(blip) 당함~~
 
-## Training & Validation
+## 모델 학습에서의 Training & Validation
 
-[이전 글](https://nyan101.github.io/blog/notes-on-pytorch-03)에서 작성했던 마지막 코드를 다시 살펴보자
+[이전 글](https://nyan101.github.io/blog/notes-on-pytorch-03)에서 작성했던 마지막 코드를 다시 살펴보자. 이전 글에서는 아래 5가지 단계를 거쳤다.
+
+1. `nn.Module`을 상속받은 모델 클래스 작성
+2. `torchvision.datasets` 라이브러리에서 유명 데이터셋(MNIST) 다운로드
+3. `torch.utils.data.Dataloader` 사용법
+4. 모델의 1 epoch 학습 진행
+5. 모델의 test 성능 측정
+
+각 단계별로 주요 로직을 정리해 하나의 코드로 합친 결과는 다음과 같다.
 
 ```python
 # 모델 생성 및 설정
@@ -52,7 +60,7 @@ with torch.no_grad():
     print(f"test accuracy : {acc}/{tot} ({100*acc/tot}%)")
 ```
 
-마지막 테스트 전 학습에서는 고정된 epoch의 학습을 무작정 진행했다. 그러나 모델을 본격적으로 학습시키기 위해서는 학습 과정에서 training loss를 계산하거나 주기적으로 validation을 진행하는 등, 학습의 진행도를 추적하기 위해 다양한 절차를 추가하는 경우가 많다. 여기서는 `학습 진행` 단계에 다음 두 작업을 추가하고자 한다.
+모델의 학습과정을 보면 최종 검증 직전까지도 아무런 중간점검 없이 전체 epoch의 학습이 진행되는 것을 볼 수 있다. 그러나 모델을 본격적으로 학습시키기 위해서는 학습 과정에서 training loss를 계산하거나 주기적으로 validation을 진행하는 등, 학습의 진행도를 추적하기 위해 다양한 절차를 추가하는 경우가 많다. 이번 글에서느 학습 진행 단계에 다음 두 작업을 추가해보자.
 
 * validation phase 추가
 * train/val 단계마다 평균 손실(loss와)과 평균 정확도(acc) 계산
@@ -61,11 +69,11 @@ with torch.no_grad():
 
 ## dataloaders_dict 작성
 
-이전에는 train용 dataloader와 test용 dataloader를 별도로 관리했다. 그러나 관리의 편의성을 위해 둘을 dict로 모아 관리하는 방법이 자주 사용된다. 이는 이후 다른 글에서 다룰 `torchvision.transforms`의 활용에 있어서도 동일하다. 다음 작업을 수행하자.
+이전에는 train, test용 dataloader를 각각 따로 만들어 관리했다. 그러나 복잡한 코드에서는 관리의 편의성을 위해 둘을 dict로 모아 관리하는 방법이 자주 사용된다. 이는 이후 다른 글에서 다룰 `torchvision.transforms`의 활용에 있어서도 동일하다. 다음 작업을 수행하자.
 
 * `train_data`에서 일정 비율(80%)을 떼 train용으로, 나머지를 val용으로 분리한다
 * 각 데이터셋을 `data.Dataloader`를 이용해 dataloader로 만든다
-* 두 dataloader를 적절한 키(`'train'`, `'val'`)와 함께 dictionary에 등록한다
+* 두 dataloader를 적절한 키('train', 'val')와 함께 dictionary에 등록한다
 
 이를 코드로 작성하면 다음과 같다.
 
@@ -99,7 +107,7 @@ dataloaders_dict = {
 
 * 사용 가능한 device를 인식하고 모델을 변환
 * 각 epoch마다 train, val 과정 수행
-  * phase(`'train'`, `'val'`)에 따라 `model.train()`, `model.eval()` 모드 변경
+  * phase('train', 'val')에 따라 `model.train()`, `model.eval()` 모드 변경
 
 * train phase에서는 파라미터 업데이트를 위해 gradient 계산 활성화
   * `loss.backward()`로 backpropagation 수행
