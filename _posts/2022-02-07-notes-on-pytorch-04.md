@@ -1,7 +1,7 @@
 ---
 layout: post
 title:	"[PyTorch] PyTorch 사용법 정리 - train_model() 함수 제작"
-date:	2022-02-07 20:38:11
+date:	2022-02-06 20:38:11
 author: nyan101
 categories: 자습
 tags:	[전산, 개발]
@@ -59,7 +59,7 @@ with torch.no_grad():
 
 
 
-## `dataloaders_dict` 작성
+## dataloaders_dict 작성
 
 이전에는 train용 dataloader와 test용 dataloader를 별도로 관리했다. 그러나 관리의 편의성을 위해 둘을 dict로 모아 관리하는 방법이 자주 사용된다. 이는 이후 다른 글에서 다룰 `torchvision.transforms`의 활용에 있어서도 동일하다. 다음 작업을 수행하자.
 
@@ -93,7 +93,7 @@ dataloaders_dict = {
 
 
 
-## `train_model()` 함수 작성
+## train_model() 함수 작성
 
 이제 validation phase를 추가해 `train_model()` 함수를 작성하자. 수행할 작업은 다음과 같다
 
