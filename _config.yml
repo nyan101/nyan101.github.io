@@ -9,7 +9,7 @@ exclude:
   - "/vendor/"
 
 # Site settings
-timezone: Asia/Seoul
+timezone: "Asia/Seoul"
 title: Nyan101 Blog
 subtitle: "여기엔 무슨 말이 들어가야 할까요"
 email: [REDACTED]
