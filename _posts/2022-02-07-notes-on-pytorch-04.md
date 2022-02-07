@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[PyTorch] PyTorch 사용법 정리 - train_model() 함수 제작"
-date:   2022-02-07 20:27:11
+title:	"[PyTorch] PyTorch 사용법 정리 - train_model() 함수 제작"
+date:	2022-02-07 20:38:11
 author: nyan101
 categories: 자습
 tags:	[전산, 개발]
