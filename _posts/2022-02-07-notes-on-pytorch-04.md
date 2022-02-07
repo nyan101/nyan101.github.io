@@ -160,7 +160,7 @@ def train_model(net, criterion, optimizer, dataloaders_dict, num_epochs):
 
 ## 모델 학습 진행
 
-앞서 작성한 함수들을 이용해 모델 학습을 진행해보자.
+앞서 작성한 함수들을 이용해 모델 학습을 진행해보자. 편의상 별도 모델 클래스를 만드는 대신 `torchvision.models`의 `resnet18`을 사용했다.
 
 ```python
 import torch
