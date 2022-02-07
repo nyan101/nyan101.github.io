@@ -60,7 +60,7 @@ with torch.no_grad():
     print(f"test accuracy : {acc}/{tot} ({100*acc/tot}%)")
 ```
 
-모델의 학습과정을 보면 최종 검증 직전까지도 아무런 중간점검 없이 전체 epoch의 학습이 진행되는 것을 볼 수 있다. 그러나 모델을 본격적으로 학습시키기 위해서는 학습 과정에서 training loss를 계산하거나 주기적으로 validation을 진행하는 등, 학습의 진행도를 추적하기 위해 다양한 절차를 추가하는 경우가 많다. 이번 글에서느 학습 진행 단계에 다음 두 작업을 추가해보자.
+모델의 학습과정을 보면 최종 검증 직전까지도 아무런 중간점검 없이 전체 epoch의 학습이 진행되는 것을 볼 수 있다. 그러나 모델을 본격적으로 학습시키기 위해서는 학습 과정에서 training loss를 계산하거나 주기적으로 validation을 진행하는 등, 학습의 진행도를 추적하기 위해 다양한 절차를 추가하는 경우가 많다. 이번 글에서는 학습 과정에 다음 두 작업을 추가해보자.
 
 * validation phase 추가
 * train/val 단계마다 평균 손실(loss와)과 평균 정확도(acc) 계산
@@ -69,9 +69,11 @@ with torch.no_grad():
 
 ## dataloaders_dict 작성
 
-이전에는 train, test용 dataloader를 각각 따로 만들어 관리했다. 그러나 복잡한 코드에서는 관리의 편의성을 위해 둘을 dict로 모아 관리하는 방법이 자주 사용된다. 이는 이후 다른 글에서 다룰 `torchvision.transforms`의 활용에 있어서도 동일하다. 다음 작업을 수행하자.
+이전에는 train, test용 dataloader를 각각 따로 만들어 관리했다. 그러나 복잡한 코드에서는 관리의 편의성을 위해 둘을 dict로 모아 관리하는 방법이 자주 사용된다.[^1] 다음 작업을 수행하자.
 
-* `train_data`에서 일정 비율(80%)을 떼 train용으로, 나머지를 val용으로 분리한다
+[^1]: 이는 이후 다른 글에서 다룰 `torchvision.transforms`의 활용에 있어서도 동일하다.
+
+* `train_data`에서 일정 비율(80%)을 분리해 train용으로, 나머지를 val용으로 나눈다
 * 각 데이터셋을 `data.Dataloader`를 이용해 dataloader로 만든다
 * 두 dataloader를 적절한 키('train', 'val')와 함께 dictionary에 등록한다
 
@@ -108,11 +110,9 @@ dataloaders_dict = {
 * 사용 가능한 device를 인식하고 모델을 변환
 * 각 epoch마다 train, val 과정 수행
   * phase('train', 'val')에 따라 `model.train()`, `model.eval()` 모드 변경
-
-* train phase에서는 파라미터 업데이트를 위해 gradient 계산 활성화
-  * `loss.backward()`로 backpropagation 수행
-  * `optimizer.zero_grad()`, `optimizer.step()` 수행
-* val phase에서는 gradient 계산 비활성화(불필요한 계산 방지)
+  * train phase에서는 파라미터 업데이트를 위해 `set_grad_enabled` 활성화
+  * val phase에서는 불필요한 계산 방지를 위해 `set_grad_enabled` 비활성화
+  
 * 각 epoch, phase마다 loss, acc 출력
 
 이를 코드로 작성하면 다음과 같다.
@@ -168,7 +168,7 @@ def train_model(net, criterion, optimizer, dataloaders_dict, num_epochs):
 
 ## 모델 학습 진행
 
-앞서 작성한 함수들을 이용해 모델 학습을 진행해보자. 편의상 별도 모델 클래스를 만드는 대신 `torchvision.models`의 `resnet18`을 사용했다.
+앞서 작성한 함수들을 이용해 모델 학습을 진행해보자. 편의상 별도의 모델 클래스를 만드는 대신 `torchvision.models`의 `resnet18`을 사용했다.
 
 ```python
 import torch
@@ -194,7 +194,7 @@ optimizer = optim.Adam(params = net.parameters())
 train_model(net, criterion, optimizer, dataloaders_dict, num_epochs=5)
 ```
 
-이를 실행하면 다음과 같은 출력을 볼 수 있다.(`tqdm`을 통해 학습이 진행되는 동안 진행상태를 볼 수 있다)
+이를 실행하면 다음과 같은 출력을 볼 수 있다. 함께 출력되는 진행바는`tqdm`의 효과이다.
 
 ```
 Using device: cuda
