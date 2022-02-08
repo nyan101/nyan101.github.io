@@ -1,7 +1,7 @@
 ---
 layout: post
 title:	"[PyTorch] PyTorch 사용법 정리 - train_model() 함수 작성"
-date:	2022-02-06 20:38:11
+date:	2022-02-07 20:38:11
 author: nyan101
 categories: 자습
 tags:	[전산, 개발]
@@ -131,6 +131,7 @@ def train_model(net, criterion, optimizer, dataloaders_dict, num_epochs):
         # 각 epoch마다 'train', 'val'을 모두 진행
         for phase in ['train', 'val']:
             # 현재 phase에 따라 모델의 상태 변경
+            torch.set_grad_enabled(phase == 'train')
             if phase == 'train':
                 net.train()
             else:
@@ -145,19 +146,17 @@ def train_model(net, criterion, optimizer, dataloaders_dict, num_epochs):
             for x,y in tqdm(dataloaders_dict[phase]):
                 x = x.to(device)
                 y = y.to(device)
-                # train phase일 때만 gradient 계산
-                with torch.set_grad_enabled(phase == 'train'):
-                    output =  net(x)
-                    loss = criterion(output, y)
-                    # train phase일 때만 loss값을 기반으로 파라미터 갱신
-                    if phase == 'train':
-                        optimizer.zero_grad()
-                        loss.backward()
-                        optimizer.step()
-                    # loss, correct 계산
-                    _, y_pred = torch.max(output, 1)
-                    epoch_loss += loss.item() * x.size(0) # size(0): 해당 batch의 size
-                    epoch_corrects += torch.sum(y_pred == y.data)
+                output = net(x)
+                loss = criterion(output, y)
+                # train phase일 때만 loss값을 기반으로 파라미터 갱신
+                if phase == 'train':
+                    optimizer.zero_grad()
+                    loss.backward()
+                    optimizer.step()
+                # loss, correct 계산
+                _, y_pred = torch.max(output, 1)
+                epoch_loss += loss.item() * x.size(0) # size(0): 해당 batch의 size
+                epoch_corrects += torch.sum(y_pred == y.data)
             # epoch이 끝난 후 해당 epoch에서의 평균 손실, 정확도 계산 및 출력
             epoch_loss = epoch_loss / len(dataloaders_dict[phase].dataset)
             epoch_acc = epoch_corrects.double() / len(dataloaders_dict[phase].dataset)
