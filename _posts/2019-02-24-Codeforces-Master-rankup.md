@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Codeforces 오렌지(Master) 달성"
-date:   2019-02-24 18:45:11
+date:   2019-02-24 18:45:11 +0900
 author: nyan101
 categories: 근황
 tags:	[대회, Codeforces]

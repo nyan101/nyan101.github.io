@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "이산 로그 문제(DLP)에 대한 알고리즘(Shanks, Pollard-rho, Pohlig-Hellman)"
-date:   2020-05-08 16:36:14
+date:   2020-05-08 16:36:14 +0900
 author: nyan101
 categories: 전산
 tags:	[전산, 수학]

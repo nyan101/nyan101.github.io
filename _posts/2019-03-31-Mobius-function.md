@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Möbius 함수의 정의와 활용"
-date:   2019-03-31 21:38:49
+date:   2019-03-31 21:38:49 +0900
 author: nyan101
 categories: 전산
 tags:	[전산, 수학]

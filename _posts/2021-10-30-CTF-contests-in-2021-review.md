@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "2021년도 대회 후기 - 해킹(CTF) 편"
-date:   2021-10-30 18:40:29
+date:   2021-10-30 18:40:29 +0900
 author: nyan101
 categories: 근황
 tags:	대회

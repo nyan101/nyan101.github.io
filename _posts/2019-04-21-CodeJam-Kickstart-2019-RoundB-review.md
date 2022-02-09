@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Code Jam Kickstart 2019 Round B 후기"
-date:   2019-04-21 15:42:21
+date:   2019-04-21 15:42:21 +0900
 author: nyan101
 categories: 근황
 tags:	대회

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Coq 입문] Ch00. Overview"
-date:   2019-01-28 21:02:16
+date:   2019-01-28 21:02:16 +0900
 author: nyan101
 categories: 자습
 tags:	[Coq, Software Foundations]

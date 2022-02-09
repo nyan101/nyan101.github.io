@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "새 맥북프로 생긴 후기(feat. Softeer)"
-date:   2022-01-20 19:05:22
+date:   2022-01-20 19:05:22 +0900
 author: nyan101
 categories: 근황
 tags:	대회

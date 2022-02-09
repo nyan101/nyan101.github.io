@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Facebook Hacker Cup 2019 후기"
-date:   2019-07-14 16:09:22
+date:   2019-07-14 16:09:22 +0900
 author: nyan101
 categories: 근황
 tags:	대회

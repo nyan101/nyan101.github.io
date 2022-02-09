@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "2020년도 대회 후기"
-date:   2020-11-18 20:09:32
+date:   2020-11-18 20:09:32 +0900
 author: nyan101
 categories: 근황
 tags:	대회

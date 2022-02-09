@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[ML] Knockoff Net: 랜덤한 입력으로 다른 모델을 모방할 수 있을까?"
-date:   2019-11-03 11:12:33
+date:   2019-11-03 11:12:33 +0900
 author: nyan101
 categories: 자습
 tags:	[전산, 개발]

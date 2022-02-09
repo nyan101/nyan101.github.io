@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Code Jam Kickstart 2021 Round E 후기"
-date:   2021-09-14 20:51:38
+date:   2021-09-14 20:51:38 +0900
 author: nyan101
 categories: 근황
 tags:	대회

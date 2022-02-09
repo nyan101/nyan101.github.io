@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "리디북스 페이퍼 프로(Ridi Paper Pro) 사용기"
-date:   2020-05-18 21:49:40
+date:   2020-05-18 21:49:40 +0900
 author: nyan101
 categories: 근황
 tags:

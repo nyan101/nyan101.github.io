@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "코딩에서 답지를 보는것에 대한 개인적인 생각"
-date:   2019-04-19 12:34:51
+date:   2019-04-19 12:34:51 +0900
 author: nyan101
 categories: 잡담
 tags:	[잡담]

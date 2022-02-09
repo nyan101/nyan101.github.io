@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Facebook Hacker Cup 2020 후기"
-date:   2020-08-30 20:35:19
+date:   2020-08-30 20:35:19 +0900
 author: nyan101
 categories: 근황
 tags:	대회

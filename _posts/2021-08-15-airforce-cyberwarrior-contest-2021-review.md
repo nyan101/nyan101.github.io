@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "공군 사이버전사 경연대회 후기"
-date:   2021-08-15 23:57:12
+date:   2021-08-15 23:57:12 +0900
 author: nyan101
 categories: 근황
 tags:	대회

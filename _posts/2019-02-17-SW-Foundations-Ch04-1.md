@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Coq 입문] Ch04. Polymorphism & Higher-Order Functions (1)"
-date:   2019-02-17 22:22:37
+date:   2019-02-17 22:22:37 +0900
 author: nyan101
 categories: 자습
 tags:	[Coq, Software Foundations]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Google Code Jam 2020 후기"
-date:   2020-06-11 00:09:32
+date:   2020-06-11 00:09:32 +0900
 author: nyan101
 categories: 근황
 tags:	대회

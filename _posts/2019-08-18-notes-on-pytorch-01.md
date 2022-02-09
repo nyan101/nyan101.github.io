@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[PyTorch] 01. PyTorch의 기본 구조"
-date:   2019-08-18 22:00:21
+date:   2019-08-18 22:00:21 +0900
 author: nyan101
 categories: 자습
 tags:	[전산, 개발]

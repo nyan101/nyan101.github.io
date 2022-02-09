@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "이데일리 Coding Challenge 후기"
-date:   2018-11-07 21:56:05
+date:   2018-11-07 21:56:05 +0900
 author: nyan101
 categories: 근황
 tags:	대회

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "FireEye Cyber Defense Live 2019 Seoul 후기"
-date:   2019-04-28 15:43:33
+date:   2019-04-28 15:43:33 +0900
 author: nyan101
 categories: 근황
 tags:	컨퍼런스

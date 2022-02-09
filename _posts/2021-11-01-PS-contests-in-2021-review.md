@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "2021년도 대회 후기 - 알고리즘(PS) 편"
-date:   2021-11-01 12:56:49
+date:   2021-11-01 12:56:49 +0900
 author: nyan101
 categories: 근황
 tags:	대회

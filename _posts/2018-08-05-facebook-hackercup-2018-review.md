@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Facebook Hacker Cup 2018 후기"
-date:   2018-08-05 05:12:07
+date:   2018-08-05 05:12:07 +0900
 author: nyan101
 categories: 근황
 tags:	대회

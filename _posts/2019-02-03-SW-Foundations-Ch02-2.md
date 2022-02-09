@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Coq 입문] Ch02. Proof by tactics (2)"
-date:   2019-02-03 22:16:28
+date:   2019-02-03 22:16:28 +0900
 author: nyan101
 categories: 자습
 tags:	[Coq, Software Foundations]

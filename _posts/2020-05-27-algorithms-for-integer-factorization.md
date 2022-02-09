@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "소인수분해 알고리즘(Pollard-(p-1), Pollard-rho, Dixon's Random Square)"
-date:   2020-05-27 01:25:33
+date:   2020-05-27 01:25:33 +0900
 author: nyan101
 categories: 전산
 tags:	[전산, 수학]

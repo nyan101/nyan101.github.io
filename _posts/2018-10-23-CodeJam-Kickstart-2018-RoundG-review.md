@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Code Jam Kickstart 2018 Round G 후기"
-date:   2018-10-23 23:56:03
+date:   2018-10-23 23:56:03 +0900
 author: nyan101
 categories: 근황
 tags:	대회

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Coq 입문] Ch01. Functional Programming in Coq (2)"
-date:   2019-01-31 20:01:32
+date:   2019-01-31 20:01:32 +0900
 author: nyan101
 categories: 자습
 tags:	[Coq, Software Foundations]
