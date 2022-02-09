@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[PyTorch] PyTorch 사용법 정리 - 모듈 조립으로 CNN 만들기"
+title:  "[PyTorch] 03. torch.nn 모듈 조립으로 CNN 만들기"
 date:   2019-08-25 16:39:46
 author: nyan101
 categories: 자습

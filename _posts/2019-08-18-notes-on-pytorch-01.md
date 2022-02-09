@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[PyTorch] PyTorch 사용법 정리 - 기본 구조"
+title:  "[PyTorch] 01. PyTorch의 기본 구조"
 date:   2019-08-18 22:00:21
 author: nyan101
 categories: 자습

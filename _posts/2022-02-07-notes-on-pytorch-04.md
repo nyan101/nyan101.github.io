@@ -1,6 +1,6 @@
 ---
 layout: post
-title:	"[PyTorch] PyTorch 사용법 정리 - train_model() 함수 작성"
+title:	"[PyTorch] 04. validation phase를 추가해 train_model() 함수 작성하기"
 date:	2022-02-07 20:38:11
 author: nyan101
 categories: 자습

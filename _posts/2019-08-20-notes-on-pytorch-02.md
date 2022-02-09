@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[PyTorch] PyTorch 사용법 정리 - 모델 클래스 만들기"
+title:  "[PyTorch] 02. nn.Module로 모델 클래스 만들기"
 date:   2019-08-20 21:53:17
 author: nyan101
 categories: 자습

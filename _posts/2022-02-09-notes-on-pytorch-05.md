@@ -1,6 +1,6 @@
 ---
 layout: post
-title:	"[PyTorch] PyTorch 사용법 정리 - 나만의 Dataset 제작"
+title:	"[PyTorch] 05. data.Dataset으로 나만의 Dataset 클래스 만들기"
 date:	2022-02-08 18:53:27
 author: nyan101
 categories: 자습
