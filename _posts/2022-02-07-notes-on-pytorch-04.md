@@ -144,8 +144,7 @@ def train_model(net, criterion, optimizer, dataloaders_dict, num_epochs):
             epoch_corrects = 0
             # tqdm : 진행바(progress bar)를 표시하기 위한 라이브러리
             for x,y in tqdm(dataloaders_dict[phase]):
-                x = x.to(device)
-                y = y.to(device)
+                x, y = x.to(device), y.to(device)
                 output = net(x)
                 loss = criterion(output, y)
                 # train phase일 때만 loss값을 기반으로 파라미터 갱신
