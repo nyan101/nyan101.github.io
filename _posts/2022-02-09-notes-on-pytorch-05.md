@@ -12,9 +12,9 @@ use_math: true
 
 ## 자체 Dataset 클래스의 필요성
 
-지금까지의 실습에서는 `torchvision.datasets`에서 제공하는 데이터셋을 사용했다. `torchvision` 라이브러리는 vision과 관련된 약 30여개의 데이터셋을 제공하며, 전체 목록은 https://pytorch.org/vision/stable/datasets.html에서 확인할 수 있다.
+지금까지의 실습에서는 `torchvision.datasets`에서 제공하는 데이터셋을 사용했다. `torchvision` 라이브러리는 vision과 관련된 약 30여개의 데이터셋을 제공하며, 전체 목록은 [공식 홈페이지](https://pytorch.org/vision/stable/datasets.html)에서 확인할 수 있다.
 
-그러나 실습이나 연구를 진행하다보면, 기존에 잘 알려진 데이터셋 외에 자신만의 데이터로 학습을 진행해야 하는 상황이 자주 발생한다. 이를 위해 `torch.utils.data.dataloader`에 넘길 수 있는 나만의 `Dataset` 객체를 만드는 법을 알아보자.
+그러나 실습이나 연구를 진행하다 보면, 기존에 잘 알려진 데이터셋 외에 자신만의 데이터로 학습을 진행해야 하는 상황이 자주 발생한다. 이를 위해 `torch.utils.data.dataloader`에 넘길 수 있는 나만의 `Dataset` 객체를 만드는 법을 알아보자.
 
 
 
@@ -32,7 +32,7 @@ data/cat/nsdf3.png
 data/cat/[...]/asd932_.png
 ```
 
-이렇게 `..[공통경로]/[라벨명]/[파일명]`으로 정리된 구조를 가질 때, 다음과 같은 코드로 손쉽게 dataset 객체를 생성할 수 있다.
+이렇게 이미지 파일들이 `..[공통경로]/[라벨명]/[파일명]`으로 정리된 구조를 가질 때, 다음과 같은 코드로 손쉽게 dataset 객체를 생성할 수 있다.
 
 ```python
 import torchvision
@@ -50,7 +50,7 @@ data_transform = transforms.Compose([
 train_data = torchvision.datasets.ImageFolder(root='./data', transform=data_transform)
 
 # 이후는 이전 포스팅에서의 코드와 동일하다
-train_size = int(len(train_data)*0.8) # 전체의 80%를 학습용으로 사용
+train_size = int(len(train_data)*0.8)
 val_size = len(train_data) - train_size
 train_dataset, val_dataset = data.dataset.random_split(train_data, [train_size, val_size])
 
@@ -60,13 +60,13 @@ dataloaders_dict = {
 }
 ```
 
-일반적인 이미지 파일에 대한 실습은 `ImageFolder()` 함수로 충분하며, 좀더 세부적인 조절을 필요로 하는 경우 다음과 같이 `torch.data.Dataset` 클래스를 직접 구현할 수도 있다.
+이렇듯 일반적인 이미지 파일에 대한 실습은 `ImageFolder()` 함수로 충분하다. 그러나 train, val 과정에 서로 다른 전처리를 적용하거나 데이터파일의 폴더 구조가 복잡한 구성을 가지는 등, 좀더 세부적인 작업을 필요로 하는 경우 다음과 같이 `torch.data.Dataset` 클래스를 직접 구현해야 한다.
 
 
 
 ## 방법 2. torch.data.Dataset 클래스 작성
 
-여기서는 `torchvision`이 아닌 `torch` 에서 제공하는 클래스를 통해 `torch.data.Dataset` 클래스를 직접 작성해보기로 하자. `Dataset` 클래스는 크게 다음과 같은 메소드를 가진다
+여기서는 torchvision이 아닌 torch에서 제공하는 클래스를 통해 `torch.data.Dataset` 클래스를 직접 작성해보기로 하자. Dataset 클래스는 크게 다음과 같은 메소드를 가진다
 
 * `__init__(self)` : 초기화 함수
 * `__len__(self)` : 전체 데이터셋의 개수를 리턴하는 함수
@@ -74,9 +74,9 @@ dataloaders_dict = {
 
 이를 구현해보자. 우리가 만들 Dataset 클래스는 다음 기능을 가진다.
 
-* 데이터 파일 경로들의 리스트(`path_list`)를 받아 관리
-* 현재 데이터셋이 어떤 phase(`train`, `val`)에 사용되는지 관리
-* 적용중인 phase(`train`, `val`)에 따라 서로 다른 로직 사용
+* 데이터 파일 경로들의 리스트(path\_list)를 받아 관리
+* 현재 데이터셋이 어떤 phase('train', 'val')에 사용되는지 관리
+* 적용중인 phase에 따라 서로 다른 로직 사용
 
 이를 코드로 작성하면 아래와 같다. `transforms_dict`가 사용되는 방식에 유의하자.
 
@@ -127,7 +127,7 @@ class MyDataset(data.Dataset):
 
 ```
 
-이렇게 만들어진 `MyDataset` 클래스는 다음과 같이 사용할 수 있다.
+이렇게 만들어진 MyDataset 클래스는 다음과 같이 사용할 수 있다.
 
 ```python
 from glob import glob
