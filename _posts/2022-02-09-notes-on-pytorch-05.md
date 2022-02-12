@@ -70,7 +70,7 @@ dataloaders_dict = {
 
 * `__init__(self)` : 초기화 함수
 * `__len__(self)` : 전체 데이터셋의 개수를 리턴하는 함수
-* `__getitem(self, idx)__` : idx번째 데이터를 (x, y) 형태의 tuple로 리턴하는 함수. 이때 x, y는 `torch.Tensor()`, 혹은 텐서로 변환될 수 있는 대상이어야 한다.
+* `__getitem(self, idx)__` : idx번째 데이터를 (x, y) 형태의 tuple로 리턴하는 함수. 이때 x, y는 torch.Tensor(), 혹은 텐서로 변환될 수 있는 대상이어야 한다.
 
 이를 구현해보자. 우리가 만들 Dataset 클래스는 다음 기능을 가진다.
 
@@ -89,7 +89,6 @@ class MyDataset(data.Dataset):
     def __init__(self, path_list, phase='train'):
         self.path_list = path_list
         self.phase = phase
-
         # phase에 따라 서로 다른 전처리(transform) 적용
         img_size = 224
         img_mean = (0.485, 0.456, 0.406)
@@ -109,7 +108,6 @@ class MyDataset(data.Dataset):
                 transforms.Normalize(img_mean, img_std)
             ])
         }
-        
         # 문자열로 된 label들을 int로 바꾸기 위한 dict. 일관성을 위해 sorted 사용
         labels = sorted(list({ path.split('/')[-2] for path in path_list }))
         self.label_to_idx = { label : idx for idx,label in enumerate(labels) }
