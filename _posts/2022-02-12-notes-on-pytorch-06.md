@@ -95,7 +95,7 @@ wandb.init(project='my-wandb-project', name='run-1', config=config, save_code=Fa
 
 
 
-세션이 활성화되면 `wandb.log()`를 통해 해당 세션에서 주요 값들을 추적할 수 있다.
+세션이 활성화되면 `wandb.log()`를 통해 해당 세션에서 값들을 기록할 수 있다.
 
 ```python
 wandb.log({'var1' : value, 'var2' : value2})
@@ -128,7 +128,7 @@ def train_model(net, criterion, optimizer, dataloaders_dict, num_epochs, model_n
     }
     ### 새 wandb 세션 시작 ###
     wandb.init(reinit=True, project='my-wandb-project', config=config)
-    ### 모델 추적을 위한 .watch 호출 ###
+    ### 모델 파라미터(그래디언트 등) 추적을 위한 .watch 호출 ###
     wandb.watch(net)
     
     for epoch in range(num_epochs):
@@ -161,7 +161,10 @@ def train_model(net, criterion, optimizer, dataloaders_dict, num_epochs, model_n
             epoch_loss = epoch_loss / len(dataloaders_dict[phase].dataset)
             epoch_acc = epoch_corrects.double() / len(dataloaders_dict[phase].dataset)
             ### 각 epoch마다 해당 phase에서의 loss, acc을 기록 ###
-            wandb.log({f'{phase}_epoch_loss' : epoch_loss, f'{phase}_epoch_acc' : epoch_acc})
+            wandb.log({
+                f'{phase}_epoch_loss' : epoch_loss,
+                f'{phase}_epoch_acc' : epoch_acc
+            })
             print(f"{phase} Loss: {epoch_loss:.4f}  Acc: {epoch_acc:.4f} ({epoch_corrects}/{len(dataloaders_dict[phase].dataset)})")
     ### 학습이 끝난 후 세션 종료를 위한 .finish() 호출 ###
     wandb.finish()
@@ -205,7 +208,7 @@ train_model(net, criterion, optimizer, dataloaders_dict, num_epochs=4, model_nam
 
 ![wandb-charts](../assets/images/2022/02/wandb-charts.jpg)
 
-별다른 설정을 하지 않았다면 `wandb.log()` 를 통해 기록된 값들이 각 세션별 plot으로 그려지며, 그 외에 이미지, 사운드와 같은 미디어의 경우 별도의 적절한 형태로 표시된다.
+별다른 설정을 하지 않았다면 `wandb.log()` 를 통해 기록된 값들이 각 세션별 plot으로 그려지며, 그 외에 이미지, 사운드 등 미디어의 경우 별도의 적절한 형태로 표시된다.
 
 왼쪽 목록에서 세션 이름을 클릭하면 세부 정보를 확인할 수 있다. 각 탭에서 볼 수 있는 정보에 대해 알아보자.
 
