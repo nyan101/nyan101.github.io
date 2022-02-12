@@ -18,7 +18,7 @@ use_math: true
 
 
 
-### 방법 1. torchvision.datasets.ImageFolder() 이용
+## 방법 1. torchvision.datasets.ImageFolder() 이용
 
 이미지 데이터의 경우 `torchvision.datasets.ImageFolder()` 함수를 이용해 간단히 처리 가능하다. 각 이미지 파일들이 다음과 같은 구조로 정리되어 있다고 가정하자.
 

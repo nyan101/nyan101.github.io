@@ -41,7 +41,7 @@ val Loss: 1.1661  Acc: 0.5980 (5980/10000)
 
 
 
-### wandb란 무엇인가 & 가입 및 초기 설정
+## wandb란 무엇인가 & 가입 및 초기 설정
 
 wandb는 ~~Wan DB가 아니라~~ Weight & Bias의 약자로, 모델의 학습 진행상황을 추적하고 자동화된 파라미터 튜닝을 지원하는 웹 도구이다. 공식 홈페이지(https://wandb.ai/)에서 github나 gmail 계정을 이용해 쉽게 가입이 가능하며, 처음 로그인하면  다음과 같은 화면을 볼 수 있다.
 
@@ -58,7 +58,7 @@ wandb login
 
 
 
-### wandb를 이용해 학습 진행상황 로깅하기
+## wandb를 이용해 학습 진행상황 로깅하기
 
 wandb의 주요 기능은 다음과 같다.
 
@@ -107,7 +107,7 @@ wandb.log({'var1' : value, 'var2' : value2})
 
 
 
-### train_model() 함수에 wandb 코드 추가하기
+## train_model() 함수에 wandb 코드 추가하기
 
 이제 [이전 글](https://nyan101.github.io/blog/notes-on-pytorch-04)에서 작성했던 `train_model()` 함수에 wandb와 연동하는 코드를 추가해보자. 기존 코드에서 추가된 부분을 주석으로 강조했다.
 
@@ -127,7 +127,7 @@ def train_model(net, criterion, optimizer, dataloaders_dict, num_epochs, model_n
         'some-other-config' : 'you can put any value here'
     }
     ### 새 wandb 세션 시작 ###
-    wandb.init(reinit=True, project='first-wandb-project', config=config)
+    wandb.init(reinit=True, project='my-wandb-project', config=config)
     ### 모델 추적을 위한 .watch 호출 ###
     wandb.watch(net)
     
@@ -175,7 +175,6 @@ net = models.resnet18()
 net.fc = nn.Linear(in_features=net.fc.in_features, out_features=10)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(params = net.parameters())
-
 train_model(net, criterion, optimizer, dataloaders_dict, num_epochs=4, model_name='resnet18')
 
 # resnet34로 학습 진행
@@ -183,7 +182,6 @@ net = models.resnet34()
 net.fc = nn.Linear(in_features=net.fc.in_features, out_features=10)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(params = net.parameters())
-
 train_model(net, criterion, optimizer, dataloaders_dict, num_epochs=4, model_name='resnet34')
 
 # vgg16으로 학습 진행
@@ -191,8 +189,8 @@ net = models.vgg16(pretrained=True)
 net.classifier[6] = nn.Linear(in_features=net.classifier[6].in_features, out_features=10)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(params = net.parameters())
-
 train_model(net, criterion, optimizer, dataloaders_dict, num_epochs=4, model_name='vgg16(pretrained)')
+
 ```
 
 코드를 실행하고 출력을 보면 매 train_model() 호출마다[^1] 새로운 wandb 세션이 만들어지는 것을 볼 수 있다.
@@ -201,7 +199,7 @@ train_model(net, criterion, optimizer, dataloaders_dict, num_epochs=4, model_nam
 
 
 
-#### 웹에서 wandb 결과 확인하기
+## 웹에서 wandb 결과 확인하기
 
 위 코드를 보면 각 batch마다 loss를, 각 epoch/phase마다 loss, acc을 기록하는 것을 볼 수 있다. 웹브라우저를 열어 wandb에 접속하면 학습이 진행됨에 따라 대시보드에 실시간으로 차트가 그려진다.
 
