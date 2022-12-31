@@ -52,6 +52,7 @@ use_math: true
 
 작년에는 결국 수상권 안에 들지 못해 아쉬움이 많이 남았던 대회였는데, 올해는 운이 따랐는지 스타포스(?) +4성에 시상식까지 참석하면서 나름 인상적인 경험을 할 수 있었다.
 
+
 ## CCE 사이버공격 방어대회
 
 * 일시 : 9.24.(예선), 10.27.(본선)
@@ -69,9 +70,7 @@ use_math: true
 <img src="/assets/images/2022/12/cce-contest-02.jpg" style="width:49%;display:inline-block">
 </div>
 
-이번에는 온라인이었던 작년과 달리, 대구 EXCO에서 오프라인으로 본선을 진행했다.
-
-<img src="/assets/images/2022/12/cce-scoreboard.jpg" style="width:80%">
+온라인이었던 작년과 달리, 대구 EXCO에서 오프라인으로 본선을 진행했다.
 
 작년 실시간 방어 분야에서 헤멨던 만큼 올해는 나름 준비를 해갔지만, 웹서버 패치 방식이었던 작년과 달리 바이너리 패치 방식이어서 거의 손을 대지 못했다. NodeJS서버에 바이너리 실행파일이 올라가있고 이를 패치해 업로드하는 형식이었는데, 바이너리라는 특성상 오류가 나면 디버깅을 하지 못한다는 생각에 팀원들끼리 상의 후에 "괜히 잘못 건드려서 SLA Fail 패널티 받느니 그냥 기본점수만 받고 들어가자" 라는 합의가 진행됐다.
 
@@ -85,6 +84,28 @@ use_math: true
 </div>
 
 대회가 끝난 후 Theori 주관으로 참가자들 간 애프터파티가 열렸다. 오랜만에 보는 낮익은 얼굴들과 즐거운 시간을 보낼 수 있었다.
+
+
+## DFC 디지털 포렌식 챌린지
+
+* 일시 : 5.1. ~ 9.30.
+* 주최/주관 : 한국정보보호학회
+* 결과 : 장려상(7위)
+
+<img src="/assets/images/2022/12/dfc-contest-main.jpg" style="width:85%">
+
+한국정보보호학회에서 주관하는 대회로, 매달 다양한 주제의 포렌식 문제가 공개되고 이를 해결해 보고서를 제출하는 형식의 대회이다. 학과 선배, 동기들과 함께 6인 팀을 구성해 나갔으며, 주기적으로 온라인 회의를 통해 각자의 진행상황을 공유했다. 장장 5개월에 걸쳐 진행되는 만큼 페이스 조절이 어려운 대회였다.
+
+<img src="/assets/images/2022/12/dfc-contest-award-01.jpg" style="width:85%">
+
+그렇게 긴 여정이 끝나고 최종 7위라는 결과를 얻었다. 6위 팀까지 장려상이 수여된다고 알고있어 다들 낙심하던 중, 해외 팀들의 참여 부족으로 국내 수상팀 숫자에 TO가 하나 늘어나면서 아슬아슬하게 수상 막차를 탈 수 있었다.
+
+<div style="width:90%;min-width:320px;margin:0 auto;display:flex;justify-content:center">
+<img src="/assets/images/2022/12/dfc-contest-award-02.jpg" style="width:49%;display:inline-block">
+<img src="/assets/images/2022/12/dfc-contest-award-03.jpg" style="width:49%;display:inline-block">
+</div>
+
+번외로, 상패에 영문 수상명이 "Participation Prize"로 되어있어 팀원들끼리 농담조로 "이거 참가상 아니야?" 라는 말을 했는데 구글검색 결과 장려상이 영어로 Participation Prize라는 사실을 알게 되었다.~~그냥 내가 영알못이었던 걸로~~
 
 ---
 
