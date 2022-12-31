@@ -19,7 +19,7 @@ use_math: true
 * 주관 : 군사안보지원사령부(現 국군방첩사령부)
 * 결과 : 우수(2위)
 
-<img src="/assets/images/2022/12/dssc-contest-award.jpg" style="width:49%">
+<img src="/assets/images/2022/12/dssc-contest-award.jpg" style="width:45%">
 
 군사안보지원사령부에서 주관하는 전군(육+해+공+국직) 대상 경진대회이다. 작년엔 코로나로 대회가 취소되는 탓에 출전하지 못했지만 다행히 작년 성적을 인정받아 올해 공군 대표단에 포함되어 나갈 수 있었다. 필기와 실기가 합쳐진 형식이었으며, 필기는 보안규정이나 정보보안 관련 지식을 묻는 지필고사 형식, 실기는 Jeopary 형식의 CTF로 진행되었다.
 
@@ -34,18 +34,18 @@ use_math: true
 * 주최/주관 : 대한민국 국방부 / 사이버작전사령부
 * 결과 : 국방트랙 우수(2위)
 
-<img src="/assets/images/2022/12/whitehat-contest-main.jpg" style="width:90%">
+<img src="/assets/images/2022/12/whitehat-contest-main.jpg" style="width:85%">
 
 사이버작전사령부에서 주관하는 CTF로, 일반 / 청소년 / 국방트랙이 별도로 분리되어 진행된다.
 
-<div style="width:90%;margin:0 auto;display:flex;justify-content:space-evenly">
+<div style="width:90%;min-width:320px;margin:0 auto;display:flex;justify-content:space-evenly">
 <img src="/assets/images/2022/12/whitehat-contest-award-01.jpg" style="width:49%;display:inline-block">
 <img src="/assets/images/2022/12/whitehat-contest-award-02.jpg" style="width:49%;display:inline-block">
 </div>
 
 작년에 아쉽게 5위를 했던 기억이 있어 다들 마음을 다잡고 대회에 임했다. ~~지금까지 모든 대회에서 그랬듯이~~ 본선 초반 빠르게 문제를 풀어 중간 1위를 달성했지만, 중반 이후 더 문제가 풀리지 않아 점차 추격해오는 다른 팀들을 긴장어린 눈으로 바라봤다. 막판에 추가된 문제들 중 암호학 관련 문제들이 포함되어있어 빠르게 추가 점수를 얻었고, 그 덕분인지 대회 마지막까지 최종 2위(합참의장상) 자리를 지켜낼 수 있었다.
 
-<div style="width:90%;margin:0 auto;display:flex;justify-content:center">
+<div style="width:90%;min-width:320px;margin:0 auto;display:flex;justify-content:center">
 <img src="/assets/images/2022/12/whitehat-contest-award-03.jpg" style="width:49%;display:inline-block">
 <img src="/assets/images/2022/12/whitehat-contest-award-04.jpg" style="width:49%;display:inline-block">
 </div>
@@ -60,11 +60,11 @@ use_math: true
 
 [^1]: 분야별 3위까지 상이 수여된다...
 
-<img src="/assets/images/2022/12/cce-main.jpg" style="width:90%">
+<img src="/assets/images/2022/12/cce-main.jpg" style="width:85%">
 
 국가정보원에서 주관하는 CTF로 일반인들을 위한 일반분야와 공공기관 종사자들을 위한 공공분야로 나눠 진행된다. 예선은 일반적인 Jeopardy(문제풀이) 방식, 본선은 Jeopardy와 함께 공격받는 Live 서버를 실시간으로 방어하는 방식으로 진행되었다.
 
-<div style="width:90%;margin:0 auto;display:flex;justify-content:space-evenly">
+<div style="width:90%;min-width:320px;margin:0 auto;display:flex;justify-content:space-evenly">
 <img src="/assets/images/2022/12/cce-contest-01.jpg" style="width:49%;display:inline-block">
 <img src="/assets/images/2022/12/cce-contest-02.jpg" style="width:49%;display:inline-block">
 </div>
@@ -73,13 +73,13 @@ use_math: true
 
 <img src="/assets/images/2022/12/cce-scoreboard.jpg" style="width:80%">
 
-작년에 헤멨던 만큼 실시간 방어 분야를 위해 나름 준비를 해갔지만, 웹서버 패치 방식이었던 작년과 달리 바이너리 패치 방식이어서 거의 손을 대지 못했다. NodeJS서버에 바이너리 실행파일이 올라가있고 이를 패치해 업로드하는 형식이었는데, 바이너리라는 특성상 오류가 나면 디버깅을 하지 못한다는 생각에 팀원들끼리 상의 후에 "괜히 잘못 건드려서 SLA Fail 패널티 받느니 그냥 기본점수만 받고 들어가자" 라는 합의가 진행됐다.
+작년 실시간 방어 분야에서 헤멨던 만큼 올해는 나름 준비를 해갔지만, 웹서버 패치 방식이었던 작년과 달리 바이너리 패치 방식이어서 거의 손을 대지 못했다. NodeJS서버에 바이너리 실행파일이 올라가있고 이를 패치해 업로드하는 형식이었는데, 바이너리라는 특성상 오류가 나면 디버깅을 하지 못한다는 생각에 팀원들끼리 상의 후에 "괜히 잘못 건드려서 SLA Fail 패널티 받느니 그냥 기본점수만 받고 들어가자" 라는 합의가 진행됐다.
 
 여기에 Jeopary 방식은 역대급 난이도를 자랑했다(...) 우리 팀은 암호학 관련 문제를 겨우 풀었는데 그나마도 해당 주제에 대한 배경지식이 부족해 대회 시간 내내 인터넷에서 논문을 찾아가며 공부해야 풀리는 문제였다. 2020년대에 나온 논문을 참조해가며 Sage 코드를 작성했고, 몇 번의 시행착오 끝에 플래그를 획득할 수 있었다. 당시 중간 스코어보드를 확인해보니 공공분야 3위여서 혹시나 하는 마음으로 기도했지만 13시간 대회 중 종료 1시간 미만을 남겨두고 역전당해 최종 순위는 4위로 내려갔다.~~후임, "매년 아깝게 그럴거면 차라리 그냥 20등을 하세요..."~~
 
 대회가 끝난 후 확인해보니 공공분야 본선에 진출했던 20개 팀들 중 과반이 넘는 12개 팀이 대회 시간동안 1문제도 해결하지 못했다는 것을 알 수 있었다. 조금이라도 풀었으니 그보다는 낫다고 위안삼을 수도 있지만 일반부 스코어보드의 ~~기러기목 오리과의 모 동물이름을 쓰는~~ 괴수집단들을 보면 아직 갈길이 멀다는 걸 새삼 깨닫게 된다.
 
-<div style="width:90%;margin:0 auto;display:flex;justify-content:space-evenly">
+<div style="width:90%;min-width:320px;margin:0 auto;display:flex;justify-content:space-evenly">
 <img src="/assets/images/2022/12/cce-party-01.jpg" style="width:49%;display:inline-block">
 <img src="/assets/images/2022/12/cce-party-02.jpg" style="width:49%;display:inline-block">
 </div>
