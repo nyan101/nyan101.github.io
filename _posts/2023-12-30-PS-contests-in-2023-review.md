@@ -28,11 +28,11 @@ use_math: true
 *"올해 티셔츠는 구글 대신 메타에서 받았습니다"*
 
 * 주최/주관 : 메타(Meta)
-* 결과 : Round 2 진출 + 티셔츠 획득
+* 결과 : **Round 2 진출 + 티셔츠 획득**
 
 <img src="/assets/images/2023/12/hackercup-main.jpg" style="width:85%">
 
-이제 주관사 명칭이 바뀐(?) 프로그래밍 대회이다. Round 1에서 World Final까지 총 5단계로 이뤄지며, 각 라운드의 진출요건은 다음과 같다.
+페이스북 운영사인 메타(Meta)에서 주관하는 프로그래밍 대회이다. Round 1에서 World Final까지 총 5단계로 이뤄지며, 각 라운드의 진출요건은 다음과 같다.
 
 * Practice Round
   * 이전 Qualification Round와 달리, 대회에 영향을 주지 않는 연습 라운드이다.
@@ -47,11 +47,11 @@ use_math: true
 * Round 3
   * Round 3 참가자들 중 상위 25명이 World Final에 진출
 * World Final
-  * 코드잼과 동일
+  * 천상계(...)
 
 [^1]: Round 1 진행 중, 서버 오류가 생기면서 양수 점수를 얻은 사람 모두를 Round 2로 진출시켰다(...)
 
-<img src="/assets/images/2023/12/hackercup-cerficiate.jpg" style="width:85%">
+<img src="/assets/images/2023/12/hackercup-certificate.jpg" style="width:85%">
 
 올해는 코드잼도 없어 이번에야말로 해커컵 티셔츠를 받겠다는 마음으로 대회에 참가했다. Round 1 진행 중 갑자기 답안 제출이 안 되는 문제가 발생했고, 빠르게 SNS를 열어보니 나뿐만이 아닌 많은 사람들이 동일한 문제를 겪고있다는 걸 확인할 수 있었다. 한밤중이었던 만큼 *"서버 오류면 다음에 다시 하던지 따로 공지를 올려주겠지"*라는 생각으로 자러 들어갔고, 결과적으로 한 문제 이상 푼 사람 모두를 Round 2로 진출시키겠다는 공지가 올라왔다.
 
@@ -59,7 +59,7 @@ use_math: true
 
 결국 티셔츠 등수(2,000등)와 Round 3 진출등수(500등) 사이인 768등으로 마감했고, 티셔츠를 받았다. [예전 티셔츠](https://nyan101.github.io/blog/facebook-hackercup-2020-review)와 거의 동일한 디자인이지만 이번엔 어깨에 **FACEBOOK**이 아닌 **∞ Meta**라고 적혀있다는 차이가 있다.
 
-<img src="/assets/images/2023/12/hackercup-tshirt.jpg" style="width:85%">
+<img src="/assets/images/2023/12/hackercup-tshirt.jpg" style="width:85%; border:1px solid black">
 
 
 ## Woori 코딩 페스티벌 성인부
@@ -68,9 +68,9 @@ use_math: true
 
 * 일시 : 5.13.(예선), 5.27.(본선)
 * 주최/주관 : 우리FIS
-* 결과 : 장려상(언어별 3~4위)
+* 결과 : **장려상(언어별 3~4위)**
 
-<img src="/assets/images/2022/13/woori-coding-festival.jpg" style="width:85%">
+<img src="/assets/images/2023/12/woori-coding-main.jpg" style="width:85%">
 
 우리FIS에서 진행한 코딩대회로 YBM센터에서 대회를 진행했다는 게 인상적이었다. `C`, `Java`, `Python`의 세 가지 언어 중 하나를 택해 응시할 수 있었으며, 개인적으로 익숙한 `Python`을 선택했다. 각 언어별로 1~4등까지 총 12명에게 상장과 상금이 제공되는 비교적 작은 규모로 진행되었다.
 
@@ -92,13 +92,15 @@ use_math: true
 
 * 일시 : 5.13.(예선), 5.27.(본선)
 * 주최/주관 : 삼성전자
-* 결과 : 5등상
+* 결과 : **5등상**
 
 <img src="/assets/images/2020/11/scpc-01.jpg" style="width:85%">
 
 [학부 시절](https://nyan101.github.io/blog/SCPC-2017-review)부터 매년 참가하는 대회로, 국내 알고리즘 대회 중에서는 ICPC에 버금가는 인지도를 가진 대회이다. 매년 본선에 꾸준히 진출하면서도 막상 수상에선 아쉽게 미끄러지곤 했는데, 올해는 5등상으로 대회를 마무리할 수 있었다.
 
-올해에도 대회가 끝나고서야 발견한 실수들이 있어 *"올해도 수상은 내년을 기약해야 하나..."* 라며 아쉬워했는데, 5등상이라는 결과를 받으니 뭔가 생각지도 못한 선물을 받은 기분이다. ~~솔직히 이러면 "실수만 안했으면 4등상이었던거 아니야?" 라는 생각이 드는 게 또 사람 마음이다.~~
+올해에도 대회가 끝나고서야 발견한 실수들이 있어 *"올해도 수상은 내년을 기약해야 하나..."* 라며 아쉬워했는데, 5등상이라는 결과를 받으니 뭔가 생각지도 못한 선물을 받은 기분이다.
+
+~~그런데 이러면 "실수만 안했으면 4등상이었던거 아니야?" 라는 생각이 드는 게 또 사람 마음이다.~~
 
 <img src="../assets/images/2023/12/scpc-scoreboard.jpg" style="width:85%">
 
