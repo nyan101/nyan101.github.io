@@ -16,7 +16,7 @@ use_math: true
 
 * 일시 : 6.10.(예선), 7.12.(본선)
 * 주최/주관 : 국가정보원 / 국가보안기술연구소
-* 결과 : 공공기관 7위
+* 결과 : **공공기관 7위**
 
 <img src="/assets/images/2023/12/cce-main.jpg" style="width:85%">
 
@@ -38,7 +38,7 @@ use_math: true
 
 * 일시 : 9.16.(예선), 10.26.(본선)
 * 주최/주관 : 대한민국 국방부 / 사이버작전사령부
-* 결과 : 예선(...)
+* 결과 : **참가에 의의를(...)**
 
 <img src="/assets/images/2023/12/whitehat-main.jpg" style="width:85%">
 
@@ -48,7 +48,7 @@ use_math: true
 ## CTFZone
 * 일시 : 8.12.(예선), 11.25.(본선)
 * 주최/주관 : BI.ZONE(러시아 보안업체)
-* 결과 : 8위
+* 결과 : **국제 8위**
 
 러시아 보안업체인 BI.ZONE에서 운영하는 국제 CTF 대회이다. 올해 BoB 멘토님과 함께 현직 군 소속 인원들끼리 **Call of Duty**라는 CTF 팀을 구성해 이런저런 CTF들에 참가해오고 있었는데, 그중 본선까지 진출해 괜찮은 실적을 냈던 대회이다.
 
@@ -64,11 +64,11 @@ use_math: true
 ## 군 사이버보안 전문인력 양성 해커톤
 * 일시 : 12.9.
 * 주최/주관 : 대한민국 국방부, 과학기술정보통신부 / 한국인터넷진흥원(KISA)
-* 결과 : 최우수(1위)
+* 결과 : **최우수(1위)**
 
 국방부, 과학기술정보통신부에서 주최한 군 사이버보안 전문인력(사이버탈피오트) 양성 해커톤이다. ~~이제는 익숙해진~~ 사이버 탈피오트라는 슬로건을 내걸고 상당히 큰 규모의 상금이 함께한 대회였다.
 
-기획서로 평가하는 예선과, 현장에서 시제품을 완성해 발표하는 본선으로 진행되었으며 동기, 후배들과 함께 5인 팀을 구성해 나갔다.
+기획서로 평가하는 예선과 현장에서 시제품을 완성해 발표하는 본선으로, 진행되었으며 동기, 후배들과 함께 5인 팀을 구성해 나갔다.
 
 <div style="width:90%;min-width:320px;margin:0 auto;display:flex;justify-content:space-evenly">
 <img src="/assets/images/2023/12/cybertalpiot-01.jpg" style="width:49%;display:inline-block">
@@ -79,7 +79,7 @@ use_math: true
 
 <img src="/assets/images/2023/12/cybertalpiot-03.jpg" style="width:85%">
 
-대회를 마친 다음주, 시상식과 함께 군 사이버전문인력 양성 세미나가 진행되었다.
+대회를 마친 다음주, COEX에서 시상식과 함께 군 사이버전문인력 양성 세미나가 진행되었다.
 
 <img src="/assets/images/2023/12/cybertalpiot-04.jpg" style="width:85%">
 
