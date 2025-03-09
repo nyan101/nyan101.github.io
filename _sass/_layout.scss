@@ -179,12 +179,6 @@ ul.default {
   }
 }
 
-h2.section-header {
-    margin-top: 1em;
-    border-top: 4px solid;
-    border-bottom: 1px solid #D3D3D3;
-}
-
 /*
 *	Body
 */
@@ -498,6 +492,17 @@ blockquote {
 p img {
     min-width: 320px;
     height: auto !important;
+}
+
+h2.section-header {
+    margin-top: 1em;
+    border-top: 4px solid;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+h3.subsection-header {
+    margin-bottom: -0.5em;
+    margin-top: -0.5em;
 }
 
 /* End Custom */
