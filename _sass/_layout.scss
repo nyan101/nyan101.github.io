@@ -27,77 +27,6 @@ ul.default {
 	@extend %default-ul;
 }
 
-/* nyan101 Custom */
-@import "rouge-highlight-theme";
-
-ul li ul {
-  list-style-type: circle;
-  margin: 0;
-}
-
-li {
-    padding: 0 0 1px 0;
-}
-
-code{
-	display: inline-block;
-	border-radius: 3px;
-}
-
-code.highlighter-rouge{
-	background-color: #eee;
-	padding: 0 3px;
-}
-
-pre code {
-	padding: .5em;
-	font-size: modular-scale(-1);
-}
-
-blockquote {
-    border-left: 5px solid #ccc;
-    margin: 10px;
-    padding: 10px;
-    color: #000a;
-}
-
-.resume-item {
-    margin: 0 0 10px 0;
-}
-
-.resume-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.resume-appendix{
-    flex-grow: 1;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.resume-organization{
-    font-family: inherit;
-    color: #434343;
-    margin: 0 10px 0 0;
-}
-
-.resume-date {
-    font-style: italic;
-    font-family: inherit;
-    color: dimgray;
-}
-
-
-p img {
-    min-width: 320px;
-    height: auto !important;
-}
-
-/* End Custom */
-
 .page-divider {
 	$divider-color: $light-gray;
   display: block;
@@ -495,3 +424,80 @@ h2.section-header {
 		}
 	}
 }
+
+/* nyan101 Custom */
+@import "rouge-highlight-theme";
+
+ul li ul {
+  list-style-type: circle;
+  margin: 0;
+}
+
+li.resume-item ul li ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 0 0 1px 0;
+}
+
+code{
+	display: inline-block;
+	border-radius: 3px;
+}
+
+code.highlighter-rouge{
+	background-color: #eee;
+	padding: 0 3px;
+}
+
+pre code {
+	padding: .5em;
+	font-size: modular-scale(-1);
+}
+
+blockquote {
+    border-left: 5px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    color: #000a;
+}
+
+.resume-item {
+    margin: 0 0 10px 0;
+}
+
+.resume-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.resume-appendix{
+    flex-grow: 1;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.resume-organization{
+    font-family: inherit;
+    color: #434343;
+    margin: 0 10px 0 0;
+}
+
+.resume-date {
+    font-style: italic;
+    font-family: inherit;
+    color: dimgray;
+}
+
+
+p img {
+    min-width: 320px;
+    height: auto !important;
+}
+
+/* End Custom */
