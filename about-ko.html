@@ -1,10 +1,20 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/ko
 main_nav: false
 ---
 
+<div class="wrapper">
+<div class="page">
+
+<header class="post-header">
+<h1 class="post-title" style="margin:0">{{ page.title }}</h1>
+<a href="/about/ko">ko</a>|<a href="/about/en">en</a>
+</header>
+{% include page_divider.html %}
+
+<article class="post-content">
 <img
 	src="{{ site.baseurl }}/assets/profile.jpg"
 	title="Profile Picture"
@@ -529,3 +539,6 @@ main_nav: false
 		>
 	</li>
 </ul>
+</article>
+</div>
+</div>
