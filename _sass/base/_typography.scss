@@ -9,13 +9,7 @@ body {
 
 h1,
 h2,
-h3{
-  font-family: $heading-font-family;
-  font-size: $base-font-size;
-  line-height: $heading-line-height;
-  margin: 0 0 $base-font-size;
-  margin: 0 0 rem($base-font-size);
-}
+h3,
 h4,
 h5,
 h6 {
@@ -25,7 +19,6 @@ h6 {
   margin: 0 0 0.5*$base-font-size;
   margin: 0 0 0.5*rem($base-font-size);
 }
-
 h1 {
 	font-size: modular-scale(4);
 }
