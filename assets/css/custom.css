@@ -77,3 +77,8 @@
   margin-bottom: 0.5em;
   vertical-align: top;
 }
+
+/* Heading anchor mark; see layouts/_default/_markup/render-heading.html */
+.heading-anchor-mark::before {
+  content: "#";
+}

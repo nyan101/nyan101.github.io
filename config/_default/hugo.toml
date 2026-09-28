@@ -5,7 +5,9 @@ timeZone = "Asia/Seoul"
 hasCJKLanguage = true
 
 enableRobotsTXT = true
-summaryLength = 0
+# Auto summary length; Korean counts per character (hasCJKLanguage), and the
+# list view clamps it to 3 lines
+summaryLength = 150
 enableEmoji = true
 
 [pagination]

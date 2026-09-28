@@ -56,7 +56,7 @@ disqusShortname = "nyan101-github-io"
 
 [list]
   showBreadcrumbs = false
-  showSummary = false
+  showSummary = true
   showTableOfContents = false
   showCards = false
   groupByYear = true
