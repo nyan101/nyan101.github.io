@@ -4,8 +4,8 @@ date: 2019-02-11T22:01:56+09:00
 slug: "SW-Foundations-Ch03-2"
 categories: ["자습"]
 tags: ["Coq", "Software Foundations"]
-series: ["Software Foundations"]
-series_order: 7
+series: ["Coq"]
+series_order: 9
 math: true
 ---
 ## Reasoning About Lists

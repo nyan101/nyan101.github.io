@@ -4,7 +4,7 @@ date: 2019-08-25T16:39:46+09:00
 slug: "notes-on-pytorch-03"
 categories: ["자습"]
 tags: ["전산", "개발"]
-series: ["Notes on PyTorch"]
+series: ["PyTorch"]
 series_order: 3
 math: true
 ---

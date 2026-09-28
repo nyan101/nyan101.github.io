@@ -4,8 +4,8 @@ date: 2019-02-17T22:22:37+09:00
 slug: "SW-Foundations-Ch04-1"
 categories: ["자습"]
 tags: ["Coq", "Software Foundations"]
-series: ["Software Foundations"]
-series_order: 8
+series: ["Coq"]
+series_order: 10
 math: true
 ---
 ## Polymorphic Lists

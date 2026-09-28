@@ -4,8 +4,8 @@ date: 2019-01-31T20:01:32+09:00
 slug: "SW-Foundations-Ch01-2"
 categories: ["자습"]
 tags: ["Coq", "Software Foundations"]
-series: ["Software Foundations"]
-series_order: 3
+series: ["Coq"]
+series_order: 5
 math: true
 ---
 ## Define Numbers

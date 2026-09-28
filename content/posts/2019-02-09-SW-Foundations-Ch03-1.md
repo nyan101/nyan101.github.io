@@ -4,8 +4,8 @@ date: 2019-02-09T15:33:11+09:00
 slug: "SW-Foundations-Ch03-1"
 categories: ["자습"]
 tags: ["Coq", "Software Foundations"]
-series: ["Software Foundations"]
-series_order: 6
+series: ["Coq"]
+series_order: 8
 math: true
 ---
 본 챕터에서는 Structured Data, 그중에서도 List에 대해 다룬다.

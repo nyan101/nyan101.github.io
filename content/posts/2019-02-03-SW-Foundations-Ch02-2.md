@@ -4,8 +4,8 @@ date: 2019-02-03T22:16:28+09:00
 slug: "SW-Foundations-Ch02-2"
 categories: ["자습"]
 tags: ["Coq", "Software Foundations"]
-series: ["Software Foundations"]
-series_order: 5
+series: ["Coq"]
+series_order: 7
 math: true
 ---
 ## Proof by Case Analysis

@@ -4,8 +4,8 @@ date: 2019-01-28T21:02:16+09:00
 slug: "SW-Foundations-Ch00"
 categories: ["자습"]
 tags: ["Coq", "Software Foundations"]
-series: ["Software Foundations"]
-series_order: 1
+series: ["Coq"]
+series_order: 3
 math: true
 ---
 Coq를 공부해보겠다는 막연한 목표와 함께 이런저런 자료를 찾아보고 그만두기를 반복하던 중, [DeepSpec Summer School](https://deepspec.org/event/dsss18/) 세미나에서 나온 영상을 발견했다. 유투브에서 찾은 다른 영상들이 4,5년 전 자료였던 반면 DeepSpec에서는 최근인 2017, 2018년까지 꾸준히 학습자료와 세미나 영상이 업로드되고 있다.

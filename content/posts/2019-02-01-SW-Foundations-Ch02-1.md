@@ -4,8 +4,8 @@ date: 2019-02-01T20:15:17+09:00
 slug: "SW-Foundations-Ch02-1"
 categories: ["자습"]
 tags: ["Coq", "Software Foundations"]
-series: ["Software Foundations"]
-series_order: 4
+series: ["Coq"]
+series_order: 6
 math: true
 ---
 이제 Coq를 이용해 간단한 증명을 직접 작성해보자.

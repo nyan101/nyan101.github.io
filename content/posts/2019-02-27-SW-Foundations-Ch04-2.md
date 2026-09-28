@@ -4,8 +4,8 @@ date: 2019-02-27T19:47:20+09:00
 slug: "SW-Foundations-Ch04-2"
 categories: ["자습"]
 tags: ["Coq", "Software Foundations"]
-series: ["Software Foundations"]
-series_order: 9
+series: ["Coq"]
+series_order: 11
 math: true
 ---
 ## High-Order Functions

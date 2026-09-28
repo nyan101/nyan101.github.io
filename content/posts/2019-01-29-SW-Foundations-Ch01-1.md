@@ -4,8 +4,8 @@ date: 2019-01-29T00:47:23+09:00
 slug: "SW-Foundations-Ch01-1"
 categories: ["자습"]
 tags: ["Coq", "Software Foundations"]
-series: ["Software Foundations"]
-series_order: 2
+series: ["Coq"]
+series_order: 4
 math: true
 ---
 ## Introduction
