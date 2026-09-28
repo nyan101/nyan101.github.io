@@ -82,3 +82,10 @@
 .heading-anchor-mark::before {
   content: "#";
 }
+
+/* Header logo: Blowfish defaults to max 5rem; keep it just above the site title's size */
+header img.logo {
+  max-height: 2rem;
+  max-width: 2rem;
+  border-radius: 9999px;
+}
