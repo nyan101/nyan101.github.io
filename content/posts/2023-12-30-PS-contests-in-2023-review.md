@@ -18,7 +18,6 @@ math: true
 * 결과 : ~~운영 종료~~
 
 ![](/assets/images/2023/06/farewell-CodeJam.jpg)
-{width="85%"}
 
 매년 구글에서 진행~~하는~~했던 프로그래밍 대회이다. [지난 글](https://nyan101.github.io/blog/farewell-codejam)에서 썼듯이, 올해부터는 더 이상 열리지 않는다.
 
@@ -31,7 +30,6 @@ math: true
 * 결과 : **Round 2 진출 + 티셔츠 획득**
 
 ![](/assets/images/2023/12/hackercup-main.jpg)
-{width="85%"}
 
 페이스북 운영사인 메타(Meta)에서 주관하는 프로그래밍 대회이다. Round 1에서 World Final까지 총 5단계로 이뤄지며, 각 라운드의 진출요건은 다음과 같다.
 
@@ -53,7 +51,6 @@ math: true
 [^1]: Round 1 진행 중, 서버 오류가 생기면서 양수 점수를 얻은 사람 모두를 Round 2로 진출시켰다(...)
 
 ![](/assets/images/2023/12/hackercup-certificate.jpg)
-{width="85%"}
 
 올해는 코드잼도 없어 이번에야말로 해커컵 티셔츠를 받겠다는 마음으로 대회에 참가했다. Round 1 진행 중 갑자기 답안 제출이 안 되는 문제가 발생했고, 빠르게 SNS를 열어보니 나뿐만이 아닌 많은 사람들이 동일한 문제를 겪고있다는 걸 확인할 수 있었다. 한밤중이었던 만큼 *"서버 오류면 다음에 다시 하던지 따로 공지를 올려주겠지"*라는 생각으로 자러 들어갔고, 결과적으로 한 문제 이상 푼 사람 모두를 Round 2로 진출시키겠다는 공지가 올라왔다.
 
@@ -62,7 +59,7 @@ math: true
 결국 티셔츠 등수(2,000등)와 Round 3 진출등수(500등) 사이인 768등으로 마감했고, 티셔츠를 받았다. [예전 티셔츠](https://nyan101.github.io/blog/facebook-hackercup-2020-review)와 거의 동일한 디자인이지만 이번엔 어깨에 **FACEBOOK**이 아닌 **∞ Meta**라고 적혀있다는 차이가 있다.
 
 ![](/assets/images/2023/12/hackercup-tshirt.jpg)
-{width="85%" style="border:1px solid black"}
+{style="border:1px solid black"}
 
 
 ## Woori 코딩 페스티벌 성인부
@@ -74,7 +71,6 @@ math: true
 * 결과 : **장려상(언어별 3~4위)**
 
 ![](/assets/images/2023/12/woori-coding-main.jpg)
-{width="85%"}
 
 우리FIS에서 진행한 코딩대회로 YBM센터에서 대회를 진행했다는 게 인상적이었다. `C`, `Java`, `Python`의 세 가지 언어 중 하나를 택해 응시할 수 있었으며, 개인적으로 익숙한 `Python`을 선택했다. 각 언어별로 1~4등까지 총 12명에게 상장과 상금이 제공되는 비교적 작은 규모로 진행되었다.
 
@@ -83,7 +79,7 @@ math: true
 [^2]: 거창하게 썼지만, 그냥 코드 검토 없이 스스로를 믿고(?) 초안 작성하자마자 바로 제출버튼 눌렀다는 뜻이다(...)
 
 
-{{< image-row width="90%" >}}
+{{< image-row >}}
 ![](/assets/images/2023/12/woori-coding-01.jpg)
 
 ![](/assets/images/2023/12/woori-coding-02.jpg)
@@ -102,7 +98,6 @@ math: true
 * 결과 : **5등상**
 
 ![](/assets/images/2020/11/scpc-01.jpg)
-{width="85%"}
 
 [학부 시절](https://nyan101.github.io/blog/SCPC-2017-review)부터 매년 참가하는 대회로, 국내 알고리즘 대회 중에서는 ICPC에 버금가는 인지도를 가진 대회이다. 매년 본선에 꾸준히 진출하면서도 막상 수상에선 아쉽게 미끄러지곤 했는데, 올해는 5등상으로 대회를 마무리할 수 있었다.
 
@@ -111,12 +106,11 @@ math: true
 ~~그런데 이러면 "실수만 안했으면 4등상이었던거 아니야?" 라는 생각이 드는 게 또 사람 마음이다.~~
 
 ![](/assets/images/2023/12/scpc-scoreboard.jpg)
-{width="85%"}
 
 온라인으로 진행된 만큼 상장과 상패는 택배를 통해 따로 전달되었다. 이제 수상 2회를 달성해 현대모비스 대회에 이어 SCPC도 더이상 못 나간다(...)
 
 
-{{< image-row width="90%" >}}
+{{< image-row >}}
 ![](/assets/images/2023/12/scpc-award-01.jpg)
 
 ![](/assets/images/2023/12/scpc-award-02.jpg)

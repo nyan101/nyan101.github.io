@@ -12,7 +12,6 @@ math: true
 
 
 ![](/assets/images/2019/04/kickstart-B-dashboard.png)
-{width="800px"}
 
 
 
@@ -41,7 +40,6 @@ Large를 해결하기 위한 핵심은 **고정된 l에 대해 `get[]`을 구했
 
 
 ![](/assets/images/2019/04/kickstart-B-ProblemC.png)
-{width="800px"}
 
 
 

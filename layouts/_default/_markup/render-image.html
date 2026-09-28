@@ -2,7 +2,8 @@
      https://github.com/nunocoracao/blowfish/blob/v3.8.0/layouts/_default/_markup/render-image.html
      - images are centered (mx-auto)
      - Markdown attributes {width="80%"} / {style="..."} on a standalone image
-       size its <figure>, and the image fills that width
+       size its <figure>, and the image fills that width; without {width},
+       params.imageDefaultWidth is used
 */}}
 {{- define "RenderImageSimple" -}}
   {{- $imgObj := .imgObj -}}
@@ -85,9 +86,10 @@
 {{- $isRemote := findRE "^(https?|data)" $url.Scheme -}}
 {{- $resource := "" -}}
 {{- $attrs := .Attributes -}}
-{{- $fill := isset $attrs "width" -}}
+{{- $width := $attrs.width | default site.Params.imageDefaultWidth -}}
+{{- $fill := ne $width nil -}}
 {{- $figStyle := "" -}}
-{{- with $attrs.width -}}
+{{- with $width -}}
   {{- $figStyle = printf "width:%s;max-width:100%%;margin-left:auto;margin-right:auto;" . -}}
 {{- end -}}
 {{- with $attrs.style -}}

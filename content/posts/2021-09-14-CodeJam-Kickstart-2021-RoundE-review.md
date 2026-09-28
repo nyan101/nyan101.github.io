@@ -12,7 +12,6 @@ math: true
 
 
 ![](/assets/images/2021/09/kickstart-E.jpg)
-{width="800px"}
 
 그동안 킥스타트는 굳이 후기를 안 썼지만 이번에 역대급 성과를 낸 김에 글로 남겨본다.
 

@@ -12,6 +12,10 @@ defaultBackgroundImage = "img/header_image.jpg"
 highlightCurrentMenuArea = true
 smartTOC = true
 
+# Default width of post images and {{< image-row >}}; override per image
+# with {width="..."} on the line after a Markdown image
+imageDefaultWidth = "90%"
+
 # Existing Disqus threads; see layouts/partials/comments.html
 disqusShortname = "nyan101-github-io"
 

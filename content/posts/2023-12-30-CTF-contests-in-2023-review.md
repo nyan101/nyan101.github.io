@@ -18,14 +18,13 @@ math: true
 * 결과 : **공공기관 7위**
 
 ![](/assets/images/2023/12/cce-main.jpg)
-{width="85%"}
 
 국가정보원에서 주관하는 CTF로 일반인들을 위한 일반분야와 공공기관 종사자들을 위한 공공분야로 나눠 진행된다. 예선은 일반적인 Jeopardy(문제풀이) 방식, 본선은 Jeopardy와 함께 공격받는 Live 서버를 실시간으로 방어하는 방식으로 진행되었다. ~~작년이랑 설명이 똑같은 것 같다고요? 기분 탓입니다~~
 
 본선은 서울 롯데호텔에서 진행되었다. 
 
 
-{{< image-row width="90%" >}}
+{{< image-row >}}
 ![](/assets/images/2023/12/cce-contest-01.jpg)
 
 ![](/assets/images/2023/12/cce-contest-02.jpg)
@@ -35,7 +34,6 @@ math: true
 4인 대회에 3인 팀을 구성해 나간 만큼 ~~다양한 다과와 퀄리티 높은 식사를~~대회의 분위기를 즐기는 데 집중했다. 그렇게 일부 문제를 해결했지만 약간의 아쉬움과 함께 공공분야 7등이라는 성적으로 대회를 마칠 수 있었다.
 
 ![](/assets/images/2023/12/cce-scoreboard.jpg)
-{width="85%"}
 
 
 ## 화이트햇 콘테스트
@@ -45,7 +43,6 @@ math: true
 * 결과 : **참가에 의의를(...)**
 
 ![](/assets/images/2023/12/whitehat-main.jpg)
-{width="85%"}
 
 사이버작전사령부에서 주관하는 CTF로 [작년](https://nyan101.github.io/blog/CTF-contests-in-2022-review)에 국방트랙 2등을 했던 대회이다. 올해는 화이트햇 예선과 SCPC(삼성 대학생/대학원생 프로그래밍 경진대회) 본선이 겹치면서 예선 문제를 구경하는 데 의의를 뒀다. ~~그래도 SCPC는 5등상 받았으니 만족합니다~~
 
@@ -60,12 +57,10 @@ math: true
 훌륭한 팀원들의 버스에 실려 예선 4위라는 성적으로 본선에 진출했다.
 
 ![](/assets/images/2023/12/ctfzone-qual-scoreboard.jpg)
-{width="85%"}
 
 국제대회인 만큼 본선 역시 온라인으로 진행되었으며, 가산 BoB센터에 모여 밤샘 대회를 진행했다. 최종 8위로 대회를 마쳤다.
 
 ![](/assets/images/2023/12/ctfzone-final-scoreboard.jpg)
-{width="85%"}
 
 
 ## 군 사이버보안 전문인력 양성 해커톤
@@ -78,7 +73,7 @@ math: true
 기획서로 평가하는 예선과 현장에서 시제품을 완성해 발표하는 본선으로, 진행되었으며 동기, 후배들과 함께 5인 팀을 구성해 나갔다.
 
 
-{{< image-row width="90%" >}}
+{{< image-row >}}
 ![](/assets/images/2023/12/cybertalpiot-01.jpg)
 
 ![](/assets/images/2023/12/cybertalpiot-02.jpg)
@@ -88,12 +83,10 @@ math: true
 개발시간이 한정된 만큼 AI나 블록체인 대신 현실성에 집중해 아이디어를 냈는데, 발표에서 이런 부분을 강조했던 점이 높은 점수를 받았는지 최종 1위라는 높은 성적을 받을 수 있었다.
 
 ![](/assets/images/2023/12/cybertalpiot-03.jpg)
-{width="85%"}
 
 대회를 마친 다음주, COEX에서 시상식과 함께 군 사이버전문인력 양성 세미나가 진행되었다.
 
 ![](/assets/images/2023/12/cybertalpiot-04.jpg)
-{width="85%"}
 
 ---
 

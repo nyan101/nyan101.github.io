@@ -17,7 +17,6 @@ tags: ["대회"]
 쉬는시간에 최종 결과를 확인해보니 23등으로 나름 선방(?)한 걸 확인할 수 있었다. 
 
 ![](/assets/images/2018/08/kickstart-scoreboard.png)
-{width="800px"}
 
 
 
@@ -39,7 +38,6 @@ tags: ["대회"]
 {width="500px"}
 
 ![](/assets/images/2018/08/hackercup.png)
-{width="650px"}
 
 
 

@@ -9,7 +9,6 @@ tags: ["대회"]
 한동안 개인 사정으로 인해 다른 일을 할 수 없어 Google Code Jam 본대회 Qualification Round를 불참했는데, 마침 오늘 Code Jam Kickstart 가 있길래 참가해봤다. 
 
 ![](/assets/images/2018/05/kickstart-title.png)
-{width="800px"}
 
 
 
@@ -20,7 +19,6 @@ Kickstart는 CodeJam 본대회와 달리 비교적 자주 진행되고(2017년 �
 
 
 ![](/assets/images/2018/05/kickstart-scoreboard.jpg)
-{width="800px"}
 
 
 

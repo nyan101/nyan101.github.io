@@ -140,7 +140,6 @@ Qed.
 
 
 ![](/assets/images/2019/02/SWF-03-2-Search.png)
-{width="800px"}
 
 
 

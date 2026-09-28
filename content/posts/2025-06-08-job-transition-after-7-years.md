@@ -12,7 +12,7 @@ math: true
 사실 [About](https://nyan101.github.io/about/ko) 페이지나 그간의 대회 후기에서나 반쯤은 드러내놓고 써서 새삼스럽긴 하지만, 지난주, 정확히는 2025년 5월 31일을 기준으로 7년간의 군생활을 마치고 공군 대위에서 **예비역** 공군 대위로 칭호가 바뀌었다. 전역하게 되면 뭔가 심정적으로도 크게 동요할 줄 알았는데 그새 1주일이 지나서인지 나름 익숙해진 것 같다. ~~올해부터 군 전직지원기간이 늘어서 지난 2월부터 출근 안 하고 거의 4개월 휴가를 보냈던 탓도 있는거같음~~
 
 
-{{< image-row width="90%" >}}
+{{< image-row >}}
 ![](/assets/images/2025/06/military-01.jpg)
 
 ![](/assets/images/2025/06/military-02.jpg)
@@ -22,7 +22,6 @@ math: true
 <br>결론부터 말하면, 지난 6월 2일부터 쿼라(Quora)에서 Software Engineer로 일을 시작했다. 쿼라에 대한 소개는 [잘 정리된 다른 글](https://medium.com/@codetree_team/%EC%8B%A4%EB%A6%AC%EC%BD%98%EB%B0%B8%EB%A6%AC-%ED%9A%8C%EC%82%AC-%EB%8B%A4%EB%8B%88%EC%A7%80%EB%A7%8C-%ED%95%9C%EA%B5%AD%EC%97%90%EC%84%9C-%EC%9D%BC%ED%95%A9%EB%8B%88%EB%8B%A4-quora-%EC%BF%BC%EB%9D%BC-%EA%B0%9C%EB%B0%9C%EC%9E%90-1%ED%8E%B8-66c14c915df9)이 있어 이로 대체한다. 기본적으로 100% 재택근무에 원하는 경우 사당 공유오피스를 이용할 수 있다(출근하면 무료 간식/커피와 점심 식대가 지원된다). 지금은 본격적인 업무 시작 전 온보딩 과정중에 있어 회의/화상교육이 있을 때는 재택, 아닌 때는 오피스에 나와 다른 분들께 다양한 업무 관련 조언을 구하고 있다.
 
 ![](/assets/images/2025/06/quora-offer.jpg)
-{width="85%"}
 
 
 ## 구직과정

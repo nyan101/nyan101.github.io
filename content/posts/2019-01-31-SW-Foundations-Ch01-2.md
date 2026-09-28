@@ -125,7 +125,6 @@ end.
 
 
 ![](/assets/images/2019/01/SWF-01-2-Fixpoint.png)
-{width="800px"}
 
 
 
@@ -241,14 +240,12 @@ Coq에서는 **항상 종료되는 함수**를 보장하기 위해 조금 엄격
 
 
 ![](/assets/images/2019/01/SWF-01-2-FuncDiagram.png)
-{width="800px"}
 
 
 
 실제로 아래와 같이 정의한 함수 `always_zero`는 모든 입력에 대해 `O`를 반환하지만 Coq에서는 오류를 내뱉는다. 
 
 ![](/assets/images/2019/01/SWF-01-2-AlwaysZero.png)
-{width="800px"}
 
 
 

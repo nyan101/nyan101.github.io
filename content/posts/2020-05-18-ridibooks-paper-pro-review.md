@@ -17,7 +17,6 @@ math: true
 
 
 ![](/assets/images/2020/05/RBPP-01.jpg)
-{width="700px"}
 
 사진 왼쪽이 리더기 본체, 오른쪽이 함께 구입한 북커버 케이스의 모습이다.
 

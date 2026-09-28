@@ -18,10 +18,8 @@ math: true
 * 결과 : **세계 9위**
 
 ![](/assets/images/2024/12/DEFCON-qual-news.jpg)
-{width="85%"}
 
 ![](/assets/images/2024/12/DEFCON-final-scoreboard.jpg)
-{width="85%"}
 
 같은 직장 동기/후배들, BoB 지인들과 *Cold Fusion* 이라는 이름으로 여러 CTF를 나갔고, 예선에서 다같이 힘을 합친 끝에 DEFCON 본선에도 진출했다. 한국에서 온라인으로 참가할지, 이왕 진출한거 미국까지 갈지 고민 끝에 개인 휴가를 털어가며 라스베가스행 비행기표를 끊었다. 약간의 우여곡절도 있었지만, 1인분을 했다고 자신있게 말하긴 어려워도 나름 문제풀이에 기여도 하면서 버스 탑승료 정도는 냈다고(?) 생각한다.
 
@@ -39,17 +37,15 @@ math: true
 * 결과 : **공공기관 4위**
 
 ![](/assets/images/2024/12/cce-banner.jpg)
-{width="80%"}
 
 
-{{< image-row width="80%" >}}
+{{< image-row >}}
 ![](/assets/images/2024/12/cce-contest.jpg)
 
 ![](/assets/images/2024/12/cce-1.jpg)
 {{< /image-row >}}
 
 ![](/assets/images/2024/12/cce-scoreboard.png)
-{width="80%"}
 
 작년에 이어 올해도 출전한 국정원 주관 해킹대회인 CCE이다. 군인 4명이서 팀을 꾸려 나갔는데, 부대 사정으로 2명이 본선 참가를 못 하게 되면서 2명이서 몸을 비틀어가며 대회를 진행했다. 올해는 CSK라는 국제 사이버훈련과 함께 진행되면서 대회 도중 VIP가 직접 방문하는 시간이 있기도 했고, 초반 2등까지 올라가면서 나름 기대를 했지만 결국 마지막 30분을 남겨두고 4등으로 떨어지면서 수상이 좌절됐다. 2022년에도 4등으로 아쉽게 수상하지 못한 적이 있었던 만큼, 3등까지 수상권인 대회에 4등만 두번 겪다보니 대회가 끝나고도 멘탈을 회복하는 데 시간이 좀 걸렸다(...)
 
@@ -63,10 +59,9 @@ math: true
 * 결과 : **간부트랙 3위(사이버작전사령관상)**
 
 ![](/assets/images/2024/12/whitehat-banner.jpg)
-{width="80%"}
 
 
-{{< image-row width="80%" >}}
+{{< image-row >}}
 ![](/assets/images/2024/12/whitehat-main.jpg)
 
 ![](/assets/images/2024/12/whitehat-award.jpg)
@@ -85,7 +80,7 @@ math: true
 * 결과 : **우수상(공군참모총장상)**
 
 
-{{< image-row width="80%" >}}
+{{< image-row >}}
 ![](/assets/images/2024/12/maicon-main.jpg)
 
 ![](/assets/images/2024/12/maicon-award.jpg)
@@ -105,7 +100,6 @@ math: true
 * 결과 : **Round 2 진출 + 티셔츠 획득**
 
 ![](/assets/images/2024/12/hackercup-certificate.jpg)
-{width="80%"}
 
 페이스북 운영사인 메타(Meta)에서 주관하는 프로그래밍 대회이다. Round 1에서 World Final까지 총 5단계로 이뤄지며, 각 라운드의 진출요건은 다음과 같다. ~~어딘가 익숙한 느낌이 든다면 2023년도 설명 복붙 맞습니다~~. 올해는 기존의 대회를 *Human Track* 으로, NeurIPS 학회와 함께 AI가 전체 코드를 작성하는 별도의 트랙을 *AI Track* 으로 구분해 진행했다. 대회 당시만 해도 AI가 점차 성능이 좋아지는 걸 느꼈는데, 이 글을 쓰는 12월에는 GPT o3가 코드포스 기준 2727점을 달성했다는 소식이 나왔다. 과연 인간 코더의 설 자리는...
 
