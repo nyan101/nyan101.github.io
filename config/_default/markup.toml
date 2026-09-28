@@ -1,0 +1,27 @@
+[goldmark]
+  [goldmark.parser]
+    wrapStandAloneImageWithinParagraph = false
+    [goldmark.parser.attribute]
+      block = true
+
+  # Posts embed raw HTML (<img>, <div>, <table>) that must be passed through
+  [goldmark.renderer]
+    unsafe = true
+
+  # Leave math untouched for MathJax. \[ \] is not a delimiter here because
+  # posts use it as escaped brackets in plain text.
+  [goldmark.extensions.passthrough]
+    enable = true
+    [goldmark.extensions.passthrough.delimiters]
+      block = [['$$', '$$']]
+      inline = [['$', '$'], ['\(', '\)']]
+
+  [goldmark.extensions.footnote]
+    enable = true
+
+[highlight]
+  noClasses = false
+
+[tableOfContents]
+  startLevel = 2
+  endLevel = 4
