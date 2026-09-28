@@ -2,6 +2,7 @@
 title: "[PyTorch] 04. validation phase를 추가해 train_model() 함수 작성하기"
 date: 2022-02-07T20:38:11+09:00
 slug: "notes-on-pytorch-04"
+url: "/blog/notes-on-pytorch-04/"
 categories: ["자습"]
 tags: ["전산", "개발"]
 series: ["PyTorch"]

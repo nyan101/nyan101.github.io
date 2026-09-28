@@ -2,6 +2,7 @@
 title: "Facebook Hacker Cup 2020 후기"
 date: 2020-08-30T20:35:19+09:00
 slug: "facebook-hackercup-2020-review"
+url: "/blog/facebook-hackercup-2020-review/"
 categories: ["근황"]
 tags: ["대회"]
 math: true

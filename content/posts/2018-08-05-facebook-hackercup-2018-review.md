@@ -2,6 +2,7 @@
 title: "Facebook Hacker Cup 2018 후기"
 date: 2018-08-05T05:12:07+09:00
 slug: "facebook-hackercup-2018-review"
+url: "/blog/facebook-hackercup-2018-review/"
 categories: ["근황"]
 tags: ["대회"]
 ---

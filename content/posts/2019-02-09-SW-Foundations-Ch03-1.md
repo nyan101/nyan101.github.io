@@ -2,6 +2,7 @@
 title: "[Coq 입문] Ch03. Working with Structured Data (1)"
 date: 2019-02-09T15:33:11+09:00
 slug: "SW-Foundations-Ch03-1"
+url: "/blog/SW-Foundations-Ch03-1/"
 categories: ["자습"]
 tags: ["Coq", "Software Foundations"]
 series: ["Coq"]

@@ -2,6 +2,7 @@
 title: "2024년도 대회 후기"
 date: 2024-12-31T11:58:42+09:00
 slug: "contests-in-2024-review"
+url: "/blog/contests-in-2024-review/"
 categories: ["근황"]
 tags: ["대회"]
 math: true

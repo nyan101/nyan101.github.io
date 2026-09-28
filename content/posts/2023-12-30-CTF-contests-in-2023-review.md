@@ -2,6 +2,7 @@
 title: "2023년도 대회 후기 - 해킹(CTF) 편"
 date: 2023-12-30T20:19:31+09:00
 slug: "CTF-contests-in-2023-review"
+url: "/blog/CTF-contests-in-2023-review/"
 categories: ["근황"]
 tags: ["대회"]
 math: true

@@ -2,6 +2,7 @@
 title: "[Coq 입문] Ch01. Functional Programming in Coq (1)"
 date: 2019-01-29T00:47:23+09:00
 slug: "SW-Foundations-Ch01-1"
+url: "/blog/SW-Foundations-Ch01-1/"
 categories: ["자습"]
 tags: ["Coq", "Software Foundations"]
 series: ["Coq"]

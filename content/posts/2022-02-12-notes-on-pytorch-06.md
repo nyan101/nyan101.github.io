@@ -2,6 +2,7 @@
 title: "[PyTorch] 06. wandb로 학습 진행상황 로깅하기"
 date: 2022-02-12T19:37:41+09:00
 slug: "notes-on-pytorch-06"
+url: "/blog/notes-on-pytorch-06/"
 categories: ["자습"]
 tags: ["전산", "개발"]
 series: ["PyTorch"]

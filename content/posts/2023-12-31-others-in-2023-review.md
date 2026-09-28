@@ -2,6 +2,7 @@
 title: "2023년도 후기 - 기타(ETC) 편"
 date: 2023-12-31T00:37:02+09:00
 slug: "others-in-2023-review"
+url: "/blog/others-in-2023-review/"
 categories: ["근황"]
 tags: ["대회"]
 math: true

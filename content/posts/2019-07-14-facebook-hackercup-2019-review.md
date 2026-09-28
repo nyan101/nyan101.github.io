@@ -2,6 +2,7 @@
 title: "Facebook Hacker Cup 2019 후기"
 date: 2019-07-14T16:09:22+09:00
 slug: "facebook-hackercup-2019-review"
+url: "/blog/facebook-hackercup-2019-review/"
 categories: ["근황"]
 tags: ["대회"]
 math: true

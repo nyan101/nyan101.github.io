@@ -2,6 +2,7 @@
 title: "[ML] Knockoff Net: 랜덤한 입력으로 다른 모델을 모방할 수 있을까?"
 date: 2019-11-03T11:12:33+09:00
 slug: "knockoff-net-with-complete-noise"
+url: "/blog/knockoff-net-with-complete-noise/"
 categories: ["자습"]
 tags: ["전산", "개발"]
 math: true

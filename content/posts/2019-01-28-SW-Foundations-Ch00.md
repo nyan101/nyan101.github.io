@@ -2,6 +2,7 @@
 title: "[Coq 입문] Ch00. Overview"
 date: 2019-01-28T21:02:16+09:00
 slug: "SW-Foundations-Ch00"
+url: "/blog/SW-Foundations-Ch00/"
 categories: ["자습"]
 tags: ["Coq", "Software Foundations"]
 series: ["Coq"]

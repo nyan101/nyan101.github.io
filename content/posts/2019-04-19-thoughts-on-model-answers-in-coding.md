@@ -2,6 +2,7 @@
 title: "코딩에서 답지를 보는것에 대한 개인적인 생각"
 date: 2019-04-19T12:34:51+09:00
 slug: "thoughts-on-model-answers-in-coding"
+url: "/blog/thoughts-on-model-answers-in-coding/"
 categories: ["잡담"]
 tags: ["잡담"]
 math: true

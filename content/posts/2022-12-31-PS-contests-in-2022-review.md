@@ -2,6 +2,7 @@
 title: "2022년도 대회 후기 - 알고리즘(PS) 편"
 date: 2022-12-31T21:41:12+09:00
 slug: "PS-contests-in-2022-review"
+url: "/blog/PS-contests-in-2022-review/"
 categories: ["근황"]
 tags: ["대회"]
 math: true

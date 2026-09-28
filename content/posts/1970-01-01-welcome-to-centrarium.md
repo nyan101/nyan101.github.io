@@ -2,6 +2,7 @@
 title: "Welcome to Jekyll!"
 date: 1970-01-01T00:00:01+09:00
 slug: "welcome-to-centrarium"
+url: "/blog/welcome-to-centrarium/"
 tags: ["jekyll", "welcome"]
 images: ["/assets/instacode.png"]
 draft: true

@@ -2,6 +2,7 @@
 title: "ELF x86 - Race condition"
 date: 2018-01-25T00:00:05+09:00
 slug: "RootMe-system-05"
+url: "/blog/RootMe-system-05/"
 categories: ["자습"]
 tags: ["app/system"]
 draft: true

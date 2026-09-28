@@ -2,6 +2,7 @@
 title: "소인수분해 알고리즘(Pollard-(p-1), Pollard-rho, Dixon's Random Square)"
 date: 2020-05-27T01:25:33+09:00
 slug: "algorithms-for-integer-factorization"
+url: "/blog/algorithms-for-integer-factorization/"
 categories: ["전산"]
 tags: ["전산", "수학"]
 math: true

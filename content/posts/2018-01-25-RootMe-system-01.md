@@ -2,6 +2,7 @@
 title: "Root Me: ELF x86 - Stack buffer overflow basic 1"
 date: 2018-01-25T00:00:01+09:00
 slug: "RootMe-system-01"
+url: "/blog/RootMe-system-01/"
 categories: ["자습"]
 tags: ["app/system"]
 draft: true

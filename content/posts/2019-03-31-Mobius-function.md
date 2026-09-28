@@ -2,6 +2,7 @@
 title: "Möbius 함수의 정의와 활용"
 date: 2019-03-31T21:38:49+09:00
 slug: "Mobius-function"
+url: "/blog/Mobius-function/"
 categories: ["전산"]
 tags: ["전산", "수학"]
 math: true

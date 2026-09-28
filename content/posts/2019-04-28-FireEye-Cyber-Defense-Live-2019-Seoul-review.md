@@ -2,6 +2,7 @@
 title: "FireEye Cyber Defense Live 2019 Seoul 후기"
 date: 2019-04-28T15:43:33+09:00
 slug: "FireEye-Cyber-Defense-Live-2019-Seoul-review"
+url: "/blog/FireEye-Cyber-Defense-Live-2019-Seoul-review/"
 categories: ["근황"]
 tags: ["컨퍼런스"]
 math: true

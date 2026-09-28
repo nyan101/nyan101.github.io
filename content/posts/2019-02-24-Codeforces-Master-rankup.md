@@ -2,6 +2,7 @@
 title: "Codeforces 오렌지(Master) 달성"
 date: 2019-02-24T18:45:11+09:00
 slug: "Codeforces-Master-rankup"
+url: "/blog/Codeforces-Master-rankup/"
 categories: ["근황"]
 tags: ["대회", "Codeforces"]
 ---

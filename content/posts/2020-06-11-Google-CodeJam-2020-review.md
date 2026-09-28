@@ -2,6 +2,7 @@
 title: "Google Code Jam 2020 후기"
 date: 2020-06-11T00:09:32+09:00
 slug: "Google-CodeJam-2020-review"
+url: "/blog/Google-CodeJam-2020-review/"
 categories: ["근황"]
 tags: ["대회"]
 math: true

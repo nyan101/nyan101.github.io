@@ -2,6 +2,7 @@
 title: "[Coq 입문] Ch04. Polymorphism & Higher-Order Functions (2)"
 date: 2019-02-27T19:47:20+09:00
 slug: "SW-Foundations-Ch04-2"
+url: "/blog/SW-Foundations-Ch04-2/"
 categories: ["자습"]
 tags: ["Coq", "Software Foundations"]
 series: ["Coq"]

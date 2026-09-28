@@ -2,6 +2,7 @@
 title: "소수 판별 튜링머신"
 date: 2017-08-05T00:00:01+09:00
 slug: "primality-test-Turing-Machine"
+url: "/blog/primality-test-Turing-Machine/"
 categories: ["전산"]
 tags: ["전산"]
 math: true

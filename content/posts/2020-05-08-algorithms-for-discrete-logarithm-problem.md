@@ -2,6 +2,7 @@
 title: "이산 로그 문제(DLP)에 대한 알고리즘(Shanks, Pollard-rho, Pohlig-Hellman)"
 date: 2020-05-08T16:36:14+09:00
 slug: "algorithms-for-discrete-logarithm-problem"
+url: "/blog/algorithms-for-discrete-logarithm-problem/"
 categories: ["전산"]
 tags: ["전산", "수학"]
 math: true

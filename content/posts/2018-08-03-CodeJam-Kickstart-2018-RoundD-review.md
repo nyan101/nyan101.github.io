@@ -2,6 +2,7 @@
 title: "Code Jam Kickstart 2018 Round D 후기"
 date: 2018-08-03T20:24:03+09:00
 slug: "CodeJam-Kickstart-2018-RoundD-review"
+url: "/blog/CodeJam-Kickstart-2018-RoundD-review/"
 categories: ["근황"]
 tags: ["대회"]
 ---

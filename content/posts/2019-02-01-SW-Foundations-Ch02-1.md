@@ -2,6 +2,7 @@
 title: "[Coq 입문] Ch02. Proof by tactics (1)"
 date: 2019-02-01T20:15:17+09:00
 slug: "SW-Foundations-Ch02-1"
+url: "/blog/SW-Foundations-Ch02-1/"
 categories: ["자습"]
 tags: ["Coq", "Software Foundations"]
 series: ["Coq"]

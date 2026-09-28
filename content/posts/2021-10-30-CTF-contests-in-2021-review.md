@@ -2,6 +2,7 @@
 title: "2021년도 대회 후기 - 해킹(CTF) 편"
 date: 2021-10-30T18:40:29+09:00
 slug: "CTF-contests-in-2021-review"
+url: "/blog/CTF-contests-in-2021-review/"
 categories: ["근황"]
 tags: ["대회"]
 math: true

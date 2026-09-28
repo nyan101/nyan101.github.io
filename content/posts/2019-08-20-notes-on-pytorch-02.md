@@ -2,6 +2,7 @@
 title: "[PyTorch] 02. nn.Module로 모델 클래스 만들기"
 date: 2019-08-20T21:53:17+09:00
 slug: "notes-on-pytorch-02"
+url: "/blog/notes-on-pytorch-02/"
 categories: ["자습"]
 tags: ["전산", "개발"]
 series: ["PyTorch"]

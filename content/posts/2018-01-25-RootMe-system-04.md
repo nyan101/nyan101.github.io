@@ -2,6 +2,7 @@
 title: "Root Me: ELF x86 - Format string bug basic 2"
 date: 2018-01-25T00:00:04+09:00
 slug: "RootMe-system-04"
+url: "/blog/RootMe-system-04/"
 categories: ["자습"]
 tags: ["app/system"]
 draft: true

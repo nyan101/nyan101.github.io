@@ -2,6 +2,7 @@
 title: "2022년도 대회 후기 - 해킹(CTF) 편"
 date: 2022-12-31T19:58:31+09:00
 slug: "CTF-contests-in-2022-review"
+url: "/blog/CTF-contests-in-2022-review/"
 categories: ["근황"]
 tags: ["대회"]
 math: true

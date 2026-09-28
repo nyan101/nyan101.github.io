@@ -2,6 +2,7 @@
 title: "[PyTorch] 03. torch.nn 모듈 조립으로 CNN 만들기"
 date: 2019-08-25T16:39:46+09:00
 slug: "notes-on-pytorch-03"
+url: "/blog/notes-on-pytorch-03/"
 categories: ["자습"]
 tags: ["전산", "개발"]
 series: ["PyTorch"]

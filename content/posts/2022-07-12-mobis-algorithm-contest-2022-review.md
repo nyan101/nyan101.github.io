@@ -2,6 +2,7 @@
 title: "2022 현대모비스 알고리즘 경진대회 후기"
 date: 2022-07-17T13:52:12+09:00
 slug: "mobis-algorithm-contest-2022-review"
+url: "/blog/mobis-algorithm-contest-2022-review/"
 categories: ["근황"]
 tags: ["대회"]
 math: true

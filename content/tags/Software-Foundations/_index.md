@@ -1,3 +1,0 @@
----
-url: "/tag/software-foundations/"
----

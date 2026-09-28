@@ -2,6 +2,7 @@
 title: "공군 사이버전사 경연대회 후기"
 date: 2021-08-15T23:57:12+09:00
 slug: "airforce-cyberwarrior-contest-2021-review"
+url: "/blog/airforce-cyberwarrior-contest-2021-review/"
 categories: ["근황"]
 tags: ["대회"]
 math: true

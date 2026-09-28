@@ -2,6 +2,7 @@
 title: "구글, \"코드잼 서비스를 종료합니다\""
 date: 2023-06-06T03:22:54+09:00
 slug: "farewell-codejam"
+url: "/blog/farewell-codejam/"
 categories: ["근황"]
 tags: ["대회"]
 math: true

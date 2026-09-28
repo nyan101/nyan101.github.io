@@ -2,6 +2,7 @@
 title: "이데일리 Coding Challenge 후기"
 date: 2018-11-07T21:56:05+09:00
 slug: "edaily-Coding-Challenge-2018-review"
+url: "/blog/edaily-Coding-Challenge-2018-review/"
 categories: ["근황"]
 tags: ["대회"]
 ---

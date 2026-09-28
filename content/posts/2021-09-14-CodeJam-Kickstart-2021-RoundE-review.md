@@ -2,6 +2,7 @@
 title: "Code Jam Kickstart 2021 Round E 후기"
 date: 2021-09-14T20:51:38+09:00
 slug: "CodeJam-Kickstart-2021-RoundE-review"
+url: "/blog/CodeJam-Kickstart-2021-RoundE-review/"
 categories: ["근황"]
 tags: ["대회"]
 math: true

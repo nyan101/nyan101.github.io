@@ -2,6 +2,7 @@
 title: "새 맥북프로 생긴 후기(feat. Softeer)"
 date: 2022-01-20T19:05:22+09:00
 slug: "macbook-pro-review"
+url: "/blog/macbook-pro-review/"
 categories: ["근황"]
 tags: ["대회"]
 math: true

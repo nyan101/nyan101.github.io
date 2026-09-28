@@ -8,9 +8,6 @@ enableRobotsTXT = true
 summaryLength = 0
 enableEmoji = true
 
-# Jekyll kept the case of post URLs (e.g. /blog/Google-CodeJam-2019-review)
-disablePathToLower = true
-
 [pagination]
   pagerSize = 10
 

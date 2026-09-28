@@ -2,6 +2,7 @@
 title: "Code Jam Kickstart 2019 Round A 후기"
 date: 2019-03-25T16:37:11+09:00
 slug: "CodeJam-Kickstart-2019-RoundA-review"
+url: "/blog/CodeJam-Kickstart-2019-RoundA-review/"
 categories: ["근황"]
 tags: ["대회"]
 math: true

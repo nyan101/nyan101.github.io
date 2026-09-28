@@ -2,6 +2,7 @@
 title: "7년 근속(?) 후 이직 후기"
 date: 2025-06-08T01:26:23+09:00
 slug: "job-transition-after-7-years"
+url: "/blog/job-transition-after-7-years/"
 categories: ["근황"]
 tags: ["이직"]
 math: true

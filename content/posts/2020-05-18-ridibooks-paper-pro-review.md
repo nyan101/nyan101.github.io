@@ -2,6 +2,7 @@
 title: "리디북스 페이퍼 프로(Ridi Paper Pro) 사용기"
 date: 2020-05-18T21:49:40+09:00
 slug: "ridibooks-paper-pro-review"
+url: "/blog/ridibooks-paper-pro-review/"
 categories: ["근황"]
 math: true
 ---

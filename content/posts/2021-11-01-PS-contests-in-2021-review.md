@@ -2,6 +2,7 @@
 title: "2021년도 대회 후기 - 알고리즘(PS) 편"
 date: 2021-11-01T12:56:49+09:00
 slug: "PS-contests-in-2021-review"
+url: "/blog/PS-contests-in-2021-review/"
 categories: ["근황"]
 tags: ["대회"]
 math: true

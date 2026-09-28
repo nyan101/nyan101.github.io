@@ -2,6 +2,7 @@
 title: "[PyTorch] 01. PyTorch의 기본 구조"
 date: 2019-08-18T22:00:21+09:00
 slug: "notes-on-pytorch-01"
+url: "/blog/notes-on-pytorch-01/"
 categories: ["자습"]
 tags: ["전산", "개발"]
 series: ["PyTorch"]

@@ -2,6 +2,7 @@
 title: "2020년도 대회 후기"
 date: 2020-11-18T20:09:32+09:00
 slug: "programming-contests-in-2020-review"
+url: "/blog/programming-contests-in-2020-review/"
 categories: ["근황"]
 tags: ["대회"]
 math: true

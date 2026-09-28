@@ -2,6 +2,7 @@
 title: "[PyTorch] 05. data.Dataset으로 나만의 Dataset 클래스 만들기"
 date: 2022-02-09T18:53:27+09:00
 slug: "notes-on-pytorch-05"
+url: "/blog/notes-on-pytorch-05/"
 categories: ["자습"]
 tags: ["전산", "개발"]
 series: ["PyTorch"]
