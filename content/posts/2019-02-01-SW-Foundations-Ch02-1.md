@@ -5,7 +5,7 @@ slug: "SW-Foundations-Ch02-1"
 url: "/blog/SW-Foundations-Ch02-1/"
 categories: ["자습"]
 tags: ["Coq", "Software Foundations"]
-series: ["Coq"]
+series: ["Coq 입문"]
 series_order: 6
 math: true
 ---

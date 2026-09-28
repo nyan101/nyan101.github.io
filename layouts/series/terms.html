@@ -1,0 +1,28 @@
+{{/* Series list: one row per series instead of Blowfish's term badges
+     (_default/terms.html) */}}
+{{ define "main" }}
+  <header class="mt-5">
+    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+  </header>
+
+  <section class="series-list mt-6 max-w-prose">
+    {{ range .Data.Terms.ByCount }}
+      {{ $pages := .Pages.ByDate }}
+      {{ $first := index $pages 0 }}
+      {{ $last := index $pages.Reverse 0 }}
+      {{ $fmt := "2006년 1월" }}
+      <article class="series-row">
+        <h2 class="series-row__title">
+          <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+        </h2>
+        <div class="series-row__meta text-sm text-neutral-500 dark:text-neutral-400">
+          {{ .Count }}편 ·
+          {{ $first.Date | time.Format $fmt }}{{ if ne ($first.Date | time.Format $fmt) ($last.Date | time.Format $fmt) }} – {{ $last.Date | time.Format $fmt }}{{ end }}
+        </div>
+        {{ with .Page.Description }}
+          <p class="series-row__desc">{{ . }}</p>
+        {{ end }}
+      </article>
+    {{ end }}
+  </section>
+{{ end }}
