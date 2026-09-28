@@ -101,46 +101,46 @@ header img.logo {
   width: 100%;
 }
 
-/* Series list; see layouts/series/terms.html */
-.series-row {
+/* Category/series lists; see layouts/partials/term-rows.html */
+.term-row {
   padding: 1.25rem 0;
   border-bottom: 1px solid rgba(var(--color-neutral-200), 1);
 }
 
-.dark .series-row {
+.dark .term-row {
   border-bottom-color: rgba(var(--color-neutral-700), 1);
 }
 
-.series-row__title {
+.term-row__title {
   margin: 0;
   font-size: 1.25rem;
   font-weight: 700;
 }
 
-.series-row__title a {
+.term-row__title a {
   color: rgba(var(--color-neutral-800), 1);
   text-decoration: none;
 }
 
-.dark .series-row__title a {
+.dark .term-row__title a {
   color: rgba(var(--color-neutral), 1);
 }
 
-.series-row__title a:hover {
+.term-row__title a:hover {
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-color: rgba(var(--color-primary-500), 1);
 }
 
-.series-row__meta {
+.term-row__meta {
   margin-top: 0.25rem;
 }
 
-.series-row__desc {
+.term-row__desc {
   margin: 0.5rem 0 0;
   color: rgba(var(--color-neutral-600), 1);
 }
 
-.dark .series-row__desc {
+.dark .term-row__desc {
   color: rgba(var(--color-neutral-300), 1);
 }
