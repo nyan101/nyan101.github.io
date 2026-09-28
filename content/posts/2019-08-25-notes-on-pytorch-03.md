@@ -15,7 +15,8 @@ math: true
 
 딥러닝, 특히 이미지 인식 관련 예제를 보면 MNIST나 CIFAR-10같은 이름이 많이 등장한다. 이 둘은 Image Classification 문제의 대표적인 예시로 각각 손글씨와 물체 사진 이미지셋에 해당하며, 흔히 모델의 벤치마크 용도로 활용되고 있다. 이번 글에서는 좀더 단순한 MNIST를 사용하기로 한다. MNIST 데이터는 아래와 같이 색이 없는 1채널(=gray scale) 28x28픽셀 이미지들의 모음으로 0에서 9까지 총 10개의 라벨을 가지고 있다.
 
-<img src="/assets/images/2019/08/pytorch-03-MNIST-image.png" style="width:600px">
+![](/assets/images/2019/08/pytorch-03-MNIST-image.png)
+{width="600px"}
 
 유명한 데이터셋인 만큼 인터넷에서 손쉽게 구할 수 있지만 ~~있을 건 다 있는 python답게~~  `torchvision` 모듈의 `datasets` 에서도 가져올 수 있다. `root`인자로 데이터가 저장된(혹은 저장하고자 하는) 경로를 넘겨주면 이를 읽어오며, `download=True`인 경우 해당 경로에 자동으로 다운로드까지 함께 이루어진다.
 
@@ -28,7 +29,7 @@ test_data = datasets.MNIST(root='./data', train=False, download=True)
 
 `train_data`에 대한 정보를 살펴보면 각 데이터는 _(PIL 이미지, 라벨)_ 형식의 tuple로 이루어져 있음을 알 수 있다.
 
-<img src="/assets/images/2019/08/pytorch-03-MNIST-jupyter.png">
+![](/assets/images/2019/08/pytorch-03-MNIST-jupyter.png)
 
 이제 이를 인식하는 모델을 만들어야 한다.
 
@@ -38,7 +39,7 @@ test_data = datasets.MNIST(root='./data', train=False, download=True)
 
 이미지 인식이라는 주제로 찾아보면 어김없이 CNN이라는 단어가 등장한다. CNN(Convolutional Neural Network)은 이미지에 2d convolution 필터를 씌워 처리하는 네트워크로 크게 아래와 같은 구조를 가진다.
 
-<img src="/assets/images/2019/08/pytorch-03-typical-CNN.png">
+![](/assets/images/2019/08/pytorch-03-typical-CNN.png)
 
 이전 글에서 모델 클래스를 만드는 법을 알아봤으니 convolution, sampling, activation에 필요한 설정을 생각해보자.
 

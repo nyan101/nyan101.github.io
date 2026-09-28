@@ -126,7 +126,8 @@ y_pred = model(xs) # model.forward(xs)와 동일
 
 처음 예측을 진행해보면 `y_pred` 는 (당연하게도) 전혀 들어맞지 않는 결과가 나온다.
 
-<img src="/assets/images/2019/08/pytorch-02-poly-initial.png" width="600px">
+![](/assets/images/2019/08/pytorch-02-poly-initial.png)
+{width="600px"}
 
 이제 오차를 계산하고 파라미터를 조정해야 한다.
 
@@ -214,6 +215,7 @@ for epoch in range(100000):
 
 학습 epoch이 증가함에 따라 점차 fitting하고자 하는 데이터에 가까워지는 것을 확인할 수 있다.
 
-<img src="/assets/images/2019/08/pytorch-02-poly-result.png" style="margin:0;width:100%">
+![](/assets/images/2019/08/pytorch-02-poly-result.png)
+{width="100%"}
 
 ---

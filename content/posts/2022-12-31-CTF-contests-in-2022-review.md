@@ -18,7 +18,8 @@ math: true
 * 주관 : 군사안보지원사령부(現 국군방첩사령부)
 * 결과 : 우수(2위)
 
-<img src="/assets/images/2022/12/dssc-contest-award.jpg" style="width:45%">
+![](/assets/images/2022/12/dssc-contest-award.jpg)
+{width="45%"}
 
 군사안보지원사령부에서 주관하는 전군(육+해+공+국직) 대상 경진대회이다. 작년엔 코로나로 대회가 취소되는 탓에 출전하지 못했지만 다행히 작년 성적을 인정받아 올해 공군 대표단에 포함되어 나갈 수 있었다. 필기와 실기가 합쳐진 형식이었으며, 필기는 보안규정이나 정보보안 관련 지식을 묻는 지필고사 형식, 실기는 Jeopary 형식의 CTF로 진행되었다.
 
@@ -33,21 +34,28 @@ math: true
 * 주최/주관 : 대한민국 국방부 / 사이버작전사령부
 * 결과 : 국방트랙 우수(2위)
 
-<img src="/assets/images/2022/12/whitehat-contest-main.jpg" style="width:85%">
+![](/assets/images/2022/12/whitehat-contest-main.jpg)
+{width="85%"}
 
 사이버작전사령부에서 주관하는 CTF로, 일반 / 청소년 / 국방트랙이 별도로 분리되어 진행된다.
 
-<div style="width:90%;min-width:320px;margin:0 auto;display:flex;justify-content:space-evenly">
-<img src="/assets/images/2022/12/whitehat-contest-award-01.jpg" style="width:49%;display:inline-block">
-<img src="/assets/images/2022/12/whitehat-contest-award-02.jpg" style="width:49%;display:inline-block">
-</div>
+
+{{< image-row width="90%" >}}
+![](/assets/images/2022/12/whitehat-contest-award-01.jpg)
+
+![](/assets/images/2022/12/whitehat-contest-award-02.jpg)
+{{< /image-row >}}
+
 
 작년에 아쉽게 5위를 했던 기억이 있어 다들 마음을 다잡고 대회에 임했다. ~~지금까지 모든 대회에서 그랬듯이~~ 본선 초반 빠르게 문제를 풀어 중간 1위를 달성했지만, 중반 이후 더 문제가 풀리지 않아 점차 추격해오는 다른 팀들을 긴장어린 눈으로 바라봤다. 막판에 추가된 문제들 중 암호학 관련 문제들이 포함되어있어 빠르게 추가 점수를 얻었고, 그 덕분인지 대회 마지막까지 최종 2위(합참의장상) 자리를 지켜낼 수 있었다.
 
-<div style="width:90%;min-width:320px;margin:0 auto;display:flex;justify-content:center">
-<img src="/assets/images/2022/12/whitehat-contest-award-03.jpg" style="width:49%;display:inline-block">
-<img src="/assets/images/2022/12/whitehat-contest-award-04.jpg" style="width:49%;display:inline-block">
-</div>
+
+{{< image-row width="90%" >}}
+![](/assets/images/2022/12/whitehat-contest-award-03.jpg)
+
+![](/assets/images/2022/12/whitehat-contest-award-04.jpg)
+{{< /image-row >}}
+
 
 작년에는 결국 수상권 안에 들지 못해 아쉬움이 많이 남았던 대회였는데, 올해는 운이 따랐는지 스타포스(?) +4성에 시상식까지 참석하면서 나름 인상적인 경험을 할 수 있었다.
 
@@ -60,14 +68,18 @@ math: true
 
 [^1]: 분야별 3위까지 상이 수여된다...
 
-<img src="/assets/images/2022/12/cce-main.jpg" style="width:85%">
+![](/assets/images/2022/12/cce-main.jpg)
+{width="85%"}
 
 국가정보원에서 주관하는 CTF로 일반인들을 위한 일반분야와 공공기관 종사자들을 위한 공공분야로 나눠 진행된다. 예선은 일반적인 Jeopardy(문제풀이) 방식, 본선은 Jeopardy와 함께 공격받는 Live 서버를 실시간으로 방어하는 방식으로 진행되었다.
 
-<div style="width:90%;min-width:320px;margin:0 auto;display:flex;justify-content:space-evenly">
-<img src="/assets/images/2022/12/cce-contest-01.jpg" style="width:49%;display:inline-block">
-<img src="/assets/images/2022/12/cce-contest-02.jpg" style="width:49%;display:inline-block">
-</div>
+
+{{< image-row width="90%" >}}
+![](/assets/images/2022/12/cce-contest-01.jpg)
+
+![](/assets/images/2022/12/cce-contest-02.jpg)
+{{< /image-row >}}
+
 
 온라인이었던 작년과 달리, 대구 EXCO에서 오프라인으로 본선을 진행했다.
 
@@ -77,10 +89,13 @@ math: true
 
 대회가 끝난 후 확인해보니 공공분야 본선에 진출했던 20개 팀들 중 과반이 넘는 12개 팀이 대회 시간동안 1문제도 해결하지 못했다는 것을 알 수 있었다. 조금이라도 풀었으니 그보다는 낫다고 위안삼을 수도 있지만 일반부 스코어보드의 ~~기러기목 오리과의 모 동물이름을 쓰는~~ 괴수집단들을 보면 아직 갈길이 멀다는 걸 새삼 깨닫게 된다.
 
-<div style="width:90%;min-width:320px;margin:0 auto;display:flex;justify-content:space-evenly">
-<img src="/assets/images/2022/12/cce-party-01.jpg" style="width:49%;display:inline-block">
-<img src="/assets/images/2022/12/cce-party-02.jpg" style="width:49%;display:inline-block">
-</div>
+
+{{< image-row width="90%" >}}
+![](/assets/images/2022/12/cce-party-01.jpg)
+
+![](/assets/images/2022/12/cce-party-02.jpg)
+{{< /image-row >}}
+
 
 대회가 끝난 후 Theori 주관으로 참가자들 간 애프터파티가 열렸다. 오랜만에 보는 낮익은 얼굴들과 즐거운 시간을 보낼 수 있었다.
 
@@ -91,18 +106,23 @@ math: true
 * 주최/주관 : 한국정보보호학회
 * 결과 : 장려상(7위)
 
-<img src="/assets/images/2022/12/dfc-contest-main.jpg" style="width:85%">
+![](/assets/images/2022/12/dfc-contest-main.jpg)
+{width="85%"}
 
 한국정보보호학회에서 주관하는 대회로, 매달 다양한 주제의 포렌식 문제가 공개되고 이를 해결해 보고서를 제출하는 형식의 대회이다. 학과 선배, 동기들과 함께 6인 팀을 구성해 나갔으며, 주기적으로 온라인 회의를 통해 각자의 진행상황을 공유했다. 장장 5개월에 걸쳐 진행되는 만큼 페이스 조절이 어려운 대회였다.
 
-<img src="/assets/images/2022/12/dfc-contest-award-01.jpg" style="width:85%">
+![](/assets/images/2022/12/dfc-contest-award-01.jpg)
+{width="85%"}
 
 그렇게 긴 여정이 끝나고 최종 7위라는 결과를 얻었다. 6위 팀까지 장려상이 수여된다고 알고있어 다들 낙심하던 중, 해외 팀들의 참여 부족으로 국내 수상팀 숫자에 TO가 하나 늘어나면서 아슬아슬하게 수상 막차를 탈 수 있었다.
 
-<div style="width:90%;min-width:320px;margin:0 auto;display:flex;justify-content:center">
-<img src="/assets/images/2022/12/dfc-contest-award-02.jpg" style="width:49%;display:inline-block">
-<img src="/assets/images/2022/12/dfc-contest-award-03.jpg" style="width:49%;display:inline-block">
-</div>
+
+{{< image-row width="90%" >}}
+![](/assets/images/2022/12/dfc-contest-award-02.jpg)
+
+![](/assets/images/2022/12/dfc-contest-award-03.jpg)
+{{< /image-row >}}
+
 
 번외로, 상패에 영문 수상명이 "Participation Prize"로 되어있어 팀원들끼리 농담조로 "이거 참가상 아니야?" 라는 말을 했는데 구글검색 결과 장려상이 영어로 Participation Prize라는 사실을 알게 되었다.~~그냥 내가 영알못이었던 걸로~~
 

@@ -13,11 +13,13 @@ math: true
 
 지난주 토요일 2020년 [코드잼](https://codingcompetitions.withgoogle.com/codejam)을 마쳤다. 사실 대회에 대한 설명이나 기본적인 소개는 작년에 [거의 똑같은 글](https://nyan101.github.io/blog/Google-CodeJam-2019-review)을 썼어서 이번엔 별로 할 말이 많지는 않다.
 
-<img src="/assets/images/2020/06/GCJ-result.png" width="800px">
+![](/assets/images/2020/06/GCJ-result.png)
+{width="800px"}
 
 작년에 이어 이번에도 티셔츠를 받을 수 있는 Round 3까지 진출에 성공했다. 작년 티셔츠는 L사이즈로 신청했는데, 한국이랑 미국 옷의 기준이 다른건지 티셔츠 끝이 거의 허벅지까지 내려와 밖에서 입고 다니지는 못했다.
 
-<img src="/assets/images/2020/06/GCJ-Tshirt-order.png" width="800px">
+![](/assets/images/2020/06/GCJ-Tshirt-order.png)
+{width="800px"}
 
 같은 실수를 반복하지 않기 위해 올해는 사이즈를 M으로 변경했다. 올해부터는 신청한 정보로 알아서 주는 게 아니라 쇼핑몰 같은 곳에 들어가 상품코드(메일로 전달받음)를 입력하는 형식으로 바뀐 모양이다.
 

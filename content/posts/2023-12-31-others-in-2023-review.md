@@ -14,10 +14,13 @@ math: true
 
 *"3트만에 결국...! 이제 쌍기사입니다"*
 
-<div style="width:80%;min-width:320px;margin:0 auto;display:flex;justify-content:space-evenly">
-<img src="/assets/images/2023/12/security-knight-01.jpg" style="width:49%;display:inline-block">
-<img src="/assets/images/2023/12/security-knight-02.jpg" style="width:49%;display:inline-block">
-</div>
+
+{{< image-row width="80%" >}}
+![](/assets/images/2023/12/security-knight-01.jpg)
+
+![](/assets/images/2023/12/security-knight-02.jpg)
+{{< /image-row >}}
+
 
 올해 5월 정보보안기사 실기에 합격해 보안기사 자격증을 취득했다. 작년 필기에 합격하고 실기를 떨어졌었는데, 5월에 응시한 실기시험의 서술형 항목으로 SQL injection과 같이 ~~날로 먹을 수 있는~~ 익숙한 분야에서의 고배점 문항이 출제되어 합격의 기쁨을 얻을 수 있었다.
 
@@ -27,7 +30,8 @@ math: true
 
 *"말해보카와 넷플릭스에 이 영광을 바칩니다"*
 
-<img src="/assets/images/2023/12/toeic-score.jpg" style="width:55%">
+![](/assets/images/2023/12/toeic-score.jpg)
+{width="55%"}
 
 7월 말 토익시험을 봤다. 이전에 본 성적이 2년이 지나 만료되기도 했고, 당시 말해보카라는 영어공부 앱을 설치해 한창 사용하던 시기여서 한번쯤 영어 어학시험을 다시 봐야겠다는 생각을 했었다. 어차피 군인할인 적용하면 응시료도 반값이다보니 치킨 1마리 값으로 응시할 수 있었는데, 생각보다 높은 점수가 나와 한동안 혼자 뿌듯해했던 기억이 있다.
 

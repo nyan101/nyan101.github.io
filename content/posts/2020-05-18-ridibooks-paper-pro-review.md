@@ -16,25 +16,29 @@ math: true
 
 
 
-<img src="/assets/images/2020/05/RBPP-01.jpg" width="700px">
+![](/assets/images/2020/05/RBPP-01.jpg)
+{width="700px"}
 
 사진 왼쪽이 리더기 본체, 오른쪽이 함께 구입한 북커버 케이스의 모습이다.
 
 
 
-<img src="/assets/images/2020/05/RBPP-02.jpg" width="500px">
+![](/assets/images/2020/05/RBPP-02.jpg)
+{width="500px"}
 
 내부를 열면 간단한 설명서와 함께 본체를 볼 수 있다.
 
 
 
-<img src="/assets/images/2020/05/RBPP-text.jpg" width="500px">
+![](/assets/images/2020/05/RBPP-text.jpg)
+{width="500px"}
 
 전자잉크를 처음 접해보는데 실제 종이와 거의 동일한 느낌이어서 신기했다. 사진엔 드러나지 않지만 밝기 및 색온도(백열등 vs 형광등을 생각하면 된다) 조절도 가능하다.
 
 
 
-<img src="/assets/images/2020/05/RBPP-cover.jpg" width="500px">
+![](/assets/images/2020/05/RBPP-cover.jpg)
+{width="500px"}
 
 커버를 닫았을 때의 사진. 슬림한 두께와 커버의 질감이 마음에 든다.
 
@@ -44,7 +48,8 @@ math: true
 
 
 
-<img src="/assets/images/2020/05/RBPP-cafe.jpg" width="500px">
+![](/assets/images/2020/05/RBPP-cafe.jpg)
+{width="500px"}
 
 마무리는 카페에서 찍은 설정샷(...)
 

@@ -18,7 +18,8 @@ math: true
 * 주최/주관 : 구글(Google)
 * 결과 : Round 3 진출
 
-<img src="/assets/images/2022/12/codejam-main.jpg" style="width:85%">
+![](/assets/images/2022/12/codejam-main.jpg)
+{width="85%"}
 
 매년 구글에서 진행하는 프로그래밍 대회이다. Qualification Round → Round 1 → Round 2 → Round 3 → World Final까지 총 5단계로 이뤄지며, 각 라운드의 진출요건은 다음과 같다.
 * Qualification Round
@@ -47,7 +48,8 @@ math: true
 * 주최/주관 : ~~페이스북(Facebook)~~ 메타(Meta)
 * 결과 : Round 2 진출 ~~이번에도 티셔츠는 못 받았다~~
 
-<img src="/assets/images/2022/12/hackercup-main.jpg" style="width:85%">
+![](/assets/images/2022/12/hackercup-main.jpg)
+{width="85%"}
 
 이제 주관사 명칭이 바뀐(?) 프로그래밍 대회이다. 코드잼과 유사하게 Qualification Round에서 World Final까지 총 5단계로 이뤄지며, 각 라운드의 진출요건은 다음과 같다.
 
@@ -75,11 +77,13 @@ math: true
 * 주최/주관 : 현대모비스
 * 결과 : 동상(3위)
 
-<img src="/assets/images/2022/12/mobis-main.jpg" style="width:85%">
+![](/assets/images/2022/12/mobis-main.jpg)
+{width="85%"}
 
 현대모비스에서 개최한 알고리즘 경진대회로, 운이 좋았는지 **500만원**이라는 상금을 획득할 수 있었다.
 
-<img src="/assets/images/2022/07/mobis-awards-main.jpg" style="width:85%">
+![](/assets/images/2022/07/mobis-awards-main.jpg)
+{width="85%"}
 
 이건 시상식 직후에 [별도의 글](https://nyan101.github.io/blog/mobis-algorithm-contest-2022-review)을 작성한 적이 있어, 여기서는 자세한 설명을 생략한다. 이때 받은 상금으로 아이패드 프로를 사서 잘 쓰고있다.
 
@@ -93,11 +97,13 @@ math: true
 * 주최/주관 : 국방부, 국방오픈소스아카데미
 * 결과 : 3위
 
-<img src="/assets/images/2022/12/osam-contest-main.jpg" style="width:85%">
+![](/assets/images/2022/12/osam-contest-main.jpg)
+{width="85%"}
 
 매년 국방오픈소스아카데미에서 진행하는 <군장병 공개 SW 해커톤> 대회의 선발과정으로 이뤄지는 코딩경진대회이다. 다른 알고리즘 대회와 유사하게 문제풀이 방식으로 구성되었으며 프로그래머스 플랫폼을 통해 진행되었다.
 
-<img src="/assets/images/2022/12/osam-contest-award.jpg" style="width:80%">
+![](/assets/images/2022/12/osam-contest-award.jpg)
+{width="80%"}
 
 앞 3개는 비교적 평이한 코딩테스트 문제들이었는데 마지막 문제에서 SOS(Sum of Subsets) DP를 이용해야 하는 문제가 나왔다. "이런 게 나온다고??" 라는 생각과 함께 겨우 시간 내에 해결해 제출했고, 그렇게 모든 문제를 풀어 400점 만점을 받았다. 전체 참가자들 중 만점자는 3명뿐이었지만 아쉽게도 제출시간의 차이로 인해 3등상(에어팟 프로)을 받았다. 이미 버즈 라이브를 잘 쓰고있어 에어팟은 당근마켓으로 보내졌다.
 
@@ -109,11 +115,13 @@ math: true
 * 주최/주관 : 공군본부
 * 결과 : 장려상
 
-<img src="/assets/images/2022/12/airforce-hackathon-main.jpg" style="width:85%">
+![](/assets/images/2022/12/airforce-hackathon-main.jpg)
+{width="85%"}
 
 공군본부에서 주관하는 아이디어 경연대회이다. 실제 코딩을 진행하지는 않고 아이디어를 제안하고 기획서와 발표를 통해 수상팀을 결정한다. 사실 작년에도 나갔었는데 예선부터 떨어져서 작년 후기에는 포함을 안 시켰다.
 
-<img src="/assets/images/2022/12/airforce-hackathon-award.jpg" style="width:45%">
+![](/assets/images/2022/12/airforce-hackathon-award.jpg)
+{width="45%"}
 
 올해는 같은 부대에서 근무하는 후임들과 3인 팀을 이뤄 참가했다. 작년의 탈락을 거울삼아 좀더 신경써서 기획서를 작성했고, 팀원들이 애써준 덕인지 작년과는 달리 본선까지 진출해 최종 수상을 할 수 있었다.
 
@@ -125,7 +133,8 @@ math: true
 * 주관 : 삼성전자
 * 결과 : 본선 진출
 
-<img src="/assets/images/2020/11/scpc-01.jpg" style="width:85%">
+![](/assets/images/2020/11/scpc-01.jpg)
+{width="85%"}
 
 재작년, 작년에 이어 올해도 1,2차 예선, 본선 모두 온라인으로 진행되었다. 결과만 먼저 밝히면 올해도 본선은 나갔지만 성불(수상)은 하지 못했다(...) 문제가 점점 어려워지는 느낌인데 2023년에는 수상해서 성불하길...
 

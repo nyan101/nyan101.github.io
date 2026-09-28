@@ -17,9 +17,11 @@ math: true
 * 주최/주관 : DEFCON Conference
 * 결과 : **세계 9위**
 
-<img src="/assets/images/2024/12/DEFCON-qual-news.jpg" style="width:85%">
+![](/assets/images/2024/12/DEFCON-qual-news.jpg)
+{width="85%"}
 
-<img src="/assets/images/2024/12/DEFCON-final-scoreboard.jpg" style="width:85%">
+![](/assets/images/2024/12/DEFCON-final-scoreboard.jpg)
+{width="85%"}
 
 같은 직장 동기/후배들, BoB 지인들과 *Cold Fusion* 이라는 이름으로 여러 CTF를 나갔고, 예선에서 다같이 힘을 합친 끝에 DEFCON 본선에도 진출했다. 한국에서 온라인으로 참가할지, 이왕 진출한거 미국까지 갈지 고민 끝에 개인 휴가를 털어가며 라스베가스행 비행기표를 끊었다. 약간의 우여곡절도 있었지만, 1인분을 했다고 자신있게 말하긴 어려워도 나름 문제풀이에 기여도 하면서 버스 탑승료 정도는 냈다고(?) 생각한다.
 
@@ -36,14 +38,18 @@ math: true
 * 주최/주관 : 국가정보원 / 국가보안기술연구소
 * 결과 : **공공기관 4위**
 
-<img src="/assets/images/2024/12/cce-banner.jpg" style="width:80%">
+![](/assets/images/2024/12/cce-banner.jpg)
+{width="80%"}
 
-<div style="width:80%;min-width:320px;margin:0 auto;display:flex;justify-content:space-evenly">
-<img src="/assets/images/2024/12/cce-contest.jpg" style="width:49%">
-<img src="/assets/images/2024/12/cce-1.jpg" style="width:49%">
-</div>
-<p></p>
-<img src="/assets/images/2024/12/cce-scoreboard.png" style="width:80%">
+
+{{< image-row width="80%" >}}
+![](/assets/images/2024/12/cce-contest.jpg)
+
+![](/assets/images/2024/12/cce-1.jpg)
+{{< /image-row >}}
+
+![](/assets/images/2024/12/cce-scoreboard.png)
+{width="80%"}
 
 작년에 이어 올해도 출전한 국정원 주관 해킹대회인 CCE이다. 군인 4명이서 팀을 꾸려 나갔는데, 부대 사정으로 2명이 본선 참가를 못 하게 되면서 2명이서 몸을 비틀어가며 대회를 진행했다. 올해는 CSK라는 국제 사이버훈련과 함께 진행되면서 대회 도중 VIP가 직접 방문하는 시간이 있기도 했고, 초반 2등까지 올라가면서 나름 기대를 했지만 결국 마지막 30분을 남겨두고 4등으로 떨어지면서 수상이 좌절됐다. 2022년에도 4등으로 아쉽게 수상하지 못한 적이 있었던 만큼, 3등까지 수상권인 대회에 4등만 두번 겪다보니 대회가 끝나고도 멘탈을 회복하는 데 시간이 좀 걸렸다(...)
 
@@ -56,12 +62,16 @@ math: true
 * 주최/주관 : 국방부 / 사이버작전사령부
 * 결과 : **간부트랙 3위(사이버작전사령관상)**
 
-<img src="/assets/images/2024/12/whitehat-banner.jpg" style="width:80%">
+![](/assets/images/2024/12/whitehat-banner.jpg)
+{width="80%"}
 
-<div style="width:80%;min-width:320px;margin:0 auto;display:flex;justify-content:space-evenly">
-<img src="/assets/images/2024/12/whitehat-main.jpg" style="width:49%">
-<img src="/assets/images/2024/12/whitehat-award.jpg" style="width:49%">
-</div>
+
+{{< image-row width="80%" >}}
+![](/assets/images/2024/12/whitehat-main.jpg)
+
+![](/assets/images/2024/12/whitehat-award.jpg)
+{{< /image-row >}}
+
 
 사이버사령부에서 주관하는 CTF이다. 올해는 일반부가 없어진 대신 청소년 / 군(용사) / 군(간부)의 3가지 트랙으로 변경되면서 상금이 늘어났다. CCE 때와는 달리 4명 팀으로 무사히(?) 본선까지 참가할 수 있었고, 마지막에 조금 아슬아슬했지만 다행히 최종 3위로 수상권에 들 수 있었다. 2024년 마지막 사이버보안 관련 대회였는데 다행히 나름의 성과를 거두며 마무리할 수 있어 만족스러운 대회였다.
 
@@ -74,10 +84,13 @@ math: true
 * 주최/주관 : 국방부 / 국방오픈소스아카데미
 * 결과 : **우수상(공군참모총장상)**
 
-<div style="width:80%;min-width:320px;margin:0 auto;display:flex;justify-content:space-evenly">
-<img src="/assets/images/2024/12/maicon-main.jpg" style="width:49%">
-<img src="/assets/images/2024/12/maicon-award.jpg" style="width:49%">
-</div>
+
+{{< image-row width="80%" >}}
+![](/assets/images/2024/12/maicon-main.jpg)
+
+![](/assets/images/2024/12/maicon-award.jpg)
+{{< /image-row >}}
+
 
 기존 국방 해커톤이 더 이상 열리지 않고 예산을 국방 AI 경진대회에 올인한 모양이다. 예선은 코딩테스트였는데 일반적인 알고리즘 방식의 문제가 아니라 pandas, pytorch를 다루는 문제가 나왔고, 이를 통과한 사람들끼리 5인 팀을 꾸려 본선에 참가하는 방식이었다. 본선은 주어진 자율주행 로봇을 코딩해 주어진 미션(피아인식, 적외선 레이저 발사)을 수행하는 방식으로, 처음 겪어보는 방식이었지만 세트장 구성이나 진행방식 등 여러모로 신경을 쓴 게 느껴지는 대회였다.
 
@@ -91,7 +104,8 @@ math: true
 * 주최/주관 : 메타(Meta)
 * 결과 : **Round 2 진출 + 티셔츠 획득**
 
-<img src="/assets/images/2024/12/hackercup-certificate.jpg" style="width:80%">
+![](/assets/images/2024/12/hackercup-certificate.jpg)
+{width="80%"}
 
 페이스북 운영사인 메타(Meta)에서 주관하는 프로그래밍 대회이다. Round 1에서 World Final까지 총 5단계로 이뤄지며, 각 라운드의 진출요건은 다음과 같다. ~~어딘가 익숙한 느낌이 든다면 2023년도 설명 복붙 맞습니다~~. 올해는 기존의 대회를 *Human Track* 으로, NeurIPS 학회와 함께 AI가 전체 코드를 작성하는 별도의 트랙을 *AI Track* 으로 구분해 진행했다. 대회 당시만 해도 AI가 점차 성능이 좋아지는 걸 느꼈는데, 이 글을 쓰는 12월에는 GPT o3가 코드포스 기준 2727점을 달성했다는 소식이 나왔다. 과연 인간 코더의 설 자리는...
 

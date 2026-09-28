@@ -8,7 +8,8 @@ tags: ["대회"]
 ---
 동아리 톡방에서 이데일리 코딩대회에 대한 소식을 들었다. 학부를 졸업했지만 아직 대학원생은 아니라는 애매한 신분 때문에 대부분의 대회를 참가하지 못했었는데, 이번 대회는 청소년부/성인부로만 나뉘어져 있어 참가신청을 할 수 있었다.
 
-<img src="/assets/images/2018/11/edaily-title.png" width="800px">
+![](/assets/images/2018/11/edaily-title.png)
+{width="800px"}
 
 
 
@@ -20,7 +21,8 @@ tags: ["대회"]
 
 솔직히 말하면 예선의 퀄리티는 그다지 높지 못했다. A+B처럼 아주 기초적인 문제는 시스템 테스트를 위해 냈다고 생각해도 별찍기류의 문제가 여럿 등장하는 부분에서는 **"차라리 이런 문제들을 빼고 문제 수를 줄이는 게 더 좋겠다"**라는 생각까지 들었을 정도로 아쉬운 부분들이 꽤 있었다. 특히 온라인대회의 한계 + 공정성을 위해서라고는 하지만 문제에 대한 Clarification 수단이 부재했다는 점이 이런 불만을 더 크게 느끼게 만들었다. 예선 중 QnA게시판을 통해 문제 오류에 대한 많은 질문들이 올라왔지만, 모든 답변은 아래와 동일했다.
 
-<img src="/assets/images/2018/11/edaily-QnA.png" width="800px">
+![](/assets/images/2018/11/edaily-QnA.png)
+{width="800px"}
 
 내년에는 이런 점들은 조금 보완했으면 좋겠다.
 
@@ -30,11 +32,13 @@ tags: ["대회"]
 
 예선을 통과하고 서울대학교 글로벌컨벤션센터에서 열리는 본선대회에 참가했다. 
 
-<img src="/assets/images/2018/11/edaily-contest.jpg" width="800px">
+![](/assets/images/2018/11/edaily-contest.jpg)
+{width="800px"}
 
 익숙한 풍경과 함께 테이블마다 노트북이 세팅되어있었다. 
 
-<img src="/assets/images/2018/11/edaily-table.jpg" width="800px">
+![](/assets/images/2018/11/edaily-table.jpg)
+{width="800px"}
 
 대회는 3시간동안 20문제를 해결하는 방식이었다. 다행히 생각보다는 현실적인(?) 숫자였고 대회 시작 후 간단히 문제들을 훑어보니 예선보다는 검수가 꽤 된 문제들이라는 생각이 들었다. 배점이 낮은 문제부터 먼저 해결한 후 배점이 높은 문제 순으로 하나씩 코딩을 진행했다.
 
@@ -44,7 +48,8 @@ tags: ["대회"]
 
 
 
-<img src="/assets/images/2018/11/edaily-reward.jpg" width="800px">
+![](/assets/images/2018/11/edaily-reward.jpg)
+{width="800px"}
 
 
 

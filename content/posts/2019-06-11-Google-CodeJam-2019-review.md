@@ -13,11 +13,13 @@ math: true
 
 2019년 [코드잼 본 대회](https://codingcompetitions.withgoogle.com/codejam)를 치렀다. 몇 번 글을 썼던 Kickstart와는 달리 1년에 1번밖에 열리지 않는 대회이고, 작년엔 훈련소에 있느라 참가를 못 해서인지 조금은 긴장된 마음이었다. 대학 시절 내내 코드잼, 해커컵을 통틀어 티셔츠와는 인연이 없었기에 이번에야말로 하나 받아내겠다는 생각을 했다.
 
-<img src="/assets/images/2019/06/GCJ-main.png" width="800px">
+![](/assets/images/2019/06/GCJ-main.png)
+{width="800px"}
 
 구글 코드잼(Google Code Jam)은 이름에서처럼 구글에서 주최하는 코딩대회로 Qualification Round와 온사이트 World Final을 포함해 총 5단계로 이루어진다. World Final은 전 세계를 통틀어 상위 25명밖에 나갈 수 없어 기대조차 안했고(...) 그 이전 단계인 Round 3(세계 상위 1000명)까지를 목표로 삼았다.
 
-<img src="/assets/images/2019/06/GCJ-result.png" width="800px">
+![](/assets/images/2019/06/GCJ-result.png)
+{width="800px"}
 
 결론부터 말하면 목표를 달성하는 데에는 성공했다. Round 3에서 395위로 티셔츠를 받을 수 있었고, World Final을 제외하면 실질적으로 인간계에서 올라갈 수 있는 마지막 라운드까지 올라간 셈이니 결과 자체로는 만족스럽다고 할 수 있다. 하지만 그와 별개로 매 라운드마다 조금씩 아쉬움이 남았는데, 특히 마지막 라운드에서는 쉽게 생각했던 문제에서 예외케이스 하나를 떠올리지 못해 대회 종료까지 수렁에서 빠져나오지 못했다. 대회가 끝나고 풀이를 들어보니 모든 문제들이 전문적인 지식을 요구하는 게 아닌, 대회 중 했던 고민들에서 조금씩 더 나아가는 풀이였기 때문에 이런 아쉬움이 더 크게 느껴졌다.
 

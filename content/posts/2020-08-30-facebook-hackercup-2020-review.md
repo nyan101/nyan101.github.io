@@ -17,13 +17,14 @@ math: true
 
 그동안 해커컵에서의 제일 큰 불만은 **small / large가 없어서 조금이라도 실수하면 돌이킬 수가 없다**라는 점이었는데, 이번에는 validate step이 나와서 이런 점이 조금은 완화됐다. 코드포스의 pretest 느낌으로 `validate_input.txt`을 제공하고, `validate_output.txt`를 제출하면 이에 대한 채점결과를 알려주는 시스템이 추가되면서 "그래도 바보같은 코딩실수는 안했구나"라는 확인을 할 수 있었다.
 
-<img src="/assets/images/2020/08/hackercup-tshirt.png" style="max-width:550px">
+![](/assets/images/2020/08/hackercup-tshirt.png)
+{style="max-width:550px"}
 
 작년에는 Round 2 기준 상위 500명에게만 티셔츠를 제공했지만 올해 해커컵에서는 기준이 조금 바뀌었다. Round 2에서 1문제 이상을 해결한 경우 기념 티셔츠를,  Round 3(상위 200명)에 진출하는 경우 티셔츠에 "Top 200"이라는 뱃지가 추가되어 나온다는 모양이다. 이왕 받는거 Top 200이었다면 좋았겠지만 노말등급(?) 티셔츠도 전체 참가자 수 대비 5% 미만의 사람들만 받은 만큼 너무 아쉬워할 필요는 없을거같다.
 
 각 라운드의 성적은 다음과 같다.
 
-<img src="/assets/images/2020/08/hackercup-scoreboard.png">
+![](/assets/images/2020/08/hackercup-scoreboard.png)
 
 ### Qualification Round
 
@@ -41,7 +42,8 @@ A번이 같은 상황에 데이터 조건만 다르게 해 A1, A2, A3으로 분�
 
 올해도 Round 2는 일요일 새벽 2시부터 5시까지 진행됐다. 작년엔 자느라 30분 늦게 시작했던 아쉬움이 있었기에 이번엔 꼭 시간을 맞추겠다는 다짐을 했고, 편의점에서 미리 에너지드링크까지 사오면서 단단히 준비했다.
 
-<img src="/assets/images/2020/08/hackercup-kakaotalk.jpg" style="width:60%">
+![](/assets/images/2020/08/hackercup-kakaotalk.jpg)
+{width="60%"}
 
 하지만 1시에 "잠깐 눈좀 붙일까"라는 생각을 ~~해서는 안 됐음에도~~ 한 게 화근이었고, 그렇게 눈을 뜨니 2시 19분이었다(...) 다행히 바뀐 규정에 따라 1문제 이상만 해결해도 티셔츠는 받을 수 있었기에 부담을 조금 내려놓고 대회를 시작했다. A번은 Round 2인 걸 감안하면 간단한 난이도, B는 약간의 수식을 세우면 $O(N^2)$ DP로 풀리는 확률계산 문제였다. 이후 시간을 들여 C를 코딩했으나 예제가 나오지 않아 확인하던 중, 문제 접근을 살짝 엇나갔다는 사실을 깨달았다.
 

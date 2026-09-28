@@ -1,0 +1,14 @@
+{{/* Images side by side, centered as a group.
+
+  {{< image-row width="90%" >}}
+  ![](/assets/images/a.jpg)
+
+  ![](/assets/images/b.jpg)
+  {{< /image-row >}}
+
+  Separate the images with a blank line so each one is rendered by the image
+  render hook as its own <figure>. width is optional (default: full width).
+*/}}
+<div class="image-row"{{ with .Get "width" }} style="width:{{ . | safeCSS }}"{{ end }}>
+{{ .Inner | .Page.RenderString (dict "display" "block") }}
+</div>

@@ -75,7 +75,8 @@ z = x + y
 
 흔히 이런 코드를 보면 x와 y를 3, 4가 들어있는 일종의 상자로 생각하고, z를 7이 저장된 새로운 상자로 이미지하곤 한다(아래 그림의 왼쪽). `int`나 `float` 같은 primitive 타입에서는 이렇게 생각해도 문제가 없지만 tensor라는 '객체'는 조금 다르게 동작한다.
 
-<img src="/assets/images/2019/08/pytorch-01-add.png" width="400px">
+![](/assets/images/2019/08/pytorch-01-add.png)
+{width="400px"}
 
 왼쪽 그림에서와 달리 오른쪽에서 z는 연산의 결과값(7)뿐만이 아닌, 어떻게 그 값을 얻게 되었는지를 역추적할 수 있는 링크를 볼 수 있다.[^1] 이렇게 얻은 z를 이용해 연산을 진행할수록 그림의 그래프도 마찬가지로 확장해나갈 수 있는데, 이러한 형태의 그래프를 연산 그래프(Computational Graph)라고 한다.
 
@@ -101,7 +102,8 @@ y.requires_grad_(False) # 이제 y는 연산 그래프에서 gradient를 계산�
 
 먼저 첫 질문에 답해보자. 그래디언트(gradient, 이하 grad)는 간단히 말해 **각 변수가 '현재 시점'에서 목적함수를 변화시키는 정도**라고 할 수 있다. 예로 \(y = -x^4 + 10x^3 + 10x^2 - 15x - 4\)의 식에서 \(y\)를 목적함수라고 하면 아래와 같은 그래프를 얻는다.
 
-<img src="/assets/images/2019/08/pytorch-01-gradient.png" width="600px">
+![](/assets/images/2019/08/pytorch-01-gradient.png)
+{width="600px"}
 
 그래프에서 \(x=5\)인 순간에 x의 그래디언트[^2] \(\frac{\partial y}{\partial x}\)는 335이며, 이는 \(x=5\) 근처에서 x가 \(d\) 만큼 변하면 y는 \(335d\) 만큼 변하게 됨을 의미한다. 다변수 함수 \(y=f(x\_1,x\_2)\)에 대해서도 마찬가지로 \(\frac{\partial y}{\partial x\_1}, \frac{\partial y}{\partial x\_2}\) 를 구할 수 있다.
 
@@ -154,7 +156,8 @@ err = ((ys - y_pred)**2).mean() # 예측한 값의 제곱 평균 오차(Mean Squ
 
 아무 조작도 하지 않은 초기상태(\(a=0, b=7\))에서의 근사는 오른쪽과 같은 모습이다.
 
-<img src="/assets/images/2019/08/pytorch-01-linear-0.png" width="600px">
+![](/assets/images/2019/08/pytorch-01-linear-0.png)
+{width="600px"}
 
 
 
@@ -193,7 +196,8 @@ for i in range(num_adjust):
 
 그렇다면 num\_adjust가 증가할수록 실제로 err이 줄어들까? 아래 그림은 조정 횟수에 따른 최종 \(y=ax+b\) 그래프를 정리한 결과이다. 조정 횟수가 증가함에 따라 점차 근사가 정확해지는(=오차가 줄어드는) 것을 확인할 수 있다.
 
-<img src="/assets/images/2019/08/pytorch-01-linear-1.png" width="600px">
+![](/assets/images/2019/08/pytorch-01-linear-1.png)
+{width="600px"}
 
 
 

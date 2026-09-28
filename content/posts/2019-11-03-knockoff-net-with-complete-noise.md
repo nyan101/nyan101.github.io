@@ -12,7 +12,8 @@ math: true
 
 Knockoff net을 간단히 말하면 **이미 학습이 끝난 모델 V를 블랙박스로 이용해 (V와 같은 기능을 하도록) 자신의 모델 A를 학습시키는** 것이라고 할 수 있다. 모델을 학습시킬 때 마주하는 문제 중 하나는 소위 *좋은 학습 데이터*를 구하기 어렵다는 점이다. Classification 문제를 생각해봐도 대표적인 MNIST나 CIFAR-10 등 유명한 일부를 제외하면 잘 정제되어 있고 + 올바른 라벨이 붙어있는 데이터는 구하기 쉽지 않다. 이때 이런 고급 데이터셋으로 학습된 모델 V를 이용해 (해당 데이터셋 없이) 새로운 모델 A를 학습시킨다고 생각해 보자.
 
-<img src="/assets/images/2019/11/model-stealing-overview.png" style="width:500px">
+![](/assets/images/2019/11/model-stealing-overview.png)
+{width="500px"}
 
 핵심은 모델 V를 블랙박스처럼 사용해 모델 A를 위한 학습 데이터셋을 생성하는 것이다. 딥러닝의 원리를 생각해보면 이를 좀더 직관적으로 이해할 수 있다. Classification Model의 경우
 
@@ -23,7 +24,8 @@ Knockoff net을 간단히 말하면 **이미 학습이 끝난 모델 V를 블랙
 
 그렇다면 \(D\)가 아닌 **다른 데이터셋 \(R=\{ (r\_\{sample\}, \_) \} \)에 대해 \(F\_A(r\_\{sample\}) \simeq F\_V(r\_\{sample\})\)이 되도록 조정한다면, 일반화된 샘플에 대해서 \(F\_\{A\}(sample) \simeq F\_\{V\}(sample) \simeq F\_\{ideal\}(sample)\)이 되지 않을까?** knockoff net 논문에서는 그림이라는 선은 지켰지만[^1] 본 블로그에서는 랜덤한 노이즈를 통해 \(R\)을 생성했다.
 
-<img src="/assets/images/2019/11/model-stealing-different-sample-distribution.png" style="width:450px">
+![](/assets/images/2019/11/model-stealing-different-sample-distribution.png)
+{width="450px"}
 
 (그림 출처:  [Knockoff Nets: Stealing Functionality of Black-Box Models]( https://arxiv.org/pdf/1812.02766.pdf) )
 
@@ -72,7 +74,8 @@ optimizer = optim.Adam(net.parameters())
 
 모델 A를 위해 랜덤한 데이터를 생성해보자. MNIST가 28x28 크기의 흑백 이미지이므로 `torch.randn` 함수를 사용해 같은 크기의 이미지를 만들었다.
 
-<img src="/assets/images/2019/11/model-stealing-random-sample.png" style="width:250px">
+![](/assets/images/2019/11/model-stealing-random-sample.png)
+{width="250px"}
 
 이 이미지를 앞서 학습이 끝난 모델 V (`net`) 에 입력하면 아래와 같은 출력을 내놓는다.
 

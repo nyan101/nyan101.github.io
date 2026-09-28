@@ -33,7 +33,8 @@ $$
 
 다음 벤 다이어그램을 살펴보자.
 
-<img src="/assets/images/2019/03/mobius-set-diagram.png" width="800px">
+![](/assets/images/2019/03/mobius-set-diagram.png)
+{width="800px"}
 
 전체 합집합의 넓이는 어떻게 구할 수 있을까? 색칠을 해보면 다음 식을 어렵지 않게 구할 수 있다.
 

@@ -73,7 +73,8 @@ Proof.
 
 그럼 (CoqIDE 기준) 오른쪽 위에 subgoal이 나타난 것을 확인할 수 있다.
 
-<img src="/assets/images/2019/02/SWF-02-1-Subgoal.png" width="800px">
+![](/assets/images/2019/02/SWF-02-1-Subgoal.png)
+{width="800px"}
 
 
 
@@ -113,7 +114,8 @@ n = n
 
 
 
-<img src="/assets/images/2019/02/SWF-02-1-Qed.png" width="800px">
+![](/assets/images/2019/02/SWF-02-1-Qed.png)
+{width="800px"}
 
 
 

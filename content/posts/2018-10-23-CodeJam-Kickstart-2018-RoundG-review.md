@@ -12,13 +12,15 @@ tags: ["대회"]
 
 대회 초반에 빠르게 문제를 풀고 중간 등수가 6등까지 올라갔다. 남은 1시간 반 동안 C 라지를 마저 풀까 하다가 exponential 한 알고리즘밖에 떠오르지 않길래 gg 후 웹툰으로 넘어갔다.
 
-<img src="/assets/images/2018/10/kickstart-scoreboard-semi.png" width="800px">
+![](/assets/images/2018/10/kickstart-scoreboard-semi.png)
+{width="800px"}
 
 
 
 따로 문제를 더 풀진 않았으니 대회가 진행될수록 스코어보드에서 등수는 점점 내려갔다. 종료 직전엔 38등까지 떨어진 걸 보고 이번 판은 망했구나 싶었...는데 C 라지에서 sysfail의 철퇴를 맞은 사람들이 대거 떨어지면서 최종 등수는 19등으로 끝났다.
 
-<img src="/assets/images/2018/10/kickstart-scoreboard-final.png" width="800px">
+![](/assets/images/2018/10/kickstart-scoreboard-final.png)
+{width="800px"}
 
 
 

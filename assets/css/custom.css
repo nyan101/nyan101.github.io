@@ -71,13 +71,6 @@
   color: rgba(var(--color-neutral-400), 1);
 }
 
-/* Posts place two images side by side with inline width:49%;display:inline-block */
-.prose img[style*="inline-block"] {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  vertical-align: top;
-}
-
 /* Heading anchor mark; see layouts/_default/_markup/render-heading.html */
 .heading-anchor-mark::before {
   content: "#";
@@ -87,5 +80,23 @@
 header img.logo {
   max-height: 2rem;
   max-width: 2rem;
-  border-radius: 9999px;
+}
+
+/* {{< image-row >}} shortcode; see layouts/shortcodes/image-row.html */
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  min-width: min(320px, 100%);
+  max-width: 100%;
+  margin: 2em auto;
+}
+
+.image-row figure {
+  flex: 1 1 0;
+  margin: 0;
+}
+
+.image-row img {
+  width: 100%;
 }

@@ -172,7 +172,8 @@ S (n' + 0) = S n'
 
 ~~뭐지 데자뷰인가~~ 다시 `destruct`를 적용해 시도해봤지만 같은 패턴이 반복된다.
 
-<img src="/assets/images/2019/02/SWF-02-2-plus-n-0.png" width="800px">
+![](/assets/images/2019/02/SWF-02-2-plus-n-0.png)
+{width="800px"}
 
 그러면 이 무한한 경우의 수를 모두 하나씩 보여야 할까? 이는 애초에 불가능하다. 그렇다면 어떤 접근을 사용할 수 있을까.
 
@@ -233,7 +234,8 @@ Proof.
 
 `assert` 를 추가하면 2개의 subgoal이 나타난다. 첫 번째는 assert로 추가된 명제, 두 번째는 원래 목표였던 subgoal이다. assert로 추가한 내용을 증명하고 나면 `induction`에서와 마찬가지로 이를 이용할 수 있다.
 
-<img src="/assets/images/2019/02/SWF-02-2-assert.png" width="800px">
+![](/assets/images/2019/02/SWF-02-2-assert.png)
+{width="800px"}
 
 
 
