@@ -1,5 +1,5 @@
-languageCode = "ko-KR"
-languageName = "한국어"
+locale = "ko-KR"
+label = "한국어"
 weight = 1
 title = "Nyan101 Blog"
 
