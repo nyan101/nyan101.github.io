@@ -1,0 +1,20 @@
+languageCode = "ko-KR"
+languageName = "한국어"
+weight = 1
+title = "Nyan101 Blog"
+
+[params]
+  displayName = "KO"
+  isoCode = "ko"
+  rtl = false
+  dateFormat = "2006년 1월 2일"
+  description = "여기엔 무슨 말이 들어가야 할까요"
+  copyright = "© nyan101"
+
+[params.author]
+  name = "nyan101"
+  image = "img/profile.jpg"
+  headline = "컴퓨터&수학 비슷한 거 공부하는 사람"
+  links = [
+    { github = "https://github.com/nyan101" },
+  ]

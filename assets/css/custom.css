@@ -1,0 +1,79 @@
+/* About page (CV) — ported from the Centrarium resume styles */
+.about-lang {
+  margin-top: 0;
+  font-size: 0.9em;
+}
+
+.prose img.profile {
+  display: block;
+  max-width: 240px;
+  margin: 1em auto;
+  border-radius: 9999px;
+}
+
+.prose h2.section-header {
+  margin-top: 1.5em;
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid rgba(var(--color-neutral-300), 1);
+}
+
+.dark .prose h2.section-header {
+  border-bottom-color: rgba(var(--color-neutral-600), 1);
+}
+
+.prose h3.subsection-header {
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+}
+
+.prose ul.resume-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.25em;
+}
+
+.prose ul.resume-list > li.resume-item {
+  padding-left: 0;
+  margin: 0 0 0.75em 0;
+}
+
+.prose li.resume-item ul li ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 1em;
+}
+
+.resume-appendix {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.resume-organization {
+  margin: 0 10px 0 0;
+  color: rgba(var(--color-neutral-600), 1);
+}
+
+.resume-date {
+  font-style: italic;
+  color: rgba(var(--color-neutral-500), 1);
+}
+
+.dark .resume-organization {
+  color: rgba(var(--color-neutral-400), 1);
+}
+
+/* Posts place two images side by side with inline width:49%;display:inline-block */
+.prose img[style*="inline-block"] {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  vertical-align: top;
+}
