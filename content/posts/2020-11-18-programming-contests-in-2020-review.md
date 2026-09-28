@@ -5,6 +5,8 @@ slug: "programming-contests-in-2020-review"
 url: "/blog/programming-contests-in-2020-review/"
 categories: ["근황"]
 tags: ["대회"]
+series: ["연말 후기"]
+series_order: 1
 math: true
 ---
 지난 코드잼, 해커컵 이후로도 출전한 대회는 몇 있었지만 문제 유출 방지규정이나 다른 사정(~~대회 종료 직후의 귀찮음이라던가~~), 혹은 딱히 별도의 글로 쓸만한 성과가 아니었다는 이유로 따로 후기를 쓰진 않았다. 그러다보니 시간이 꽤 지나 굳이 각각을 별도의 글로 쪼개기도 애매해졌고, 대회 후기글로 블로그를 도배할 생각도 없어 이번 기회에 한번 몰아서 정리해봤다. 

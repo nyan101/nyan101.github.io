@@ -5,6 +5,8 @@ slug: "CTF-contests-in-2022-review"
 url: "/blog/CTF-contests-in-2022-review/"
 categories: ["근황"]
 tags: ["대회"]
+series: ["연말 후기"]
+series_order: 4
 math: true
 ---
 2022년에는 대회 하나씩 끝날 때마다 후기를 쓰겠다고 다짐했지만 이번에도 결국 연말에 몰아서 쓰게 됐다(...)

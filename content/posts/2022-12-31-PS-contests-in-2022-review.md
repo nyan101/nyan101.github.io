@@ -5,6 +5,8 @@ slug: "PS-contests-in-2022-review"
 url: "/blog/PS-contests-in-2022-review/"
 categories: ["근황"]
 tags: ["대회"]
+series: ["연말 후기"]
+series_order: 5
 math: true
 ---
 [2022년도 대회 후기 - 해킹(CTF) 편](https://nyan101.github.io/blog/CTF-contests-in-2022-review)에 이은 알고리즘(PS) 편이다. ~~어떻게 2023년 오기 전에 다 쓰기는 하네~~ 현대모비스 대회에서 예상치 못한 소득(feat. 500만원)과 함께 공군해커톤 등 나름 성과가 있었고, 올해도 SCPC 성불은 하지 못했다(...)

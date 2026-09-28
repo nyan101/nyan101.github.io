@@ -5,6 +5,8 @@ slug: "CTF-contests-in-2023-review"
 url: "/blog/CTF-contests-in-2023-review/"
 categories: ["근황"]
 tags: ["대회"]
+series: ["연말 후기"]
+series_order: 6
 math: true
 ---
 [작년에 이어](https://nyan101.github.io/blog/CTF-contests-in-2022-review) 올해도 대회는 꾸준히 나갔지만 후기는 연말에 몰아서 쓰게 됐다(...)

@@ -5,6 +5,8 @@ slug: "others-in-2023-review"
 url: "/blog/others-in-2023-review/"
 categories: ["근황"]
 tags: ["대회"]
+series: ["연말 후기"]
+series_order: 8
 math: true
 ---
 [CTF 같은 해킹대회](https://nyan101.github.io/blog/CTF-contests-in-2023-review)나 [PS 알고리즘 대회](https://nyan101.github.io/blog/PS-contests-in-2023-review)는 아니지만, 소소한 다른 것들을 정리할 포스트도 필요하다고 생각해 따로 작성했다. ~~막상 제대로 적을 건 둘밖에 없긴 하지만~~

@@ -5,6 +5,8 @@ slug: "PS-contests-in-2021-review"
 url: "/blog/PS-contests-in-2021-review/"
 categories: ["근황"]
 tags: ["대회"]
+series: ["연말 후기"]
+series_order: 3
 math: true
 ---
 지난번 [2021년도 대회 후기 - 해킹(CTF) 편](https://nyan101.github.io/blog/CTF-contests-in-2021-review)에 이은 알고리즘(PS) 편이다. 올해는 전반적으로 성적이 좋지는 못한데, 개인적으로 기대했던 SCPC에서 억울할 정도의(...) 성적을 받아 여러모로 후유증이 남기도 했다. ~~Z플립 3 지를때 "SCPC에서 보충해야지"라고 계획까지 세워놨는데...~~

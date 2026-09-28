@@ -5,6 +5,8 @@ slug: "contests-in-2024-review"
 url: "/blog/contests-in-2024-review/"
 categories: ["근황"]
 tags: ["대회"]
+series: ["연말 후기"]
+series_order: 9
 math: true
 ---
 올해는 알고리즘 대회 하나(메타 해커컵), AI 대회 하나(국방 AI 경진대회)를 제외하면 다 보안 관련 대회들이라 밸런스가 안 맞다는 이유로, 이것저것 다양하게 해서 [CTF 편](https://nyan101.github.io/blog/CTF-contests-in-2023-review), [PS/알고리즘 편](https://nyan101.github.io/blog/PS-contests-in-2023-review), [기타 편](https://nyan101.github.io/blog/others-in-2023-review)을 따로 작성했던 2023년과는 달리 글 하나에 몰아 작성하기로 했다. ~~이제 나갈 수 있는 대회들이 점점 줄어간다...~~

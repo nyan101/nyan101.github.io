@@ -5,6 +5,8 @@ slug: "PS-contests-in-2023-review"
 url: "/blog/PS-contests-in-2023-review/"
 categories: ["근황"]
 tags: ["대회"]
+series: ["연말 후기"]
+series_order: 7
 math: true
 ---
 2023년 올해도 [CTF 편](https://nyan101.github.io/blog/CTF-contests-in-2023-review)에 이은 알고리즘(PS) 편이다. 올해는 ~~페이스북~~ 메타 해커컵 티셔츠, SCPC 성불 모두 이룬 나름 의미있는 해였다.
