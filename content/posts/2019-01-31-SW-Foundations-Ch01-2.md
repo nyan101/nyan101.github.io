@@ -76,7 +76,7 @@ Compute를 통해 함수가 의도한 대로 만들어졌는지 확인하자.
    4 : nat
 ```
 
-하지만 `S`는 `pred`, `minusTwo`와 근본적으로 다르다. 구체적으로 `pred`는 일종의 **계산규칙(computation rule)**을 가지고 `nat` 위에서 정의된 함수이고 `S`는 `nat`의 정의에서 등장하는 생성자라는 차이를 가진다. `pred`의 정의에 따라 `pred 4`는 `3`으로 simplified될 수 있지만 `S 3`이 `4`가 되는 건 Coq에서 제공하는 syntactic sugar일 뿐 simplified가 아니다. 잠시 10진법을 머리에서 지우고 `S`와 `O`을 이용한 표기로 돌아가보면 그 차이를 이해할 수 있다.
+하지만 `S`는 `pred`, `minusTwo`와 근본적으로 다르다. 구체적으로 `pred`는 일종의 **계산규칙(computation rule)**\ 을 가지고 `nat` 위에서 정의된 함수이고 `S`는 `nat`의 정의에서 등장하는 생성자라는 차이를 가진다. `pred`의 정의에 따라 `pred 4`는 `3`으로 simplified될 수 있지만 `S 3`이 `4`가 되는 건 Coq에서 제공하는 syntactic sugar일 뿐 simplified가 아니다. 잠시 10진법을 머리에서 지우고 `S`와 `O`을 이용한 표기로 돌아가보면 그 차이를 이해할 수 있다.
 
 ```coq
 >> Compute (pred (S (S (S (S O))))).
@@ -111,7 +111,7 @@ match n with
 end.
 ```
 
-그런데 이를 실행시키면 "_The reference is_even was not found in the current environment._"라는 오류를 볼 수 있다. `is_even`의 정의에서 다시 `is_even`을 사용한 게 원인으로 Definition이 단순한 패턴 매칭이기 때문에 등장하는 오류이다. 생각해보면 `is_even (S (S (S O)))`를 `is_even (S O)`로 바꾼다고 계산이 끝나는 게 아니므로, 함수를 다시 **재귀적(recursive)**으로 적용하는 방법을 찾아야 한다. Coq에서는 `Fixpoint`가 그 역할을 수행한다.
+그런데 이를 실행시키면 "_The reference is_even was not found in the current environment._"라는 오류를 볼 수 있다. `is_even`의 정의에서 다시 `is_even`을 사용한 게 원인으로 Definition이 단순한 패턴 매칭이기 때문에 등장하는 오류이다. 생각해보면 `is_even (S (S (S O)))`를 `is_even (S O)`로 바꾼다고 계산이 끝나는 게 아니므로, 함수를 다시 **재귀적(recursive)**\ 으로 적용하는 방법을 찾아야 한다. Coq에서는 `Fixpoint`가 그 역할을 수행한다.
 
 ```coq
 Fixpoint is_even (n : nat) : bool :=
@@ -222,7 +222,7 @@ end.
 
 앞서 Fixpoint를 이용해 함수를 재귀적으로 정의할 수 있다고 했으므로 _xxx is recursively defined_  부분은 별로 놀랍지 않다. 그런데 이어진 괄호 안의 문장은 어떤 의미일까?
 
-Coq에서 함수를 정의할 때 가장 중요한 점은 **"모든 함수는 언젠가 종료되어야 한다"**라는 사실이다. 다시 말해, 무한 루프를 비롯해 끝나지 않을 가능성이 있는 함수의 정의는 원칙적으로 허용되지 않는다. 이를 위해서는 정의된 함수가 항상 유한 시간 내에 끝나는지 판단하는 방법이 있어야 한다.
+Coq에서 함수를 정의할 때 가장 중요한 점은 **"모든 함수는 언젠가 종료되어야 한다"**\ 라는 사실이다. 다시 말해, 무한 루프를 비롯해 끝나지 않을 가능성이 있는 함수의 정의는 원칙적으로 허용되지 않는다. 이를 위해서는 정의된 함수가 항상 유한 시간 내에 끝나는지 판단하는 방법이 있어야 한다.
 
 
 

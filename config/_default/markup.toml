@@ -19,6 +19,13 @@
   [goldmark.extensions.footnote]
     enable = true
 
+  # Korean particles attach directly to emphasis (**"..."**를), which CommonMark
+  # won't close. Write **"..."**\ 를 instead: the escaped space counts as
+  # whitespace for delimiter flanking but is not rendered.
+  [goldmark.extensions.cjk]
+    enable = true
+    escapedSpace = true
+
 [highlight]
   noClasses = false
 

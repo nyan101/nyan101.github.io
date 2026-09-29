@@ -131,7 +131,7 @@ Proof.
 Qed.
 ```
 
-먼저 `app_length` 를 사용해 앞서 막혔던 subgoal인 **length (rev l' ++ [n]) = S (length (rev l'))** 을 **length (rev l') + length [n] = S (length (rev l'))** 로 바꿀 수 있고, `length [n]`은 1이므로 subgoal은 다시 **length (rev l') + 1 = S (length (rev l'))**이 된다. 이제 nat에서의 +연산은 교환법칙을 만족한다는 사실(plus\_comm)과 induction hypothesis를 이용하면 나머지는 쉽게 증명할 수 있다.
+먼저 `app_length` 를 사용해 앞서 막혔던 subgoal인 **length (rev l' ++ [n]) = S (length (rev l'))** 을 **length (rev l') + length [n] = S (length (rev l'))** 로 바꿀 수 있고, `length [n]`은 1이므로 subgoal은 다시 **length (rev l') + 1 = S (length (rev l'))**\ 이 된다. 이제 nat에서의 +연산은 교환법칙을 만족한다는 사실(plus\_comm)과 induction hypothesis를 이용하면 나머지는 쉽게 증명할 수 있다.
 
 ### Search
 
